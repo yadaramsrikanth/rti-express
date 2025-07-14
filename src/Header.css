@@ -1,0 +1,13 @@
+.Header-container{
+    background-color: #1877F2;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    box-sizing: border-box;
+}
+
+#home{
+    color: #FFFFFF;
+}
