@@ -25,7 +25,7 @@ const toToggle=()=>{
         </div>
   <p className="feedback text">Feedback</p>
   <p className="symbol text">|</p>
-  <p className="text epaper">Epaper</p>
+  <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper">Epaper</a>
       </div>
     </div>
     <div className="logo-container">
