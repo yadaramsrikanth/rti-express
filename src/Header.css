@@ -12,3 +12,7 @@
 #home{
     color: #FFFFFF;
 }
+
+#home:hover{
+    color: #FF69B4;
+}
