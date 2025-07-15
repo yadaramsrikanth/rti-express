@@ -1,8 +1,8 @@
 import { CgMail } from "react-icons/cg";
 import { MdToggleOn } from "react-icons/md";
 import { MdToggleOff } from "react-icons/md";
-import Header from "./Header";
-import Register from "./Register";
+import Header from "./components/Header/Header";
+import Register from "./components/Register/Register";
 import "./App.css"
 import { useState } from "react";
 const App=()=>{
