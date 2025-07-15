@@ -103,17 +103,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
+ height: 100vh;
   width: 100%;
 }
 .map-container{
 background-image: url("https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752493253/apmap1_lfev8g__1_1752493150-removebg-preview_lhxh1y.png");
   min-height: 100vh;
-  background-size: cover;
+  background-size: contain;
   margin-bottom: 50px;
-  width: 50%;
-   position: relative;
+  width: 100%;
+   background-position: top center;
+ background-repeat: no-repeat;
  
+ z-index: 0;
+ margin-top: 40px;
+margin-bottom: 10px; 
 }
 
 .form-main-container{
@@ -142,4 +146,22 @@ background-image: url("https://res.cloudinary.com/dqdx0yz2t/image/upload/v175249
   font-weight: 900;
   font-size: 24px;
   color: #1877F2;
+}
+.coming-soon{
+  font-family: "Poppins";
+  font-size: 24px;
+  color:	#A020F0 ;
+  font-weight: bold;
+}
+.toggle-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 15px;
+}
+.language{
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #000000;
 }
