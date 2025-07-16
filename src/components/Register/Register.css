@@ -53,3 +53,60 @@ font-weight: 600;
     font-size: 16px;
     font-weight: 600;
 }
+
+@media (max-width:575px){
+  .register-from{
+    width: 60%;
+  }
+  
+}
+
+@media (min-width:576px) and (max-width:767px){
+  .register-from{
+    width: 50%;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px){
+  .register-from{
+    width: 55%;
+  }
+  .register-input-element::placeholder{
+    font-size: 16px;
+}
+.register-button{
+  font-size: 18px;
+}
+.register-input-element{
+  padding: 13px;
+}
+}
+@media (min-width:992px) and (max-width:1199px){
+  .register-from{
+    width: 45%;
+  }
+  .register-input-element::placeholder{
+    font-size: 18px;
+}
+.register-button{
+  font-size: 20px;
+}
+.register-input-element{
+  padding: 15px;
+}
+}
+
+@media (min-width:1200px){
+  .register-from{
+    width: 40%;
+  }
+  .register-input-element::placeholder{
+    font-size: 18px;
+}
+.register-button{
+  font-size: 18px;
+}
+.register-input-element{
+  padding: 15px;
+}
+}

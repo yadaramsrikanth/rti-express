@@ -39,8 +39,8 @@ const toToggle=()=>{
     <div className="bg-color-container"></div>
     </div>
     <Header isON={isON}/>
-    <div className="map-form-container">
-    <div className="map-container"> 
+  <div className="map-form-container">
+  <div className="map-container"> 
  <div className="form-main-container">
   <h1 className="coming-soon">COMING SOON.....</h1>
   <h2 className="early-access-heading">Be among the first to explore our new website</h2>
