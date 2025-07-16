@@ -1,4 +1,3 @@
-import { FaSquareFacebook } from "react-icons/fa6";
 import "./Header.css"
 
 const Header=(props)=>{
@@ -33,7 +32,7 @@ const Header=(props)=>{
         <p className="text" id="home">{categories[7]}</p>
         <p className="text" id="home">{categories[8]}</p>
         <p className="text" id="home">Contact Us</p>
-        <FaSquareFacebook size={24}/>
+       
     </div>
 }
 

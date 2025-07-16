@@ -7,7 +7,7 @@ import "./App.css"
 import { useState } from "react";
 const App=()=>{
   const [isON,SetIsON]=useState(false)
-const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752484779/baa1282749cc67b4168457ccdf668bef78425d9e_qvofhy.jpg"
+const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752644036/IMG-20250715-WA0002_xrwuem.jpg"
 
 const toToggle=()=>{
   SetIsON((prev)=>!prev)
@@ -16,8 +16,10 @@ const toToggle=()=>{
   return <div className="app-container">
     <div className="top-container">
       <div className="email-container">
-     <CgMail size={22} className="icon"/>
-      <h3 className="website-mail">hello@rtiexpress.com</h3></div>
+     <CgMail size={22} className="icon-email"/>
+      <h3 className="website-mail">hello@rtiexpress.com</h3>
+      </div>
+      
       <div className="top-left-side-text-container">
         <div className="toggle-container" onClick={toToggle}>
         {isON?<MdToggleOn size={35}  color="green" />:<MdToggleOff size={35} color="gray"/>}
@@ -26,6 +28,10 @@ const toToggle=()=>{
   <p className="feedback text">Feedback</p>
   <p className="symbol text">|</p>
   <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper">Epaper</a>
+   
+   <p className="rti-reporter-join text">RTI Reporter Join</p>
+   <p className="rti-reporter-join text">RTI ACT Org Join</p>   
+      
       </div>
     </div>
     <div className="logo-container">

@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   min-height:100vh;
-  position: relative;
+  
 }
 
 .top-container{
@@ -17,10 +17,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-   position: relative;
-   justify-content: space-between;
-   padding: 10px;
+  justify-content: space-between;
+  padding: 15px;
 }
+
 .email-container{
   display: flex;
   flex-direction: row;
@@ -32,31 +32,26 @@
   font-family: "Poppins";
   font-weight: 600;
   font-size: 16px;
- 
-  top: 11px;
-  left: 57px;
+         /*  chnages sratsfrom here*/
   line-height: 24px;
 }
-.icon{
+.icon-email{
   width: 20px;
   height: 15px;
-  top: 2px;
-  left: 2px;
+  margin-left: 2px;
 }
 .top-left-side-text-container{
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: relative;
+  
 }
 .text{
   
   font-family: "Poppins";
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   height: 24px;
-  top: 11px;
-  
   line-height: 24px;
   color: #000000;
 }
@@ -64,39 +59,39 @@
 .feedback{
  width: 81px;
  
-  left: 1192px;
+  
 }
 .epaper{
    width: 58px;
  
-  left: 1298px;
+ 
   text-decoration: none;
 
 }
 .symbol{
   width: 5px;
-  left: 1283px;
+  
   margin-right: 10px;
 }
 .logo-rti-express{
   width: 140px;
-  height: 95px;
-  margin-top: 72px;
-  margin-left: 28px;
+  height: 60px;
+  margin-top: 12px;
+ 
 }
 .logo-container{
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: relative;
-  margin: 15px;
+  justify-content: space-between;
+  margin:15px;
 }
 .bg-color-container{
   background-color: #D9D9D9;
     width: 935px;
     height: 95px;
-    margin-top: 72px;
-    margin-left: 483px;
+    margin-top: 12px;
+   
 
 }
 .map-form-container{
@@ -166,5 +161,8 @@ margin-bottom: 10px;
   font-weight: 400;
   color: #000000;
 }
+.rti-reporter-join{
+  margin-left:10px;
 
+}
 
