@@ -56,14 +56,14 @@ font-weight: 600;
 
 @media (max-width:575px){
   .register-from{
-    width: 60%;
+    width: 80%;
   }
   
 }
 
 @media (min-width:576px) and (max-width:767px){
   .register-from{
-    width: 50%;
+    width: 60%;
   }
 }
 
