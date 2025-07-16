@@ -18,6 +18,155 @@
     color: #FF69B4;
 }
 
+@media (max-width:575px){
+    .Header-container{
+        display:none;
+    }
+    .mobile-view-small-large-screen-hamburger-icon-container{
+        background-color: #d9d9d9;
+        height: 50px;
+       margin-bottom: 120px;
+       display: flex;
+       align-items: center;
+       flex-direction: row;
+       justify-content: space-between;
+       padding: 20px 0px 20px 20px;
+    }
+    .mobile-logo-rti-express{
+        width: 80px;
+        height: 30px;
+    }
+    .categories-container-on-mobile-view{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .hamburger-button{
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        color:black;
+    }
+    .close-button-mobile-view{
+    background: transparent;
+  border: none;
+  font-size: 24px;
+  align-self: flex-end;
+  cursor: pointer;
+    }
+.right-side-drawer{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+    }
+    #home{
+    font-family: "Poppins";
+  font-weight: 600;
+  font-size: 15px;
+  height: 24px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 5px;
+    
+}
+.right-side-drawer.open {
+  transform: translateX(0); 
+}
+
+.right-side-drawer.closed {
+  transform: translateX(100%); 
+}
+
+
+}
+@media (min-width:768px){
+    .mobile-view-small-large-screen-hamburger-icon-container{
+        display: none;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px){
+     .Header-container{
+        display:none;
+    }
+    .mobile-view-small-large-screen-hamburger-icon-container{
+        background-color: #d9d9d9;
+        height: 50px;
+       margin-bottom: 120px;
+       display: flex;
+       align-items: center;
+       flex-direction: row;
+       justify-content: space-between;
+       padding: 20px 0px 20px 20px;
+    }
+    .mobile-logo-rti-express{
+        width: 80px;
+        height: 30px;
+    }
+    .categories-container-on-mobile-view{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .hamburger-button{
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        color:black;
+    }
+    .close-button-mobile-view{
+    background: transparent;
+  border: none;
+  font-size: 24px;
+  align-self: flex-end;
+  cursor: pointer;
+    }
+.right-side-drawer{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+    }
+    #home{
+    font-family: "Poppins";
+  font-weight: 600;
+  font-size: 15px;
+  height: 24px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 5px;
+    
+}
+.right-side-drawer.open {
+  transform: translateX(0); 
+}
+
+.right-side-drawer.closed {
+  transform: translateX(100%); 
+}
+
+
+}
+
 @media (min-width:768px)  and (max-width:991px){
     #home{
         font-size: 12px;
@@ -30,10 +179,10 @@
 
 @media (min-width:992px)  and (max-width:1199px){
     #home{
-        font-size: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        font-weight: 500;   
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;   
     }
     
 }
