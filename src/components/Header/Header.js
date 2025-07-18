@@ -2,8 +2,11 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { MdToggleOn } from "react-icons/md";
 import { MdToggleOff } from "react-icons/md";
 import { MdOutlineClose } from "react-icons/md";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import "./Header.css"
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const Header=(props)=>{
   const {isON}=props
@@ -32,21 +35,26 @@ setLanguageCategory((prev)=>(!prev))
   "Andhra Pradesh",
   "National",
   "Cinema",
-  "Ideals",
-  "Cultural",
   "Business",
-  "Editorial",
   "Sports"]:
   [ "తెలంగాణ",
   "ఆంధ్రప్రదేశ్",
   "జాతీయం",
   "సినిమా",
-  "ఆదర్శం",
-  "సాంస్కృతికం",
   "బిజినెస్",
-  "లొగొట్టు సంపాదకీయం",
   "క్రీడలు"]
-  console.log(categories)
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768 && isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [isMenuOpen]);
+
     return <> <nav className="Header-container">
         <p className="text" id="home">{categories[0]}</p>
         <p className="text" id="home">{categories[1]}</p>
@@ -54,10 +62,12 @@ setLanguageCategory((prev)=>(!prev))
         <p className="text" id="home">{categories[3]}</p>
         <p className="text" id="home">{categories[4]}</p>
         <p className="text" id="home">{categories[5]}</p>
-        <p className="text" id="home">{categories[6]}</p>
-        <p className="text" id="home">{categories[7]}</p>
-        <p className="text" id="home">{categories[8]}</p>
+        <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper"  id="home"><p>Epaper</p></a>
+        
+        <p className="text" id="home"> RTI Activist </p>
+        <a className="text epaper" id="home" target="__blank" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter</p></a>  
         <p className="text" id="home">Contact Us</p>
+        
        </nav>
 
     <nav className="mobile-view-small-large-screen-hamburger-icon-container">
@@ -79,11 +89,22 @@ setLanguageCategory((prev)=>(!prev))
         <p  id="home">{categories[3]}</p>
         <p  id="home">{categories[4]}</p>
         <p  id="home">{categories[5]}</p>
-        <p  id="home">{categories[6]}</p>
-        <p  id="home">{categories[7]}</p>
-        <p  id="home">{categories[8]}</p>
+       <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper"  id="home"><p>Epaper</p></a>
+        <p className="text" id="home"> RTI Activist </p>
+        <a className="text epaper" id="home" target="__blank" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter</p></a>  
         <p id="home">Contact Us</p>
         <p id="home">hello@rtiexpress.com</p>
+        <hr className="horizontal-line"/>
+        <div className="social-media-links-container">
+          <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="__blank"><FaFacebook size={20} className="social-media-icon"/></a>
+            
+           <a href="https://www.instagram.com/rtiexpress/" target="__blank"><FaInstagram size={20} className="social-media-icon"/></a>
+           
+          <a href="https://www.youtube.com/@rtiexpress667" target="__blank"><FaYoutube size={20} className="social-media-icon"/></a>
+            
+             
+          
+        </div>
         </div>}
 
 

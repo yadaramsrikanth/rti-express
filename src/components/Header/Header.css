@@ -17,7 +17,23 @@
     
     color: #FF69B4;
 }
-
+.epaper{
+  text-decoration: none;
+}
+.social-media-links-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  margin-top: 10px;
+}
+.horizontal-line{
+  border: 1px solid black;
+  
+background-color: "blue";
+width: 100%;
+}
 @media (max-width:575px){
     .Header-container{
         display:none;
@@ -92,6 +108,9 @@
 @media (min-width:768px){
     .mobile-view-small-large-screen-hamburger-icon-container{
         display: none;
+    }
+    .right-side-drawer{
+      display: none !important;
     }
 }
 

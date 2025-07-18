@@ -1,6 +1,9 @@
 import { CgMail } from "react-icons/cg";
 import { MdToggleOn } from "react-icons/md";
 import { MdToggleOff } from "react-icons/md";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import Header from "./components/Header/Header";
 import Register from "./components/Register/Register";
 import "./App.css"
@@ -26,11 +29,14 @@ const toToggle=()=>{
         <p className="language"> {isON ? 'English' : 'తెలుగు'}</p>
         </div>
   <p className="feedback text">Feedback</p>
-  <p className="symbol text">|</p>
-  <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper">Epaper</a>
+ 
+
+  <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="__blank"><FaFacebook size={20} className="social-media-icon"/></a>
+ <a href="https://www.instagram.com/rtiexpress/" target="__blank"><FaInstagram size={20} className="social-media-icon"/></a>
+<a href="https://www.youtube.com/@rtiexpress667" target="__blank"><FaYoutube size={20} className="social-media-icon"/></a>
+  
    
-   <p className="rti-reporter-join text">RTI Reporter Join</p>
-   <p className="rti-reporter-join text">RTI ACT Org Join</p>   
+      
       
       </div>
     </div>

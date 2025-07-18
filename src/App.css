@@ -62,9 +62,7 @@ overflow-x: hidden;
   color: #000000;
 }
 
-.epaper{
-  text-decoration: none;
-}
+
 .symbol{
   margin-right: 10px;
 }
@@ -159,9 +157,12 @@ background-image: url("https://res.cloudinary.com/dqdx0yz2t/image/upload/v175249
   font-weight: 400;
   color: #000000;
 }
-.rti-reporter-join{
-  margin-left:10px;
-
+.social-media-icon{
+  color: black;
+  margin-left: 5px;
+}
+.feedback{
+  margin-right: 5px;
 }
 
 /*Extra small device*/
