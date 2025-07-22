@@ -5,7 +5,8 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import Header from "./components/Header/Header";
-import Register from "./components/Register/Register";
+// import Register from "./components/Register/Register";
+import SliderWithContent from "./components/SliderWithContent/index";
 import "./App.css"
 import { useState } from "react";
 const App=()=>{
@@ -45,17 +46,20 @@ const toToggle=()=>{
     <div className="bg-color-container"></div>
     </div>
     <Header isON={isON}/>
-  <div className="map-form-container">
-  <div className="map-container"> 
- <div className="form-main-container">
-  <h1 className="coming-soon">COMING SOON.....</h1>
-  <h2 className="early-access-heading">Be among the first to explore our new website</h2>
-  <p className="signup-para">sign up now for early access</p>
+  
+  {/* <div className="map-form-container"> */}
+  {/* <div className="map-container">  */}
+ {/* <div className="form-main-container"> */}
+  {/* <h1 className="coming-soon">COMING SOON.....</h1> */}
+  {/* <h2 className="early-access-heading">Be among the first to explore our new website</h2> */}
+  {/* <p className="signup-para">sign up now for early access</p> */}
  
-  <Register/>
- </div>
- </div>
-    </div>
+  {/* <Register/> */}
+ {/* </div> */}
+ {/* </div> */}
+    {/* </div> */}
+<SliderWithContent/>
+
   </div>
 }
 

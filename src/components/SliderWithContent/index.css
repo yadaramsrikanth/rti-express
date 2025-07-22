@@ -1,0 +1,17 @@
+.slider-text-main-container{
+    width: 100%;
+    min-height: 70vh;
+    padding: 15px;
+    
+
+}
+.slider-container{
+    width: 50%;
+    margin: 15px;
+    
+    
+}
+.slider-image{
+    width: 100%;
+    height:auto;
+}
