@@ -63,7 +63,7 @@ const toToggle=()=>{
     {/* </div> */}
     <Routes>
     <Route path="/" element={<SliderWithContent/>}/>
-    <Route path="/news/:id" element={NewsDetails}/>
+    <Route path="/news/:id" element={<NewsDetails/>}/>
     </Routes>
 
 
