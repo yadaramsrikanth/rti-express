@@ -1,3 +1,4 @@
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 import { CgMail } from "react-icons/cg";
 import { MdToggleOn } from "react-icons/md";
 import { MdToggleOff } from "react-icons/md";
@@ -7,6 +8,7 @@ import { FaYoutube } from "react-icons/fa";
 import Header from "./components/Header/Header";
 // import Register from "./components/Register/Register";
 import SliderWithContent from "./components/SliderWithContent/index";
+import NewsDetails from "./components/NewsDetails";
 import "./App.css"
 import { useState } from "react";
 const App=()=>{
@@ -17,7 +19,8 @@ const toToggle=()=>{
   SetIsON((prev)=>!prev)
 }
 
-  return <div className="app-container">
+  return <BrowserRouter>
+   <div className="app-container">
     <div className="top-container">
       <div className="email-container">
      <CgMail size={22} className="icon-email"/>
@@ -34,7 +37,7 @@ const toToggle=()=>{
 
   <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="__blank"><FaFacebook size={20} className="social-media-icon"/></a>
  <a href="https://www.instagram.com/rtiexpress/" target="__blank"><FaInstagram size={20} className="social-media-icon"/></a>
-<a href="https://www.youtube.com/@rtiexpress667" target="__blank"><FaYoutube size={20} className="social-media-icon"/></a>
+  <a href="https://www.youtube.com/@rtiexpress667" target="__blank"><FaYoutube size={20} className="social-media-icon"/></a>
   
    
       
@@ -58,9 +61,14 @@ const toToggle=()=>{
  {/* </div> */}
  {/* </div> */}
     {/* </div> */}
-<SliderWithContent/>
+    <Routes>
+    <Route path="/" element={<SliderWithContent/>}/>
+    <Route path="/news/:id" element={NewsDetails}/>
+    </Routes>
+
 
   </div>
+  </BrowserRouter>
 }
 
 export default App

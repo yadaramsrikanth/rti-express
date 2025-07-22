@@ -1,5 +1,7 @@
+import {Link} from "react-router-dom"
 import {Swiper,SwiperSlide} from "swiper/react"
 import {Pagination,Navigation} from "swiper/modules"
+
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
@@ -18,11 +20,14 @@ const SliderWithContent=()=>{
         onSlideChange={(swiper)=>setactiveIndex(swiper.activeIndex)}
         >
          {
-           data.map((item,index)=>(
-            <SwiperSlide key={index}>
-                <img src={item.image}  alt={`slider ${index}`} className="slider-image"/>
-              
+           data.map((item)=>(
+            
+            <SwiperSlide key={item.id}>
+                <Link to={`/news/${item.id}`} className="slide-link">
+                <img src={item.image}  alt={`slider ${item.id}`} className="slider-image"/>
+              </Link>
             </SwiperSlide>
+           
            )) 
          }   
 
