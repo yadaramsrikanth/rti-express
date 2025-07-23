@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - RTI EXPRESS Group</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      color: #333;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+    }
+
+    .profile h2 {
+      cursor: pointer;
+      font-size: 20px;
+      margin-bottom: 5px;
+      color: #004aad;
+      user-select: none;
+    }
+
+    .details {
+      display: none;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    .profile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0px;
+    }
+
+    .text-info {
+      flex: 1;
+    }
+
+    .profile-image {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .title {
+      font-weight: bold;
+      font-style: italic;
+      color: #555;
+    }
+
+    .contact {
+      font-style: italic;
+      color: #0077cc;
+      margin: 5px 0 15px 0;
+    }
+
+    .contact a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .profile-image {
+        width: 100%;
+        max-width: 150px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>About Us</h1>
+
+    <div class="profile">
+      <h2 onclick="toggleDetails(this)">1. Kotipalli Baba</h2>
+      <div class="details">
+        <div class="profile-header">
+          <div class="text-info">
+            <p class="title">
+              Chairman & Managing Director, RTI EXPRESS Group<br />
+              Chief Editor, RTI EXPRESS News<br />
+              Honourable President & Founder, Andhra Pradesh RTI Activist Organization
+            </p>
+            <p class="contact">
+              Contact: <a href="tel:+917668886666">76688 86666</a>
+            </p>
+            <p>
+              Mr. Kotipalli Baba is a renowned RTI (Right to Information) Activist and seasoned journalist, widely respected
+              for his relentless efforts in promoting transparency, accountability, and good governance across public and
+              private sectors in India. With an unwavering commitment to the democratic values of truth and justice, he has
+              empowered citizens through the power of information and fearless journalism.
+            </p>
+            <p>
+              As the Chairman & Managing Director of RTI EXPRESS Group and Chief Editor of RTI EXPRESS News, Mr. Kotipalli
+              Baba has led numerous investigative reports, exposed corruption, and championed the rights of the common
+              people. Under his leadership, RTI Express has emerged as a credible voice in grassroots journalism and a
+              powerful platform for social justice.
+            </p>
+            <p>
+              Driven by a vision to create an informed and aware society, Mr. Kotipalli Baba has trained and inspired
+              hundreds of young RTI activists and citizen journalists. His bold activism, ethical reporting, and commitment
+              to truth have made a lasting impact on governance reforms and civic engagement.
+            </p>
+            <p>
+              With over two decades of experience in public advocacy and media leadership, Mr. Kotipalli Baba continues to
+              be a torchbearer of journalistic integrity and a leading figure in the RTI movement in India.
+            </p>
+          </div>
+          <img src="rti1.png" alt="Kotipalli Baba" class="profile-image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2 onclick="toggleDetails(this)">2. S. Ramachandra Naik</h2>
+      <div class="details">
+        <div class="profile-header">
+          <div class="text-info">
+            <p class="title">
+              Associate Editor, RTI EXPRESS News<br />
+              State General Secretary, Andhra Pradesh RTI Activist Organization
+            </p>
+            <p class="contact">
+              Contact: <a href="tel:+918919831001">89198 31001</a>
+            </p>
+            <p>
+              Mr. S. Ramachandra Naik is a dynamic and committed RTI (Right to Information) activist with a strong track
+              record in promoting transparency, accountability, and good governance. He currently serves as the Associate
+              Editor of RTI EXPRESS News, where his sharp editorial insight and investigative spirit contribute
+              significantly to the newspaper’s mission of public interest journalism.
+            </p>
+            <p>
+              As the State General Secretary of the Andhra Pradesh RTI Activist Organization, Mr. Ramachandra Naik plays a
+              crucial leadership role in guiding the Organization’s initiatives across the state. His unwavering dedication
+              has empowered citizens to seek truth and justice through the use of RTI, especially in rural and marginalized
+              communities.
+            </p>
+            <p>
+              A respected Lokayukta promoter, Mr. Ramachandra Naik has been instrumental in promoting institutional
+              integrity and anti-corruption mechanisms in public administration. With a reputation for fearless activism and
+              a deep understanding of legal and civic rights, Mr. S. Ramachandra Naik continues to be a voice for the
+              voiceless and a catalyst for reform in Andhra Pradesh.
+            </p>
+            <p>
+              His contributions to RTI-based journalism and social activism have made a significant impact on the lives of
+              many, inspiring a new generation of activists and journalists to uphold the values of truth, justice, and
+              public service.
+            </p>
+          </div>
+          <img src="rti3.jpg" alt="S. Ramachandra Naik" class="profile-image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2 onclick="toggleDetails(this)">3. Dr. M. Imran Ali Khan</h2>
+      <div class="details">
+        <div class="profile-header">
+          <div class="text-info">
+            <p class="title">
+              Associate Editor – National News Reporter<br />
+              State President – Andhra Pradesh RTI Activist Organization
+            </p>
+            <p class="contact">
+              Contact: <a href="tel:+918549844535">85498 44535</a>
+            </p>
+            <p>
+              Dr. M. Imran Ali Khan is a respected and dynamic figure in the fields of journalism, social service, and Right
+              to Information (RTI) activism. Serving as the Associate Editor of National News Reporter, he plays a vital
+              role in upholding journalistic integrity and bringing critical issues to the forefront.
+            </p>
+            <p>
+              As the State President of the Andhra Pradesh RTI Activist Organization, Dr. M. Imran Ali Khan has been at the
+              forefront of transparency and accountability movements, empowering citizens with information and promoting
+              good governance.
+            </p>
+            <p>
+              Widely recognized for his unwavering commitment to public service, he is also a devoted social worker whose
+              efforts have made a positive impact on many communities across the state. His dedication, leadership, and
+              strong voice for justice continue to inspire many in the spheres of activism, journalism, and civil rights.
+            </p>
+          </div>
+          <img src="rti2.png" alt="Dr. M. Imran Ali Khan" class="profile-image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2 onclick="toggleDetails(this)">4. D. SivaShankar</h2>
+      <div class="details">
+        <div class="profile-header">
+          <div class="text-info">
+            <p class="title">
+              Chief Legal Advisor – RTI EXPRESS Group<br />
+              State President (Legal Cell) – Andhra Pradesh RTI Activist Organization<br />
+              Renowned Advocate | Legal Strategist | RTI Movement Supporter
+            </p>
+            <p class="contact">
+              Contact: Not Mentioned
+            </p>
+            <p>
+              Mr. D. Siva Shankar is a distinguished legal professional and well-known advocate, currently serving as the
+              Chief Legal Advisor of RTI Express Group and the State President of the Legal Cell, Andhra Pradesh RTI
+              Activist Organization.
+            </p>
+            <p>
+              With deep expertise in legal affairs and an unwavering commitment to justice, he plays a pivotal role in
+              supporting RTI-based journalism and legal activism. His guidance ensures the lawful and ethical functioning
+              of the RTI Express Group, empowering its mission to expose truth and uphold democratic values.
+            </p>
+            <p>
+              As State President of the Legal Cell, he actively leads legal awareness campaigns and provides legal support
+              to RTI activists across Andhra Pradesh. His strategic insights and dedication have strengthened the fight for
+              transparency, accountability, and public rights.
+            </p>
+            <p>
+              Respected for his integrity, legal knowledge, and social responsibility, Mr. D. Siva Shankar stands as a
+              pivotal name in the RTI movement and continues to be an inspiration to many aspiring legal professionals and
+              activists.
+            </p>
+          </div>
+          <img src="rti4.jpg" alt="D. SivaShankar" class="profile-image" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails(element) {
+      const details = element.nextElementSibling;
+      if (details.style.display === 'block') {
+        details.style.display = 'none';
+      } else {
+        details.style.display = 'block';
+        details.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</body>
+
+</html>

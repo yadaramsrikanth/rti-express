@@ -1,0 +1,36 @@
+/* src/components/About/About.css */
+.about-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  font-family: Arial, sans-serif;
+  color: #222;
+  text-align: left;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-content li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}

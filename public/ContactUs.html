@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - RTI Express</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      background-color: white;
+      max-width: 1200px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-info, .contact-form {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .contact-info h2 {
+      color: #1877F2;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p span {
+      font-weight: bold;
+      color: #1877F2;
+    }
+
+    .contact-form h2 {
+      color: #1877F2;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+
+    .contact-form button {
+      background-color: #1877F2;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #0f5ec2;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Google Map -->
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.452181043032!2d77.5946!3d13.8277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb1e8dbed9c4c23%3A0x6ad1f88e278b6882!2sVasavi%20Dharmashala%2C%20Hindupur%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000" 
+      allowfullscreen="" 
+      loading="lazy"
+    ></iframe>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p><span>RTI EXPRESS STATE OFFICE</span></p>
+      <p>#7-2-28, Near Indian Gas,</p>
+      <p>Vasavi Dharmashala Road,</p>
+      <p>Hindupur, Sri Sathya Sai District,</p>
+      <p>Andhra Pradesh – 515 201</p>
+      <p><span>Contact:</span> 76688 86666, 90596 79786</p>
+      <p><span>Email:</span> contact@rtiexpress.in</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form onsubmit="handleSubmit(event)">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert("Thank you! Your message has been submitted.");
+      event.target.reset();
+    }
+  </script>
+
+</body>
+</html>
