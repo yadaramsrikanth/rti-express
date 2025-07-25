@@ -1,0 +1,10 @@
+.add-banner-img{
+    width: 400px;
+    height: 215px;
+    margin: 5px;
+}
+.adds-banner-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 55px;
+}

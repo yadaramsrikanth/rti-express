@@ -1,0 +1,36 @@
+.recent-posts-unordered-container{
+    padding-left: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 70px;
+
+}
+.list-item-recent-post{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     margin: 5px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+   padding: 15px;
+   border-radius: 5px; 
+   height: 100px;
+   
+}
+.recent-post-image{
+    width: 150px;
+    height: 100px;
+}
+.recent-posts-para{
+    font-size: 14px;
+    margin-left: 5px;
+
+}
+.recent-post-link-element{
+     display: flex;        
+  align-items: center;
+  gap: 10px;            
+  text-decoration: none;
+  color: inherit;
+}

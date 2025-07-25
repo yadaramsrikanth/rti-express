@@ -1,23 +1,30 @@
 import {Link} from "react-router-dom"
 import {Swiper,SwiperSlide} from "swiper/react"
-import {Pagination,Navigation} from "swiper/modules"
+import {Pagination,Navigation,Autoplay} from "swiper/modules"
 
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
+import { FiArrowUpRight } from "react-icons/fi";
+import TodaysSpotLight from "../TodaysSpotLight/index"
+import AddsBanner from "../AddsBanner/index"
+import PopularNews from "../PopularNews/index"
+import RecentPosts from "../RecentPosts/index"
 import "./index.css"
 import data from "../../data.json"
-import { useState } from "react"
+
 
 const SliderWithContent=()=>{
-    const [activeIndex,setactiveIndex]=useState(0)
+    
     return <div className="slider-text-main-container">
+      <div className="slider-top-rti-join-container">
         <div className="slider-container">
-        <Swiper modules={[Pagination,Navigation]}
+        <Swiper modules={[Pagination,Navigation,Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
         navigation pagination={{clickable:true}}
-        onSlideChange={(swiper)=>setactiveIndex(swiper.activeIndex)}
+        
+        autoplay={{delay:3000,disableOnInteraction:false}}
         >
          {
            data.map((item)=>(
@@ -34,7 +41,37 @@ const SliderWithContent=()=>{
 
         </Swiper>
     </div>
-    <div>{data[activeIndex].description}</div>
+    <div className="rti-join-and-news-letter-container">
+    <div className="rti-join-container">
+      <h3 className="join-heading">Join RTI</h3>
+      <button className="reporter-button">RTI Reporter </button>
+      <button className="reporter-button">RTI Activist  </button>
+      </div>
+      <div className="news-letter-container">
+        <h3 className="daily-news-letter-heading">Daily Newsletter</h3>
+        <p className="news-para">Get all the top stories from Blogs to keep track.</p>
+      <div className="news-letter-mail-container">
+        <p>Enter Your e-mail</p>
+        <FiArrowUpRight size={25}/>
+      </div>
+      </div>
+      </div>
+      </div>
+     <div className="home-spot-light-adds-container">
+    <div className="spot-light-home-container">
+        <TodaysSpotLight/>
+    </div> 
+      <AddsBanner/>
+      </div>
+      <div className="home-popular-recent-posts-conatiner">
+      <div className="home-popular-news-container">
+        <h1>తాజా వార్తలు</h1>
+        <PopularNews/>
+      </div>
+      <div>
+      <h1 className="taja-updates-heading">తాజా అప్‌డేట్స్</h1>
+      <RecentPosts/></div>
+      </div>
 </div>
 }
 

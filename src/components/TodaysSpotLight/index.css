@@ -1,0 +1,36 @@
+.todays-spot-light-unordered-container{
+    list-style-type: none;
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.spot-light-image{
+    width: 150px;
+    height: 150px;
+}
+.spot-light-list-item-container{
+    width: 47%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  margin: 5px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+   padding: 15px;
+   border-radius: 5px; 
+}
+.spot-light-text{
+    color: #1E90FF;
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 600;
+    font-family: "Inter";
+}
+.spot-light-link {
+  display: flex;        /* Makes img and p appear in a row */
+  align-items: center;
+  gap: 10px;            /* optional spacing between img and text */
+  text-decoration: none;
+  color: inherit;
+}
