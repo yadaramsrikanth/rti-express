@@ -44,7 +44,8 @@ const SliderWithContent=()=>{
     <div className="rti-join-and-news-letter-container">
     <div className="rti-join-container">
       <h3 className="join-heading">Join RTI</h3>
-      <button className="reporter-button">RTI Reporter </button>
+     
+  <a className="reporter-button" target="__blank" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit" >RTI Reporter</a> 
       <button className="reporter-button">RTI Activist  </button>
       </div>
       <div className="news-letter-container">

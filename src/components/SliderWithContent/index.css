@@ -68,7 +68,6 @@
 .reporter-button{
   background-color: #007BFF;
   width: 80%;
-  
   height: 40px;
   border: none;
   border-radius: 5px;
@@ -76,6 +75,10 @@
   color: #FFFFFF;
   font-weight: 800;
   font-family: "Inter";
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .news-letter-container{
   background-color: #D5DCFF;

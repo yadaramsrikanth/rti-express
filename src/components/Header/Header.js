@@ -62,11 +62,11 @@ setLanguageCategory((prev)=>(!prev))
         <p className="text" id="home">{categories[3]}</p>
         <p className="text" id="home">{categories[4]}</p>
         <p className="text" id="home">{categories[5]}</p>
-        <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper"  id="home"><p>Epaper</p></a>
+        <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper"  id="home"><p>E-paper</p></a>
         
-        <p className="text" id="home"> RTI Activist Join </p>
-        <a className="text epaper" id="home" target="__blank" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a>  
-        <p className="text" id="home">Contact Us</p>
+       
+       <p className="text" id="home">AboutUs</p> 
+        <p className="text" id="home">ContactUs</p>
         
        </nav>
 

@@ -5,6 +5,8 @@ import { MdToggleOff } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { BiLogoLinkedin } from "react-icons/bi";
+import { BiLogoTwitter } from "react-icons/bi";
 import Header from "./components/Header/Header";
 // import Register from "./components/Register/Register";
 import SliderWithContent from "./components/SliderWithContent/index";
@@ -32,14 +34,15 @@ const toToggle=()=>{
         {isON?<MdToggleOn size={35}  color="green" />:<MdToggleOff size={35} color="gray"/>}
         <p className="language"> {isON ? 'English' : 'తెలుగు'}</p>
         </div>
-  <p className="feedback text">Feedback</p>
+  
  
 
   <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="__blank"><FaFacebook size={20} className="social-media-icon"/></a>
  <a href="https://www.instagram.com/rtiexpress/" target="__blank"><FaInstagram size={20} className="social-media-icon"/></a>
   <a href="https://www.youtube.com/@rtiexpress667" target="__blank"><FaYoutube size={20} className="social-media-icon"/></a>
-  
-   
+  <p><BiLogoLinkedin size={20} className="social-media-icon" /></p>
+  <p><BiLogoTwitter size={20} className="social-media-icon" /></p>
+   <p className="feedback text">Feedback</p>
       
       
       </div>
