@@ -1,4 +1,4 @@
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { BrowserRouter,Routes,Route, Link } from "react-router-dom";
 import { CgMail } from "react-icons/cg";
 import { MdToggleOn } from "react-icons/md";
 import { MdToggleOff } from "react-icons/md";
@@ -50,7 +50,8 @@ const toToggle=()=>{
       </div>
     </div>
     <div className="logo-container">
-    <img src={imageUrl} className="logo-rti-express" alt="RTI EXPRESS" />
+      <Link to="/">
+    <img src={imageUrl} className="logo-rti-express" alt="RTI EXPRESS" /></Link>
     <div className="bg-color-container"></div>
     </div>
     <Header isON={isON}/>
