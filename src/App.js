@@ -11,6 +11,8 @@ import Header from "./components/Header/Header";
 // import Register from "./components/Register/Register";
 import SliderWithContent from "./components/SliderWithContent/index";
 import NewsDetails from "./components/NewsDetails";
+import AboutUs from "./components/AboutUs";
+import ContactUs from "./components/ContactUs";
 import "./App.css"
 import { useState } from "react";
 const App=()=>{
@@ -67,6 +69,8 @@ const toToggle=()=>{
     <Routes>
     <Route path="/" element={<SliderWithContent/>}/>
     <Route path="/news/:id" element={<NewsDetails/>}/>
+    <Route path="/about" element={<AboutUs/>}/>
+    <Route path="/contact" element={<ContactUs/>} />
     </Routes>
 
 

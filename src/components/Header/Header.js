@@ -5,6 +5,7 @@ import { MdOutlineClose } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import {Link} from "react-router-dom"
 import "./Header.css"
 import { useState,useEffect} from "react";
 
@@ -64,10 +65,10 @@ setLanguageCategory((prev)=>(!prev))
         <p className="text" id="home">{categories[5]}</p>
         <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper"  id="home"><p>E-paper</p></a>
         
-       
-       <p className="text" id="home">AboutUs</p> 
-        <p className="text" id="home">ContactUs</p>
-        
+       <Link to="/about" className="about-us-link-element">
+       <p className="text" id="home">AboutUs</p> </Link>
+        <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">ContactUs</p></Link>
+      
        </nav>
 
     <nav className="mobile-view-small-large-screen-hamburger-icon-container">
