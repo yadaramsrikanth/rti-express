@@ -29,3 +29,53 @@
 .news-card-news-details-container{
 width:40%;
 }
+
+
+@media (max-width:375px){
+    .slide-details-item-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .news-fullinfo-container{
+        width: 100%;
+        margin-right: 5px;
+    }
+    .news-details-image{
+        width: 100%;
+        max-height: 200px;
+        padding-bottom: 10px;
+    }
+    .slide-description{
+        padding-right: 5px;
+        margin-right:5px 5px 10px 0px;
+    }
+    .news-card-news-details-container{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:575px){
+    .slide-details-item-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .news-fullinfo-container{
+        width: 100%;
+        margin-right: 5px;
+    }
+    .news-details-image{
+        width: 95%;
+        max-height: 250px;
+        padding-bottom: 10px;
+        
+    }
+    .slide-description{
+        padding-right: 5px;
+        margin-right:5px 5px 10px 0px;
+        margin: 0 auto;
+    }
+    .news-card-news-details-container{
+        width: 100%;
+    }
+}
