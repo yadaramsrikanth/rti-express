@@ -34,3 +34,37 @@
   text-decoration: none;
   color: inherit;
 }
+
+@media (max-width:375px){
+    .popular-news-unordered-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .popular-news-item-card{
+        width: 47%;
+        padding: 10px;
+    }
+    .popular-news-image{
+        width: 100px;
+        height: 100px;
+    }
+    .popular-news-text{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:575px){
+    .popular-news-image{
+        width: 100px;
+        height: 100px;
+    }
+    .popular-news-item-card{
+        width: 47%;
+        padding: 10px;
+    }
+    
+    .popular-news-text{
+        font-size: 15px;
+    }
+}

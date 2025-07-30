@@ -66,12 +66,13 @@ const SliderWithContent=()=>{
       </div>
       <div className="home-popular-recent-posts-conatiner">
       <div className="home-popular-news-container">
-        <h1>తాజా వార్తలు</h1>
+        <h1 className="taja-varathalu">తాజా వార్తలు</h1>
         <PopularNews/>
       </div>
       <div>
-      <h1 className="taja-updates-heading">తాజా అప్‌డేట్స్</h1>
-      <RecentPosts/></div>
+      <h1 className="taja-updates-heading taja-varathalu">తాజా అప్‌డేట్స్</h1>
+      <RecentPosts/>
+      </div>
       </div>
 </div>
 }

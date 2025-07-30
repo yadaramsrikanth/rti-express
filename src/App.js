@@ -39,11 +39,11 @@ const toToggle=()=>{
   
  
 
-  <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="__blank"><FaFacebook size={20} className="social-media-icon"/></a>
- <a href="https://www.instagram.com/rtiexpress/" target="__blank"><FaInstagram size={20} className="social-media-icon"/></a>
-  <a href="https://www.youtube.com/@rtiexpress667" target="__blank"><FaYoutube size={20} className="social-media-icon"/></a>
-  <p><BiLogoLinkedin size={20} className="social-media-icon" /></p>
-  <p><BiLogoTwitter size={20} className="social-media-icon" /></p>
+  <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="__blank"><FaFacebook size={22} className="social-media-icon facebook"/></a>
+ <a href="https://www.instagram.com/rtiexpress/" target="__blank"><FaInstagram size={22} className="social-media-icon insta"/></a>
+  <a href="https://www.youtube.com/@rtiexpress667" target="__blank"><FaYoutube size={22} className="social-media-icon youtube"/></a>
+  <p><BiLogoLinkedin size={22} className="social-media-icon linkedin" /></p>
+  <p><BiLogoTwitter size={22} className="social-media-icon twitter" /></p>
    <p className="feedback text">Feedback</p>
       
       

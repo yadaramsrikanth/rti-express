@@ -34,3 +34,23 @@
   text-decoration: none;
   color: inherit;
 }
+
+@media (max-width:375px){
+    .recent-posts-unordered-container{
+        margin-left: 5px;
+    }
+    .list-item-recent-post{
+        height: 120px;
+    }
+    .recent-post-image{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+@media (max-width:575px){
+    .recent-posts-unordered-container{
+        margin-left: 5px;
+    }
+}

@@ -28,9 +28,34 @@
     font-family: "Inter";
 }
 .spot-light-link {
-  display: flex;        /* Makes img and p appear in a row */
+  display: flex;        
   align-items: center;
-  gap: 10px;            /* optional spacing between img and text */
+  gap: 10px;            
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width:575px){
+  .todays-spot-light-unordered-container{
+    display: flex;
+    flex-direction: row;
+    
+    padding-left: 0px;
+  }
+  .spot-light-image{
+    width: 100px;
+    height: 100px;
+  }
+.spot-light-list-item-container{
+  width: 100%;
+  padding: 10px;
+  margin-left: 0px;
+}
+.spot-light-text{
+  font-size: 14px;
+  font-weight: 500;
+}
+.spot-light-link{
+  gap: 5px;
+}
 }

@@ -2,9 +2,10 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { MdToggleOn } from "react-icons/md";
 import { MdToggleOff } from "react-icons/md";
 import { MdOutlineClose } from "react-icons/md";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import { FaFacebook ,FaInstagram,FaYoutube} from "react-icons/fa";
+
+import { BiLogoLinkedin,BiLogoTwitter } from "react-icons/bi";
+
 import {Link} from "react-router-dom"
 import "./Header.css"
 import { useState,useEffect} from "react";
@@ -72,7 +73,7 @@ setLanguageCategory((prev)=>(!prev))
        </nav>
 
     <nav className="mobile-view-small-large-screen-hamburger-icon-container">
-      <img src={imageUrl} className="mobile-logo-rti-express" alt="RTI EXPRESS" />
+    <Link to="/"><img src={imageUrl} className="mobile-logo-rti-express" alt="RTI EXPRESS" /> </Link>
       <div onClick={onToggleInmobileView} className="categories-container-on-mobile-view">
         {isON || languageCategory?<MdToggleOn size={30}  color="green" />:<MdToggleOff size={30} color="gray"/>}
         <p className="language"> {isON || languageCategory ? 'English' : 'తెలుగు'}</p>
@@ -93,16 +94,20 @@ setLanguageCategory((prev)=>(!prev))
        <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper"  id="home"><p>Epaper</p></a>
         <p className="text" id="home"> RTI Activist Join </p>
         <a className="text epaper" id="home" target="__blank" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a>  
-        <p id="home">Contact Us</p>
+      
+        <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">ContactUs</p></Link>
+       <Link to="/about" className="about-us-link-element"><p id="home">AboutUs</p></Link>
+        
         <p id="home">hello@rtiexpress.com</p>
         <hr className="horizontal-line"/>
         <div className="social-media-links-container">
-          <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="__blank"><FaFacebook size={20} className="social-media-icon"/></a>
+          <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="__blank"><FaFacebook size={20} className="social-media-icon facebook"/></a>
             
-           <a href="https://www.instagram.com/rtiexpress/" target="__blank"><FaInstagram size={20} className="social-media-icon"/></a>
+           <a href="https://www.instagram.com/rtiexpress/" target="__blank"><FaInstagram size={20} className="social-media-icon insta"/></a>
            
-          <a href="https://www.youtube.com/@rtiexpress667" target="__blank"><FaYoutube size={20} className="social-media-icon"/></a>
-            
+          <a href="https://www.youtube.com/@rtiexpress667" target="__blank"><FaYoutube size={20} className="social-media-icon youtube"/></a>
+           <p><BiLogoLinkedin size={20} className="social-media-icon linkedin" /></p>
+             <p><BiLogoTwitter size={20} className="social-media-icon twitter" /></p> 
              
           
         </div>

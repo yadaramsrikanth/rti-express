@@ -8,3 +8,29 @@
     flex-direction: column;
     margin-right: 55px;
 }
+
+@media (max-width:375px){
+    .adds-banner-container{
+        margin: 5px;
+        width: 100%;
+    }
+    .add-image1{
+        width: 0px;
+    }
+    .add-image2{
+        width: 60px;
+    }
+}
+
+@media (max-width:575px){
+    .adds-banner-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 5px;
+    }
+    .add-banner-img{
+        width: 250px;
+        height: 150px;
+    }
+}
