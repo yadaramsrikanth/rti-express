@@ -38,7 +38,7 @@
 @media (max-width:575px){
   .todays-spot-light-unordered-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
     padding-left: 0px;
   }
@@ -58,4 +58,28 @@
 .spot-light-link{
   gap: 5px;
 }
+}
+
+@media (min-width:576px) and (max-width:767px){
+  .todays-spot-light-unordered-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .spot-light-image{
+    width: 120px;
+    height: 120px;
+  }
+  .spot-light-list-item-container{
+  width: 90%;
+  padding: 8px;
+  margin: 0 auto;
+}
+.spot-light-text{
+  font-size: 16px;
+  font-weight: 600;
+}
+.spot-light-link{
+  gap: 12px;
+}
+
 }

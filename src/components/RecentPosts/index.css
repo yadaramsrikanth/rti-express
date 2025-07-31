@@ -54,3 +54,19 @@
         margin-left: 5px;
     }
 }
+
+@media (min-width:576px) and (max-width:767px){
+    .recent-posts-unordered-container{
+        margin-left: 5px;
+    }
+    .recent-post-image{
+    width: 150px;
+    height: 100px;
+}
+.list-item-recent-post{
+    max-height: 180px;
+}
+.recent-posts-para{
+    font-size: 15px;
+}
+}

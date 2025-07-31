@@ -223,4 +223,27 @@
 .swiper-button-prev{
   left: 5%;
 }
+.home-spot-light-adds-container{
+  display: flex;
+  flex-direction: column;
+}
+.spot-light-home-container{
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.home-popular-recent-posts-conatiner{
+  display: flex;
+  flex-direction: column;
+}
+.home-popular-news-container{
+  width: 100%;
+  margin-left: 5px;
+}
+.taja-varathalu{
+    font-size: 20px;
+  }
+  .taja-updates-heading{
+    margin-left: 5px;
+  }
 }

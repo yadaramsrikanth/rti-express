@@ -71,3 +71,18 @@
         font-size: 15px;
     }
 }
+
+@media (min-width:576px) and (max-width:767px){
+    .popular-news-image{
+        width: 120px;
+        height: 120px;
+    }
+    .popular-news-item-card{
+        width: 50%;
+        padding: 10px;
+    }
+    
+    .popular-news-text{
+        font-size: 16px;
+    }
+}

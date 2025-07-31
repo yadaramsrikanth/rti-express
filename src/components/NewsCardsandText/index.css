@@ -88,3 +88,27 @@ margin: 0 auto;
         margin-left: 5px;
     }
 }
+
+@media (min-width:576px) and (max-width:767px){
+    .news-card-text-container{
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+    .news-card-text-list-item{
+        width: 100%;
+        border: none;
+        padding: 10px;
+        color: #4B0082;
+        font-size: 15px;
+    }
+    .news-card-text-image{
+        height: 120px;
+        width: 120px;
+    }
+    .list-item-card-news-text-and-container{
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 5px;
+    }
+    
+}

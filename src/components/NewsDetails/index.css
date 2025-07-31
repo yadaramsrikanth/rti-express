@@ -79,3 +79,29 @@ width:40%;
         width: 100%;
     }
 }
+
+@media (min-width:576px) and (max-width:767px){
+     .slide-details-item-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .news-fullinfo-container{
+        width: 100%;
+        margin-right: 5px;
+    }
+    .news-details-image{
+        width: 95%;
+        max-height: 280px;
+        padding-bottom: 10px;
+        
+    }
+    .slide-description{
+        padding-right: 5px;
+        margin-right:5px 5px 10px 0px;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+    .news-card-news-details-container{
+        width: 100%;
+    }
+}
