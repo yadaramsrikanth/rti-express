@@ -122,13 +122,16 @@
 }
 .spot-light-home-container{
     width: 65%;
-    margin-left: 40px;
+    margin-left: 35px;
     margin-top: 20px;
-}
+} 
+
+
 .home-spot-light-adds-container{
   display: flex;
   flex-direction: row;
   align-items: center;
+
   
 }
 .home-popular-news-container{
