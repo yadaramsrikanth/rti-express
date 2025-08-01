@@ -86,3 +86,25 @@
         font-size: 16px;
     }
 }
+
+@media (min-width:768px) and (max-width:991px){
+.popular-news-image{
+    width: 90%;
+    height: 160px;
+}
+.popular-news-text{
+    font-size: 17px;
+    font-weight: 500;
+}
+}
+
+@media (min-width:992px) and (max-width:1199px){
+.popular-news-image{
+    width: 90%;
+    height: 160px;
+}
+.popular-news-item-card{
+    width: 40%;
+}
+
+}

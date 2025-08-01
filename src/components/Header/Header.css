@@ -191,20 +191,33 @@ width: 100%;
 
 @media (min-width:768px)  and (max-width:991px){
     #home{
-        font-size: 12px;
+        font-size: 20px;
         margin-left: auto;
         margin-right: auto;
         font-weight: 500;   
+    }
+    
+    .Header-container{
+        padding: 10px 15px;
+    }
+    .about-us-link-element{
+      margin-left: 10px;
+      margin-right: 10px;
+      
     }
     
 }
 
 @media (min-width:992px)  and (max-width:1199px){
     #home{
-    font-size: 15px;
+    font-size: 20px;
     margin-left: auto;
     margin-right: auto;
     font-weight: 500;   
     }
-    
+    .about-us-link-element{
+      margin-left: 10px;
+      margin-right: 10px;
+      
+    }
 }

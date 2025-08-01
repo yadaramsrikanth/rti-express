@@ -250,3 +250,155 @@
     margin-left: 5px;
   }
 }
+
+@media (min-width:768px) and (max-width:991px){
+  .swiper-pagination{
+    display: none;
+  }
+  .slider-container{
+    width: 100%;
+    text-align: center;
+  }
+  .slider-image{
+    width: 95%;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .slider-top-rti-join-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .rti-join-and-news-letter-container{
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 95%;
+  margin: 10px auto;
+  
+}
+.rti-join-container{
+ 
+  height: 170px;
+  margin-right: 5px;
+  width: 50%;
+  padding-bottom: 15px;
+}
+.join-heading{
+  
+  font-weight: 600;
+  font-size: 22px;
+  
+  
+  padding: 10px;
+}
+.reporter-button{
+  width: 70%;
+  font-weight: 600;
+  
+}
+
+.news-letter-container{
+  width: 50%;
+  margin-top: 0px;
+  height: 170px;
+  margin-left: 5px;
+  padding: 10px;
+}
+.daily-news-letter-heading{
+ 
+  font-size: 18px;
+  font-weight: 600;
+
+}
+.news-para{
+  font-size: 15px;
+  font-weight: 500;
+}
+.spot-light-home-container{
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 10px;
+} 
+.home-popular-recent-posts-conatiner{
+  display: flex;
+  flex-direction: column;
+}
+.taja-updates-heading{
+  margin-left: 15px;
+}
+.taja-varathalu{
+    font-size: 22px;
+  }
+.home-popular-news-container{
+  width: 100%;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+}
+
+@media (min-width:992px) and (max-width:1199px){
+  .swiper-pagination{
+    display: none;
+  }
+
+.slider-container{
+    width: 70%;
+    
+}
+.slider-image{
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    margin: 0 auto;
+    display: block;
+}
+.slider-top-rti-join-container{
+  width: 100%;
+  
+ 
+  
+}
+.rti-join-and-news-letter-container{
+  width:30%;
+  margin-left: 10px;
+ 
+}
+.rti-join-container{
+  background-color: #1877F2B2;
+  width: 98%;
+  height: 180px;
+}
+.reporter-button{
+  width: 70%;
+  margin-bottom: 10px;
+}
+.news-letter-container{
+  width: 98%;
+  height: 180px;
+  margin-top: 10px;
+}
+.news-para{
+  font-size: 18px;
+}
+.news-letter-mail-container{
+  font-size: 15px;
+  width: 70%;
+}
+.spot-light-home-container{
+    width: 70%;
+    margin-left: 0px;
+    margin-top: 20px;
+} 
+.home-popular-news-container{
+  width: 60%;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+.taja-updates-heading{
+  margin-left: 15px;
+}
+.recent-post-home-container{
+  width: 40%;
+}
+}

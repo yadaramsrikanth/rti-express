@@ -70,3 +70,49 @@
     font-size: 15px;
 }
 }
+
+@media (min-width:768px) and (max-width:991px){
+    .recent-posts-unordered-container{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .list-item-recent-post{
+        display: flex;
+        flex-direction: column;
+        height:auto;
+    }
+    .recent-post-link-element{
+        display: flex;
+        flex-direction: column;
+    }
+    .recent-post-image{
+    width: 85%;
+    height: 80px;
+}
+.recent-posts-para{
+    font-size: 15px;
+    
+
+}
+}
+
+@media (min-width:992px) and (max-width:1199px){
+.recent-posts-unordered-container{
+   margin-top: 10px;
+    margin-left: 0px;
+}
+.list-item-recent-post{
+    width: 98%;
+    height: 100px;
+  margin-top: 10px;
+}
+
+.recent-posts-para{
+    font-size: 15px;
+    margin-left: 5px;
+
+}
+
+}
