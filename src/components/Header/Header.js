@@ -97,7 +97,7 @@ setLanguageCategory((prev)=>(!prev))
       
         <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">ContactUs</p></Link>
        <Link to="/about" className="about-us-link-element"><p id="home">AboutUs</p></Link>
-        
+        <p className="text" id="home">Feedback</p>
         <p id="home">hello@rtiexpress.com</p>
         <hr className="horizontal-line"/>
         <div className="social-media-links-container">

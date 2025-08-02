@@ -79,7 +79,7 @@
         height: 120px;
     }
     .popular-news-item-card{
-        width: 50%;
+        width: 30%;
         padding: 10px;
     }
     
@@ -97,6 +97,10 @@
     font-size: 17px;
     font-weight: 500;
 }
+.popular-news-item-card{
+        width: 30%;
+        padding: 10px;
+    }
 }
 
 @media (min-width:992px) and (max-width:1199px){
@@ -105,7 +109,7 @@
     height: 160px;
 }
 .popular-news-item-card{
-    width: 40%;
+    width: 31%;
 }
 
 }
