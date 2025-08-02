@@ -124,3 +124,17 @@
     height: 180px;
 }
 }
+
+@media (min-width:1200px){
+  .spot-light-image{
+    width:23%;
+    height: 120px;
+}
+.spot-light-list-item-container{
+  width: 46%;
+  padding: 5px;
+}
+.spot-light-text{
+  font-size: 16px;
+}
+}

@@ -402,3 +402,81 @@
   width: 40%;
 }
 }
+
+@media (min-width:1200px){
+  .slider-container{
+    width: 65%;
+    
+}
+.slider-image{
+    width: 90%;
+    height: auto;
+    max-height: 360px;
+    margin: 0 auto;
+    display: block;
+}
+.slider-top-rti-join-container{
+  width: 100%;
+}
+.rti-join-and-news-letter-container{
+  width:30%;
+  margin-left: 10px;
+ 
+}
+.rti-join-container{
+  background-color: #1877F2B2;
+  width: 98%;
+  height: 180px;
+}
+.join-heading{
+  font-size: 27px;
+}
+.reporter-button{
+  width: 60%;
+  margin-bottom: 10px;
+  font-size: 18px;
+
+}
+.news-letter-container{
+  width: 98%;
+  height: 180px;
+  margin-top: 10px;
+}
+.daily-news-letter-heading{
+  font-size: 26px;
+}
+.news-para{
+  font-size: 20px;
+}
+.news-letter-mail-container{
+  font-size: 18px;
+  width: 70%;
+}
+.spot-light-home-container{
+    width: 75%;
+    margin-left: 25px;
+    margin-top: 20px;
+} 
+.home-spot-light-adds-container{
+ 
+  width: 100%;
+}
+.home-popular-news-container{
+  width: 60%;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+.recent-post-home-container{
+  width: 40%;
+}
+.taja-updates-heading{
+  margin-left: 10px;
+  margin-top: 12px;
+}
+.taja-varathalu{
+  margin-left: 10px;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+}
