@@ -111,7 +111,7 @@ const toggleMember=(member)=>{
               State President – Andhra Pradesh RTI Activist Organization
             </p>
             <p className="aboutus-contact">
-              Contact: <a href="tel:+918549844535">85498 44535</a>
+              Contact: <a href="tel:+918549845435">85498 45435</a>
             </p>
             <p>
               Dr. M. Imran Ali Khan is a respected and dynamic figure in the fields of journalism, social service, and Right
@@ -147,7 +147,7 @@ const toggleMember=(member)=>{
               Renowned Advocate | Legal Strategist | RTI Movement Supporter
             </p>
             <p className="aboutus-contact">
-              Contact: Not Mentioned
+              Contact: <a href="tel:+919440580500">94405 80500</a>
             </p>
             <p>
               Mr. D. Siva Shankar is a distinguished legal professional and well-known advocate, currently serving as the
