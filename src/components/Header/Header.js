@@ -36,12 +36,14 @@ setLanguageCategory((prev)=>(!prev))
   const categories=isON ||languageCategory ? [ "Telangana",
   "Andhra Pradesh",
   "National",
+  "InterNational",
   "Cinema",
   "Business",
   "Sports"]:
   [ "తెలంగాణ",
   "ఆంధ్రప్రదేశ్",
   "జాతీయం",
+  "అంతర్జాతీయ",
   "సినిమా",
   "బిజినెస్",
   "క్రీడలు"]
@@ -64,6 +66,8 @@ setLanguageCategory((prev)=>(!prev))
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[3]}</p></Link>
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[4]}</p></Link>
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[5]}</p></Link>
+              <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[6]}</p></Link>
+
         <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper"  id="home"><p>E-paper</p></a>
         
        <Link to="/about" className="about-us-link-element">
@@ -91,6 +95,8 @@ setLanguageCategory((prev)=>(!prev))
        <Link to="/" className="header-link-item"> <p  id="home">{categories[3]}</p></Link>
        <Link to="/" className="header-link-item"> <p  id="home">{categories[4]}</p></Link>
        <Link to="/" className="header-link-item"> <p  id="home">{categories[5]}</p></Link>
+            <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[5]}</p></Link>
+
        <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper"  id="home"><p>Epaper</p></a>
         <p className="text" id="home"> RTI Activist Join </p>
         <a className="text epaper" id="home" target="__blank" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a>  
