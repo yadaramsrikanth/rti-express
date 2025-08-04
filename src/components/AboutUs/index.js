@@ -3,6 +3,7 @@ const imran_image="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1753765458
 const baba_image="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1753765457/IMG-20250719-WA0001_tryp8f.jpg"
 const naik_image="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1753765457/IMG-20250721-WA0011_wrtfag.jpg"
 const shankar_image="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1753765457/IMG-20250722-WA0019_vuoqop.jpg"
+const shobarani_image="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754317325/CSE_-_70084_-_N._Shobha_Rani__BLR2814_whfwth.jpg"
 const AboutUs=()=>{
 
 
@@ -165,6 +166,33 @@ const AboutUs=()=>{
             </p>
           </div>
           <img src={shankar_image} alt="D. SivaShankar" className="profile-image" />
+        </div>
+      </div>
+</div>
+
+
+<div className="about-profile">
+      <h2>5. Dr. N. Shobha Rani</h2>
+      
+      <div className="about-details">
+        <div className="profile-header">
+          <div className="text-info">
+            <p className="aboutus-title">
+              senior advisor<br />
+             
+            </p>
+            <p className="aboutus-contact">
+              Email: <a href="mailto:shobarani.kamala@gmail.com">shobarani.kamala@gmail.com</a>
+            </p>
+            <p>
+              Dr. N. Shobha Rani, a well-known RTI crusader and respected public intellectual, serves as the Senior Advisor to RTI Express News and the Andhra Pradesh RTI Activist Organization. With a strong background in public service and community rights advocacy, she has spent decades working towards creating a more transparent, accountable, and participatory democracy. Her association with the RTI movement has been a driving force in empowering citizens to actively use the Right to Information Act as a tool for justice and social change. As a strategic guide to both the media and activist arms of the movement, Dr. Shobha Rani helps shape their vision, campaigns, and policy engagement. RTI Express News, under her counsel, functions as a dedicated platform for investigative journalism, public-interest reporting, and raising awareness on governance issues. On the other hand, the Andhra Pradesh RTI Activist Organization focuses on grassroots-level awareness, legal education, citizen training programs, and providing support to whistleblowers and RTI users across the state. Her role ensures both platforms stay grounded in ethics, legality, and people-first principles.
+            </p>
+            <p>
+             Dr. Shobha Rani believes that informed citizens are the backbone of a healthy democracy. Through her guidance, both RTI Express News and the Andhra Pradesh RTI Activist Organization have become trusted resources for individuals seeking transparency and accountability from public institutions. The platforms regularly host workshops, public meetings, and media campaigns to promote RTI awareness, encourage public participation, and challenge corruption. Dr. Shobha Rani also mentors young journalists, social activists, and legal volunteers to develop leadership skills and a strong understanding of the democratic process. Her efforts have directly contributed to a culture of civic responsibility and public vigilance in Andhra Pradesh. By bringing together the power of media and activism, she has strengthened the fight for good governance and citizen rights. Under her leadership, both organizations continue to grow as vibrant platforms committed to transparency, justice, and the public good. Their shared mission is simple but powerful: to empower every citizen with the right information, to uphold the values of democracy, and to make government more open, accountable, and answerable to the people.
+            </p>
+            
+          </div>
+          <img src={shobarani_image} alt="shoba rani" className="profile-image" />
         </div>
       </div>
 </div>

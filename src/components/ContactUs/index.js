@@ -25,7 +25,8 @@ const handleSumbitContactUs=(e)=>{
    
     <div className="contact-info">
       <h2>Contact Us</h2>
-      <p><span>RTI EXPRESS STATE OFFICE</span></p>
+      <p><span>RTI EXPRESS CORPORATE OFFICE</span></p>
+      <p>For any inquiries, advertisements or complaints, please feel free to contact us.</p>
       <p>#7-2-28, Near Indian Gas,</p>
       <p>Vasavi Dharmashala Road,</p>
       <p>Hindupur, Sri Sathya Sai District,</p>
