@@ -12,8 +12,7 @@ const handleSumbitContactUs=(e)=>{
 
     return <div>
     <div className="map-container">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.452181043032!2d77.5946!3d13.8277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb1e8dbed9c4c23%3A0x6ad1f88e278b6882!2sVasavi%20Dharmashala%2C%20Hindupur%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000" 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.184272287748!2d77.4935125!3d13.8279709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb1a3a2e57f40a3%3A0x264ad7979065d9d8!2sNew%20sarathi%20digital%20printers!5e0!3m2!1sen!2sin!4v1754321556574!5m2!1sen!2sin"
       allowfullscreen="" 
       loading="lazy"
       title="Map showing Vasavi Dharmashala in Hindupur, Andhra Pradesh"
