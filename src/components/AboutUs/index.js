@@ -1,4 +1,3 @@
-import { useState } from "react"
 import "./index.css"
 const imran_image="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1753765458/IMG-20250719-WA0002_nzv4tj.jpg"
 const baba_image="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1753765457/IMG-20250719-WA0001_tryp8f.jpg"
@@ -6,18 +5,13 @@ const naik_image="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1753765457/
 const shankar_image="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1753765457/IMG-20250722-WA0019_vuoqop.jpg"
 const AboutUs=()=>{
 
-const [activeMember,setActivemember]=useState(null)
-
-const toggleMember=(member)=>{
-  setActivemember((prev)=>(prev===member)?null:member)
-}
 
     return  <div className="aboutus-container">
-    <h1 className="about-us-heading">About Us</h1>
+    
 
     <div className="about-profile">
-      <h2 onClick={()=>toggleMember('baba')}>1. Kotipalli Baba</h2>
-      {activeMember==='baba'&&
+      <h2>1. Kotipalli Baba</h2>
+    
       <div className="about-details">
         <div className="profile-header">
           <div className="text-info">
@@ -54,12 +48,12 @@ const toggleMember=(member)=>{
           <img src={baba_image} alt="Kotipalli Baba" className="profile-image" />
         </div>
       </div>
-}
+
     </div>
 
     <div className="about-profile">
-      <h2 onClick={()=>toggleMember("naik")}>2. S. Ramachandra Naik</h2>
-      {activeMember==="naik"&&
+      <h2>2. S. Ramachandra Naik</h2>
+     
       <div className="about-details">
         <div className="profile-header">
           <div className="text-info">
@@ -97,12 +91,12 @@ const toggleMember=(member)=>{
           <img src={naik_image} alt="S. Ramachandra Naik" className="profile-image" />
         </div>
       </div>
-}
+
     </div>
 
     <div className="about-profile">
-      <h2 onClick={()=>toggleMember("ali")}>3. Dr. M. Imran Ali Khan</h2>
-      {activeMember==="ali"&&
+      <h2>3. Dr. M. Imran Ali Khan</h2>
+      
       <div className="about-details">
         <div className="profile-header">
           <div className="text-info">
@@ -132,12 +126,12 @@ const toggleMember=(member)=>{
           <img src={imran_image} alt="Dr. M. Imran Ali Khan" className="profile-image" />
         </div>
       </div>
-}
+
     </div>
 
     <div className="about-profile">
-      <h2 onClick={()=>toggleMember("shankar")}>4. D. SivaShankar</h2>
-      {activeMember==="shankar"&&
+      <h2>4. D. SivaShankar</h2>
+      
       <div className="about-details">
         <div className="profile-header">
           <div className="text-info">
@@ -173,7 +167,7 @@ const toggleMember=(member)=>{
           <img src={shankar_image} alt="D. SivaShankar" className="profile-image" />
         </div>
       </div>
-}</div>
+</div>
     
   </div>
 
