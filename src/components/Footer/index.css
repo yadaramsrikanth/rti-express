@@ -1,0 +1,39 @@
+.footer-main-container{
+    background-color: #1877F2;
+    margin-top: 10px;
+    padding: 25px;
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+.website-info-in-footer{
+    width: 30%;
+}
+
+.footer-image-logo{
+    width: 35%;
+}
+.website-info-in-footer p{
+    color: #DDEEFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+.company-name-heading{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.company-container p{
+    color: #DDEEFF;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+.company-container a{
+    text-decoration: none;
+}
+.company-container{
+ width: 22%;
+}

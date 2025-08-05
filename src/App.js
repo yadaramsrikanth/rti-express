@@ -92,10 +92,10 @@ const onChangeLanguage=(e)=>{
     <Route path="/news/:id" element={<NewsDetails/>}/>
     <Route path="/about" element={<AboutUs/>}/>
     <Route path="/contact" element={<ContactUs/>} />
-    <Route path="/footer" element={<Footer/>} />
+    
     </Routes>
 
-
+    <Footer />
   </div>
   </BrowserRouter>
 }
