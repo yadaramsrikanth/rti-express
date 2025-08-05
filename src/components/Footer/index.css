@@ -5,6 +5,7 @@
     display: flex;
     
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .website-info-in-footer{
     width: 30%;
@@ -35,5 +36,49 @@
     text-decoration: none;
 }
 .company-container{
- width: 22%;
+ width: 23%;
+
+}
+.horizontal-line{
+    background-color: #DDEEFF;
+    height: 1px;
+    border: none;
+}
+.copy-right-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #DDEEFF;
+    margin-top: 10px;
+}
+.copy-right-container p{
+    margin-left: 15px;
+    margin-right: 10px;
+
+}
+.copy-right-logo-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.copy-righ-icon{
+    margin-bottom: 6px;
+}
+@media (max-width:600px) {
+    .company-container{
+        width:100%;
+    }
+    .website-info-in-footer{
+        width: 100%;
+    }
+    .copy-right-container p{
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+.copy-right-container{
+    display: flex;
+    flex-direction: column;
+}
 }

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { MdCopyright } from "react-icons/md";
 import "./index.css"
 const logoImageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752644036/IMG-20250715-WA0002_xrwuem.jpg"
 
@@ -42,7 +43,11 @@ const Footer=()=>{
     <p>Twitter</p>
     <p>Linkedin</p>
 </div>
-
+<hr className="horizontal-line"/>
+<div className="copy-right-container">
+  <p>Designed and Developed by Krishlabs</p>
+  <p className="copy-right-logo-text"><MdCopyright size={18} className="copy-righ-icon"/> 2025 All Rights Reserved</p>
+</div>
     </div>
 }
 
