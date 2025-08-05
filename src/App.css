@@ -11,6 +11,7 @@ overflow-x: hidden;
 .drop-down-container{
     background-color: transparent;
     border: none;
+    outline: none;
     
 }
 
