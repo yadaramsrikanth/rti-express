@@ -1,7 +1,7 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 // import { MdToggleOn } from "react-icons/md";
 // import { MdToggleOff } from "react-icons/md";
-import { MdOutlineClose } from "react-icons/md";
+import { MdOutlineClose,MdLocationOn  } from "react-icons/md";
 import { FaFacebook ,FaInstagram,FaYoutube} from "react-icons/fa";
 
 import { BiLogoLinkedin,BiLogoTwitter } from "react-icons/bi";
@@ -74,7 +74,7 @@ setMobileLanguage(e.target.value)
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[5]}</p></Link>
         <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[6]}</p></Link>
 
-        <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper"  id="home"><p>E-paper</p></a>
+        <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer" className="text epaper"  id="home"><p>E-paper</p></a>
         
        <Link to="/about" className="about-us-link-element">
        <p className="text" id="home">AboutUs</p> </Link>
@@ -109,9 +109,9 @@ setMobileLanguage(e.target.value)
        <Link to="/" className="header-link-item"> <p  id="home">{categories[5]}</p></Link>
             <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[5]}</p></Link>
 
-       <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper"  id="home"><p>Epaper</p></a>
+       <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer" className="text epaper"  id="home"><p>Epaper</p></a>
         <p className="text" id="home"> RTI Activist Join </p>
-        <a className="text epaper" id="home" target="__blank" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a>  
+        <a className="text epaper" id="home" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a>  
       
         <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">ContactUs</p></Link>
        <Link to="/about" className="about-us-link-element"><p id="home">AboutUs</p></Link>
@@ -119,14 +119,15 @@ setMobileLanguage(e.target.value)
         <p id="home">hello@rtiexpress.com</p>
         <hr className="horizontal-line"/>
         <div className="social-media-links-container">
-          <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="__blank"><FaFacebook size={20} className="social-media-icon facebook"/></a>
+          <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="_blank" rel="noopener noreferrer"><FaFacebook size={20} className="social-media-icon facebook"/></a>
             
-           <a href="https://www.instagram.com/rtiexpress/" target="__blank"><FaInstagram size={20} className="social-media-icon insta"/></a>
+           <a href="https://www.instagram.com/rtiexpress/" target="_blank" rel="noopener noreferrer"><FaInstagram size={20} className="social-media-icon insta"/></a>
            
-          <a href="https://www.youtube.com/@rtiexpress667" target="__blank"><FaYoutube size={20} className="social-media-icon youtube"/></a>
+          <a href="https://www.youtube.com/@rtiexpress667" target="_blank" rel="noopener noreferrer"><FaYoutube size={20} className="social-media-icon youtube"/></a>
            <p><BiLogoLinkedin size={20} className="social-media-icon linkedin" /></p>
              <p><BiLogoTwitter size={20} className="social-media-icon twitter" /></p> 
-             
+              <a title="View Location on Google Maps" target="_blank"  rel="noopener noreferrer" href="https://maps.app.goo.gl/kKD3CUwdMENNYT2a7"><p><MdLocationOn size={22} className="social-media-icon map-icon"/></p></a>
+ 
           
         </div>
         </div>}
