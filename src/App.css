@@ -185,6 +185,9 @@ overflow-x: hidden;
 .twitter{
   color: #1DA1F2;
 }
+.map-icon{
+  color: #3B82F6;
+}
 /*Extra small device*/
 @media (max-width:575px) {
   .map-container{

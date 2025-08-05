@@ -7,6 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BiLogoTwitter } from "react-icons/bi";
+import { MdLocationOn } from "react-icons/md";
 import Header from "./components/Header/Header";
 // import Register from "./components/Register/Register";
 import SliderWithContent from "./components/SliderWithContent/index";
@@ -55,11 +56,13 @@ const onChangeLanguage=(e)=>{
   
  
 
-  <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="__blank"><FaFacebook size={22} className="social-media-icon facebook"/></a>
- <a href="https://www.instagram.com/rtiexpress/" target="__blank"><FaInstagram size={22} className="social-media-icon insta"/></a>
-  <a href="https://www.youtube.com/@rtiexpress667" target="__blank"><FaYoutube size={22} className="social-media-icon youtube"/></a>
+  <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="_blank"  rel="noopener noreferrer"><FaFacebook size={22} className="social-media-icon facebook"/></a>
+ <a href="https://www.instagram.com/rtiexpress/" target="_blank"  rel="noopener noreferrer"><FaInstagram size={22} className="social-media-icon insta"/></a>
+  <a href="https://www.youtube.com/@rtiexpress667" target="_blank"  rel="noopener noreferrer"><FaYoutube size={22} className="social-media-icon youtube"/></a>
+  
   <p><BiLogoLinkedin size={22} className="social-media-icon linkedin" /></p>
   <p><BiLogoTwitter size={22} className="social-media-icon twitter" /></p>
+  <a title="View Location on Google Maps" target="_blank"  rel="noopener noreferrer" href="https://maps.app.goo.gl/kKD3CUwdMENNYT2a7"><p><MdLocationOn size={22} className="social-media-icon map-icon"/></p></a>
    <p className="feedback text">Feedback</p>
       
       
