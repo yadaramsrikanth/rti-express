@@ -6,7 +6,7 @@
 }
 .Header-container{
     background-color: #1877F2;
-    height: 69px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -224,4 +224,9 @@ width: 100%;
       
       
     }
+}
+@media (min-width:1200px){
+  #home{
+    font-size: 18px;
+  }
 }

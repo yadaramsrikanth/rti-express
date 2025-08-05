@@ -14,6 +14,7 @@ import SliderWithContent from "./components/SliderWithContent/index";
 import NewsDetails from "./components/NewsDetails";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer"
 import "./App.css"
 import { useState } from "react";
 
@@ -38,8 +39,8 @@ const onChangeLanguage=(e)=>{
    <div className="app-container">
     <div className="top-container">
       <div className="email-container">
-     <CgMail size={22} className="icon-email"/>
-      <h3 className="website-mail">hello@rtiexpress.com</h3>
+     <CgMail size={20} className="icon-email"/>
+      <p className="website-mail">hello@rtiexpress.com</p>
       </div>
       
       <div className="top-left-side-text-container">
@@ -56,13 +57,13 @@ const onChangeLanguage=(e)=>{
   
  
 
-  <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="_blank"  rel="noopener noreferrer"><FaFacebook size={22} className="social-media-icon facebook"/></a>
- <a href="https://www.instagram.com/rtiexpress/" target="_blank"  rel="noopener noreferrer"><FaInstagram size={22} className="social-media-icon insta"/></a>
-  <a href="https://www.youtube.com/@rtiexpress667" target="_blank"  rel="noopener noreferrer"><FaYoutube size={22} className="social-media-icon youtube"/></a>
+  <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="_blank"  rel="noopener noreferrer"><FaFacebook size={25} className="social-media-icon facebook"/></a>
+ <a href="https://www.instagram.com/rtiexpress/" target="_blank"  rel="noopener noreferrer"><FaInstagram size={25} className="social-media-icon insta"/></a>
+  <a href="https://www.youtube.com/@rtiexpress667" target="_blank"  rel="noopener noreferrer"><FaYoutube size={25} className="social-media-icon youtube"/></a>
   
-  <p><BiLogoLinkedin size={22} className="social-media-icon linkedin" /></p>
-  <p><BiLogoTwitter size={22} className="social-media-icon twitter" /></p>
-  <a title="View Location on Google Maps" target="_blank"  rel="noopener noreferrer" href="https://maps.app.goo.gl/kKD3CUwdMENNYT2a7"><p><MdLocationOn size={22} className="social-media-icon map-icon"/></p></a>
+  <p><BiLogoLinkedin size={25} className="social-media-icon linkedin" /></p>
+  <p><BiLogoTwitter size={25} className="social-media-icon twitter" /></p>
+  <a title="View Location on Google Maps" target="_blank"  rel="noopener noreferrer" href="https://maps.app.goo.gl/kKD3CUwdMENNYT2a7"><p><MdLocationOn size={25} className="social-media-icon map-icon"/></p></a>
    <p className="feedback text">Feedback</p>
       
       
@@ -91,6 +92,7 @@ const onChangeLanguage=(e)=>{
     <Route path="/news/:id" element={<NewsDetails/>}/>
     <Route path="/about" element={<AboutUs/>}/>
     <Route path="/contact" element={<ContactUs/>} />
+    <Route path="/footer" element={<Footer/>} />
     </Routes>
 
 

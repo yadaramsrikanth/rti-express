@@ -36,22 +36,19 @@ overflow-x: hidden;
 
 .email-container{
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  column-gap: 4px
+  ;
 }
 .website-mail{
-  
-  height: 24px;
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px !important;
+ font-weight: 600;
+ margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 5px;
 }
-.icon-email{
-  width: 30px;
-  height: 25px;
-  margin-left: 2px;
-}
+
 .top-left-side-text-container{
   display: flex;
   flex-direction: row;
@@ -165,8 +162,8 @@ overflow-x: hidden;
 }
 .social-media-icon{
   color: black;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .feedback{
   margin-right: 5px;

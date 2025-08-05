@@ -12,10 +12,11 @@ import PopularNews from "../PopularNews/index"
 import RecentPosts from "../RecentPosts/index"
 import "./index.css"
 import data from "../../data.json"
+import { useState } from "react"
 
 
 const SliderWithContent=()=>{
-    
+    const [isEmail,setIsEmail]=useState("")
     return <div className="slider-text-main-container">
       <div className="slider-top-rti-join-container">
         <div className="slider-container">
@@ -52,7 +53,7 @@ const SliderWithContent=()=>{
         <h3 className="daily-news-letter-heading">Daily Newsletter</h3>
         <p className="news-para">Get all the top stories from Blogs to keep track.</p>
       <div className="news-letter-mail-container">
-        <p>Enter Your e-mail</p>
+        <input value={isEmail} type="email" placeholder="Enter Your e-mail" onChange={(e)=>setIsEmail(e.target.value)}/>
         <FiArrowUpRight size={25}/>
       </div>
       </div>

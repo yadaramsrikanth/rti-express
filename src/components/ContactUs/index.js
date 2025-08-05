@@ -30,7 +30,7 @@ const handleSumbitContactUs=(e)=>{
       <p>Vasavi Dharmashala Road,</p>
       <p>Hindupur, Sri Sathya Sai District,</p>
       <p>Andhra Pradesh – 515201</p>
-      <p><span>Contact:</span> 76688 86666, 90596 79786</p>
+      <p><span>Contact:</span> +9176688 86666, +9190596 79786</p>
       <p><span>Email:</span> contact@rtiexpress.in</p>
     </div>
 

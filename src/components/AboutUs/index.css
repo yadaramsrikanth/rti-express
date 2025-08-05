@@ -46,7 +46,7 @@
       flex: 1;
     }
 
-    .profile-image {
+    .profile-image-small {
       width: 120px;
       height: auto;
       border-radius: 8px;
@@ -63,6 +63,7 @@
       font-style: italic;
       color: #0077cc;
       margin: 5px 0 15px 0;
+      
     }
 
     .aboutus-contact a {
@@ -72,7 +73,30 @@
 
     .aboutus-contact a:hover {
       text-decoration: underline;
+    
     }
+    @media (min-width:601px){
+    .rti-member-bio-image-container{
+     width: 100%; 
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     
+    }
+    .rti-member-bio-container{
+      width: 75%;
+    }
+    .profile-image-large{
+        width: 20%;
+    
+      border-radius: 8px;
+      
+      
+    }
+    .profile-image-small{
+      display: none;
+    }
+  }
 
     @media (max-width: 600px) {
       .profile-header {
@@ -80,9 +104,12 @@
         align-items: flex-start;
       }
 
-      .profile-image {
+      .profile-image-small {
         width: 100%;
         max-width: 150px;
         margin-top: 10px;
+      }
+      .profile-image-large{
+        display: none;
       }
     }

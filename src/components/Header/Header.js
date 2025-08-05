@@ -45,14 +45,21 @@ setMobileLanguage(e.target.value)
   "InterNational",
   "Cinema",
   "Business",
-  "Sports"]:
+  "Sports",
+"E-paper",
+"AboutUs",
+"ContactUs"
+]:
   [ "తెలంగాణ",
   "ఆంధ్రప్రదేశ్",
   "జాతీయం",
   "అంతర్జాతీయ",
   "సినిమా",
   "బిజినెస్",
-  "క్రీడలు"]
+  "క్రీడలు",
+"ఈ-పేపర్",
+"మా గురించి",
+"సంప్రదించండి"]
 
   useEffect(() => {
     const handleResize = () => {
@@ -73,12 +80,10 @@ setMobileLanguage(e.target.value)
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[4]}</p></Link>
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[5]}</p></Link>
         <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[6]}</p></Link>
-
-        <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer" className="text epaper"  id="home"><p>E-paper</p></a>
-        
-       <Link to="/about" className="about-us-link-element">
-       <p className="text" id="home">AboutUs</p> </Link>
-        <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">ContactUs</p></Link>
+        <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer" className="text epaper"  id="home"><p>{categories[7]}</p></a>
+        <Link to="/about" className="about-us-link-element">
+         <p className="text" id="home">{categories[8]}</p> </Link>
+        <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">{categories[9]}</p></Link>
       
        </nav>
 
@@ -107,14 +112,15 @@ setMobileLanguage(e.target.value)
        <Link to="/" className="header-link-item"> <p  id="home">{categories[3]}</p></Link>
        <Link to="/" className="header-link-item"> <p  id="home">{categories[4]}</p></Link>
        <Link to="/" className="header-link-item"> <p  id="home">{categories[5]}</p></Link>
-            <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[5]}</p></Link>
+            <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[6]}</p></Link>
 
-       <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer" className="text epaper"  id="home"><p>Epaper</p></a>
-        <p className="text" id="home"> RTI Activist Join </p>
-        <a className="text epaper" id="home" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a>  
-      
-        <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">ContactUs</p></Link>
-       <Link to="/about" className="about-us-link-element"><p id="home">AboutUs</p></Link>
+       <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer" className="text epaper"  id="home"><p>{categories[7]}</p></a>
+        
+        <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">{categories[8]}</p></Link>
+         <Link to="/about" className="about-us-link-element"><p id="home">{categories[9]}</p></Link>
+         <p className="text" id="home"> RTI Activist Join </p>
+        <a className="text epaper" id="home" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a> 
+        
         <p className="text" id="home">Feedback</p>
         <p id="home">hello@rtiexpress.com</p>
         <hr className="horizontal-line"/>

@@ -110,15 +110,27 @@
 .news-letter-mail-container{
   background-color: #007BFF;
   border-radius: 5px;
-  padding: 10px;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-family: "Inter";
+ color: #FFFFFF;
+ 
   width: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+.news-letter-mail-container input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+   color: #FFFFFF;
+   padding: 10px;
+   width: 90%;
+   font-size: 15px;
+}
+.news-letter-mail-container input::placeholder{
+ 
+  color: #FFFFFF;
+  font-size: 15px;
 }
 .spot-light-home-container{
     width: 65%;
