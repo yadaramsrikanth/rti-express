@@ -1,6 +1,6 @@
 import { RxHamburgerMenu } from "react-icons/rx";
-import { MdToggleOn } from "react-icons/md";
-import { MdToggleOff } from "react-icons/md";
+// import { MdToggleOn } from "react-icons/md";
+// import { MdToggleOff } from "react-icons/md";
 import { MdOutlineClose } from "react-icons/md";
 import { FaFacebook ,FaInstagram,FaYoutube} from "react-icons/fa";
 
@@ -10,11 +10,17 @@ import {Link} from "react-router-dom"
 import "./Header.css"
 import { useState,useEffect} from "react";
 
+
+const languageOptions=[
+  {id:1,label:"Telugu",value:"TELUGU"},
+  {id:2,label:"English",value:"ENGLISH"}
+]
 const Header=(props)=>{
-  const {isON}=props
+  const {language}=props
+  const [mobileLanguage,setMobileLanguage]=useState("TELUGU")
   const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752660174/IMG-20250715-WA0002_xrwuem-removebg-preview_qdht1o.png"
 
-  const [languageCategory,setLanguageCategory]=useState(false)
+  // const [languageCategory,setLanguageCategory]=useState(false)
    
 
 const [isMenuOpen,setIsMenuOpen]=useState(false)
@@ -28,12 +34,12 @@ const closeIconHamburger=()=>{
 }
 
 
-const onToggleInmobileView=()=>{
-setLanguageCategory((prev)=>(!prev))
+const onChangeLanguageMobile=(e)=>{
+setMobileLanguage(e.target.value)
 }
 
 
-  const categories=isON ||languageCategory ? [ "Telangana",
+  const categories=language==="ENGLISH"||mobileLanguage==="ENGLISH" ?[ "Telangana",
   "Andhra Pradesh",
   "National",
   "InterNational",
@@ -66,7 +72,7 @@ setLanguageCategory((prev)=>(!prev))
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[3]}</p></Link>
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[4]}</p></Link>
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[5]}</p></Link>
-              <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[6]}</p></Link>
+        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[6]}</p></Link>
 
         <a href="https://www.rtiexpressnews.com/" target="__blank" className="text epaper"  id="home"><p>E-paper</p></a>
         
@@ -78,10 +84,16 @@ setLanguageCategory((prev)=>(!prev))
 
     <nav className="mobile-view-small-large-screen-hamburger-icon-container">
     <Link to="/"><img src={imageUrl} className="mobile-logo-rti-express" alt="RTI EXPRESS" /> </Link>
-      <div onClick={onToggleInmobileView} className="categories-container-on-mobile-view">
-        {isON || languageCategory?<MdToggleOn size={30}  color="green" />:<MdToggleOff size={30} color="gray"/>}
-        <p className="language"> {isON || languageCategory ? 'English' : 'తెలుగు'}</p>
-      </div>
+         <select value={mobileLanguage} onChange={onChangeLanguageMobile} className="drop-down-container">
+            {languageOptions.map((lan)=>(
+              <option key={lan.id} value={lan.value}>{lan.label}</option>
+            ))}
+          </select>
+      
+      {/* <div onClick={onToggleInmobileView} className="categories-container-on-mobile-view"> */}
+        {/* {isON || languageCategory?<MdToggleOn size={30}  color="green" />:<MdToggleOff size={30} color="gray"/>} */}
+        {/* <p className="language"> {isON || languageCategory ? 'English' : 'తెలుగు'}</p> */}
+      {/* </div> */}
      { !isMenuOpen&&<button onClick={OpenIconHamburger} className="hamburger-button"><RxHamburgerMenu/></button>
     }
       

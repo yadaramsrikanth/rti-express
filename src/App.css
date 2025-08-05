@@ -8,6 +8,11 @@
 html,body{
 overflow-x: hidden;
 }
+.drop-down-container{
+    background-color: transparent;
+    border: none;
+    
+}
 
 .app-container{
   display: flex;

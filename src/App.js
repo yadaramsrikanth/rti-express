@@ -1,7 +1,7 @@
 import { BrowserRouter,Routes,Route, Link } from "react-router-dom";
 import { CgMail } from "react-icons/cg";
-import { MdToggleOn } from "react-icons/md";
-import { MdToggleOff } from "react-icons/md";
+// import { MdToggleOn } from "react-icons/md";
+// import { MdToggleOff } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
@@ -15,14 +15,24 @@ import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import "./App.css"
 import { useState } from "react";
+
+const languageOptions=[
+  {id:1,label:"Telugu",value:"TELUGU"},
+  {id:2,label:"English",value:"ENGLISH"}
+]
+
 const App=()=>{
-  const [isON,SetIsON]=useState(false)
+  // const [isON,SetIsON]=useState(false)
+  const [language,setLanguage]=useState("TELUGU")
 const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752644036/IMG-20250715-WA0002_xrwuem.jpg"
 
-const toToggle=()=>{
-  SetIsON((prev)=>!prev)
-}
+// const toToggle=()=>{
+  // SetIsON((prev)=>!prev)
+// }
 
+const onChangeLanguage=(e)=>{
+  setLanguage(e.target.value)
+}
   return <BrowserRouter>
    <div className="app-container">
     <div className="top-container">
@@ -32,10 +42,16 @@ const toToggle=()=>{
       </div>
       
       <div className="top-left-side-text-container">
-        <div className="toggle-container" onClick={toToggle}>
-        {isON?<MdToggleOn size={35}  color="green" />:<MdToggleOff size={35} color="gray"/>}
-        <p className="language"> {isON ? 'English' : 'తెలుగు'}</p>
-        </div>
+         <select value={language} onChange={onChangeLanguage} className="drop-down-container">
+            {languageOptions.map((lan)=>(
+              <option key={lan.id} value={lan.value}>{lan.label}</option>
+            ))}
+          </select>
+        {/* <div className="toggle-container" onClick={toToggle}> */}
+         
+        {/* {isON?<MdToggleOn size={35}  color="green" />:<MdToggleOff size={35} color="gray"/>} */}
+        {/* <p className="language"> {isON ? 'English' : 'తెలుగు'}</p> */}
+        {/* </div> */}
   
  
 
@@ -54,7 +70,7 @@ const toToggle=()=>{
     <img src={imageUrl} className="logo-rti-express" alt="RTI EXPRESS" /></Link>
     <div className="bg-color-container"></div>
     </div>
-    <Header isON={isON}/>
+    <Header language={language}/>
   
   {/* <div className="map-form-container"> */}
   {/* <div className="map-container">  */}

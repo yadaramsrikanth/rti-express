@@ -9,8 +9,8 @@
     height: 69px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 50px;
+    justify-content: space-evenly;
+    padding: 10px 20px;
     box-sizing: border-box;
     z-index: 1;
 }
@@ -195,9 +195,9 @@ width: 100%;
 
 @media (min-width:768px)  and (max-width:991px){
     #home{
-        font-size: 16px;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 14px;
+        margin-left: 10px;
+        
         font-weight: 500;   
     }
     
@@ -206,7 +206,7 @@ width: 100%;
     }
     .about-us-link-element{
       margin-left: 10px;
-      margin-right: 10px;
+      
       
     }
     
@@ -215,13 +215,13 @@ width: 100%;
 @media (min-width:992px)  and (max-width:1199px){
     #home{
     font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+   
     font-weight: 500;   
     }
     .about-us-link-element{
       margin-left: 10px;
-      margin-right: 10px;
+      
       
     }
 }
