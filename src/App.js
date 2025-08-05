@@ -15,6 +15,7 @@ import NewsDetails from "./components/NewsDetails";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer"
+import NotFound from "./components/NotFound";
 import "./App.css"
 import { useState } from "react";
 
@@ -92,7 +93,7 @@ const onChangeLanguage=(e)=>{
     <Route path="/news/:id" element={<NewsDetails/>}/>
     <Route path="/about" element={<AboutUs/>}/>
     <Route path="/contact" element={<ContactUs/>} />
-    
+    <Route path="*" element={<NotFound/>}/>
     </Routes>
 
     <Footer />
