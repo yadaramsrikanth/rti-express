@@ -168,7 +168,7 @@
   .taja-varathalu{
     font-size: 22px;
   }
-  .swiper-pagination{
+  .slider-container .swiper-pagination{
     display: none;
   }
   .rti-join-and-news-letter-container{
@@ -183,14 +183,14 @@
     max-height: 200px;
     margin: 0 auto;
  }
- .swiper-button-next::after,
-.swiper-button-prev::after{
+ .slider-container .swiper-button-next::after,
+.slider-container .swiper-button-prev::after{
   font-size: 20px;
 }
-.swiper-button-next{
+.slider-container .swiper-button-next{
   right: 5%;
 }
-.swiper-button-prev{
+.slider-container .swiper-button-prev{
   left: 5%;
 }
 .home-spot-light-adds-container{
@@ -213,7 +213,7 @@
 }
 
 @media (min-width:576px) and (max-width:767px){
-  .swiper-pagination{
+ .slider-container .swiper-pagination{
     display: none;
   }
   .rti-join-and-news-letter-container{
@@ -228,14 +228,14 @@
     max-height: 250px;
     margin: 0 auto;
  }
- .swiper-button-next::after,
-.swiper-button-prev::after{
+  .slider-container .swiper-button-next::after,
+.slider-container .swiper-button-prev::after{
   font-size: 25px;
 }
-.swiper-button-next{
+.slider-container .swiper-button-next{
   right: 5%;
 }
-.swiper-button-prev{
+.slider-container .swiper-button-prev{
   left: 5%;
 }
 .home-spot-light-adds-container{
@@ -264,7 +264,7 @@
 }
 
 @media (min-width:768px) and (max-width:991px){
-  .swiper-pagination{
+ .slider-container .swiper-pagination{
     display: none;
   }
   .slider-container{
@@ -349,7 +349,7 @@
 }
 
 @media (min-width:992px) and (max-width:1199px){
-  .swiper-pagination{
+ .slider-container .swiper-pagination{
     display: none;
   }
 

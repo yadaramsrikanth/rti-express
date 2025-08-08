@@ -1,3 +1,6 @@
+import {Swiper,SwiperSlide} from "swiper/react"
+import {Pagination,Autoplay} from "swiper/modules"
+
 import { BrowserRouter,Routes,Route, Link } from "react-router-dom";
 import { CgMail } from "react-icons/cg";
 // import { MdToggleOn } from "react-icons/md";
@@ -16,6 +19,7 @@ import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer"
 import NotFound from "./components/NotFound";
+import addimages from "./addImages.json"
 import "./App.css"
 import { useState } from "react";
 
@@ -24,10 +28,13 @@ const languageOptions=[
   {id:2,label:"English",value:"ENGLISH"}
 ]
 
+
+
 const App=()=>{
   // const [isON,SetIsON]=useState(false)
   const [language,setLanguage]=useState("TELUGU")
-const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752644036/IMG-20250715-WA0002_xrwuem.jpg"
+const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
+
 
 // const toToggle=()=>{
   // SetIsON((prev)=>!prev)
@@ -73,7 +80,25 @@ const onChangeLanguage=(e)=>{
     <div className="logo-container">
       <Link to="/">
     <img src={imageUrl} className="logo-rti-express" alt="RTI EXPRESS" /></Link>
-    <div className="bg-color-container"></div>
+    <div className="bg-color-container">
+          <Swiper modules={[Pagination,Autoplay]} 
+          spaceBetween={50}
+        slidesPerView={1}
+        autoplay={{delay:2000,disableOnInteraction:false}}
+       pagination={{clickable:true}}
+        >
+            {
+              addimages.map((addItem)=>(
+ <SwiperSlide key={addItem.id}>
+  <img src={addItem.add_image} alt={`addimage-ban ${addItem.id}`} className="add-banner-images"/>
+ </SwiperSlide>
+              ))
+            }
+           
+          </Swiper>
+
+
+    </div>
     </div>
     <Header language={language}/>
   
