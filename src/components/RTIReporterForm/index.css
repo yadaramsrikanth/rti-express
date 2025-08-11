@@ -76,7 +76,22 @@
 
 }
 
-@media (max-width:575px){
+@media (max-width:375px){
+    .rti-reporter-input-element{
+        width: 90%;
+    }
+    .modal-content{
+         width: 90%;
+  padding: 20px 5px;
+
+  max-height: 90vh; 
+  overflow-y: auto; 
+  display: block;
+  margin: 0 auto;
+    }
+}
+
+@media (min-width:376px) and (max-width:575px){
     .rti-reporter-input-element{
         width: 80%;
     }
