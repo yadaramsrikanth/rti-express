@@ -1,7 +1,6 @@
 .add-banner-images{
   width: 100%;
-  height:230px
-  ;
+  height:250px;
 }
 *{
   padding: 0px;
@@ -282,8 +281,13 @@ overflow-x: hidden;
  
 }
 .logo-rti-express{
-  width: 120px;
-  height: 40px;
+  width: 170px;
+  height: auto;
+}
+.bg-color-container{
+  
+  width: 60%;
+   
 }
 
 }
@@ -325,9 +329,15 @@ overflow-x: hidden;
   font-size: 16px;
  
 }
+
 .logo-rti-express{
-  width: 140px;
-  height: 50px;
+  width: 200px;
+  height: auto;
+}
+.bg-color-container{
+  
+  width: 65%;
+   
 }
 
 }
@@ -372,6 +382,9 @@ overflow-x: hidden;
   width: 300px;
   height: auto;
   
+}
+.bg-color-container{
+  width: 55%;
 }
 
 }

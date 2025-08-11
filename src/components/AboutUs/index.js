@@ -203,7 +203,7 @@ const AboutUs=()=>{
         <div className="profile-header">
           <div className="text-info">
             <p className="aboutus-title">
-              senior advisor<br />
+              Senior advisor<br />
              
             </p>
             <p className="aboutus-contact">
