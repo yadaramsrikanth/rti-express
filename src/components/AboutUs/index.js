@@ -203,7 +203,8 @@ const AboutUs=()=>{
         <div className="profile-header">
           <div className="text-info">
             <p className="aboutus-title">
-              Senior advisor<br />
+              Senior advisor, RTI EXPRESS News<br />
+              Andhra Pradesh RTI Activist Organization
              
             </p>
             <p className="aboutus-contact">
