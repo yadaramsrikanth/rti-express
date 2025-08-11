@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
 import Modal from "react-modal"
 import "react-datepicker/dist/react-datepicker.css";
 import "./index.css"
@@ -7,7 +7,7 @@ Modal.setAppElement("#root");
 
 
 const RTIReporterForm=(props)=>{
- 
+ const [reporterdob,setReporterDob]=useState(null)
   const {onClose,isOpen}=props
     return <Modal 
     isOpen={isOpen}
@@ -23,8 +23,19 @@ const RTIReporterForm=(props)=>{
        <label className="rti-reporter-label-element">Name:</label>
         <input className="rti-reporter-input-element" type="text"  placeholder="John Doe"/>
          <label className="rti-reporter-label-element">Select Your DOB:</label>
-          <input className="rti-reporter-input-element" type="date"  placeholder="DD-MM-YYYY"/>
-             
+          {/* <input className="rti-reporter-input-element" type="date"  placeholder="DD-MM-YYYY"/> */}
+               <DatePicker
+                    id="dob"
+                    selected={reporterdob}
+                    onChange={(date) => setReporterDob(date)}
+                    placeholderText="DD/MM/YYYY"
+                    dateFormat="dd/MM/yyyy"
+                    className="rti-reporter-input-element"
+                    
+                    showYearDropdown
+                    scrollableYearDropdown
+                  />
+
              <label className="rti-reporter-label-element">Select Your Gender:</label>
 
     <select className="rti-reporter-input-element" placeholder="Male/Female/Other">
