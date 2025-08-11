@@ -19,6 +19,7 @@ import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer"
 import NotFound from "./components/NotFound";
+// import RTIReporterForm from "./components/RTIReporterForm";
 import addimages from "./addImages.json"
 import "./App.css"
 import { useState } from "react";
@@ -118,6 +119,7 @@ const onChangeLanguage=(e)=>{
     <Route path="/news/:id" element={<NewsDetails/>}/>
     <Route path="/about" element={<AboutUs/>}/>
     <Route path="/contact" element={<ContactUs/>} />
+   
     <Route path="*" element={<NotFound/>}/>
     </Routes>
 

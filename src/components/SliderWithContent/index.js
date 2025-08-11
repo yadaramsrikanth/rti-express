@@ -10,6 +10,7 @@ import TodaysSpotLight from "../TodaysSpotLight/index"
 import AddsBanner from "../AddsBanner/index"
 import PopularNews from "../PopularNews/index"
 import RecentPosts from "../RecentPosts/index"
+import RTIReporterForm from "../RTIReporterForm/index"
 import "./index.css"
 import data from "../../data.json"
 import { useState } from "react"
@@ -17,6 +18,7 @@ import { useState } from "react"
 
 const SliderWithContent=()=>{
     const [isEmail,setIsEmail]=useState("")
+    const [isReporterModalOpen,setIsReporterModalOpen]=useState(false)
     return <div className="slider-text-main-container">
       <div className="slider-top-rti-join-container">
         <div className="slider-container">
@@ -47,7 +49,8 @@ const SliderWithContent=()=>{
     <div className="rti-join-container">
       <h3 className="join-heading">Join RTI</h3>
      
-  <a className="reporter-button" target="__blank" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit" >RTI Reporter</a> 
+  {/* <a className="reporter-button" target="__blank" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit" >RTI Reporter</a>  */}
+            <button  onClick={()=>setIsReporterModalOpen(true)} className="reporter-button">RTI Reporter</button>
       <button className="reporter-button">RTI Activist  </button>
       </div>
       <div className="news-letter-container">
@@ -76,6 +79,8 @@ const SliderWithContent=()=>{
       <RecentPosts/>
       </div>
       </div>
+      <RTIReporterForm isOpen={isReporterModalOpen}  onClose={()=>setIsReporterModalOpen(false)}/>
+
 </div>
 }
 

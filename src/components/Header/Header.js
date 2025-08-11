@@ -1,3 +1,5 @@
+import Modal from "react-modal"
+
 import { RxHamburgerMenu } from "react-icons/rx";
 // import { MdToggleOn } from "react-icons/md";
 // import { MdToggleOff } from "react-icons/md";
@@ -7,15 +9,19 @@ import { FaFacebook ,FaInstagram,FaYoutube} from "react-icons/fa";
 import { BiLogoLinkedin,BiLogoTwitter } from "react-icons/bi";
 
 import {Link} from "react-router-dom"
+import RTIReporterForm from "../RTIReporterForm";
 import "./Header.css"
-import { useState,useEffect} from "react";
 
+
+import { useState,useEffect} from "react";
+Modal.setAppElement("#root");
 
 const languageOptions=[
   {id:1,label:"Telugu",value:"TELUGU"},
   {id:2,label:"English",value:"ENGLISH"}
 ]
 const Header=(props)=>{
+  const [reporterisModalOpeninMobile,setReporterisModalOpeninMobile]=useState(false)
   const {language}=props
   const [mobileLanguage,setMobileLanguage]=useState("TELUGU")
   const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752660174/IMG-20250715-WA0002_xrwuem-removebg-preview_qdht1o.png"
@@ -122,8 +128,8 @@ setMobileLanguage(e.target.value)
         <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">{categories[9]}</p></Link>
          <Link to="/about" className="about-us-link-element"><p id="home">{categories[10]}</p></Link>
          <p className="text" id="home"> RTI Activist Join </p>
-        <a className="text epaper" id="home" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a> 
-        
+        {/* <a className="text epaper" id="home" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a>  */}
+      <p onClick={()=>setReporterisModalOpeninMobile(true)} className="text" id="home"> RTI Reporter Join </p> 
         <p className="text" id="home">Feedback</p>
         <p id="home">hello@rtiexpress.com</p>
         <hr className="horizontal-line"/>
@@ -141,7 +147,7 @@ setMobileLanguage(e.target.value)
         </div>
         </div>}
 
-
+    <RTIReporterForm  isOpen={reporterisModalOpeninMobile}  onClose={()=>setReporterisModalOpeninMobile(false)}/>
        </>
 
 }
