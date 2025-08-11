@@ -6,7 +6,7 @@ import "./index.css"
 Modal.setAppElement("#root");
 
 
-const RTIReporterForm=(props)=>{
+const RTIActivistForm=(props)=>{
  
   const {onClose,isOpen}=props
     return <Modal 
@@ -19,7 +19,7 @@ const RTIReporterForm=(props)=>{
       
       
       <form className="rti-reporter-form-container">
-        <h3>RTI REPORTER FORM</h3>
+        <h3>RTI ACTIVIST FORM</h3>
        
         <input className="rti-reporter-input-element" type="text"  placeholder="Enter Your Name.."/>
           <input className="rti-reporter-input-element" type="date"  placeholder="Enter Your DOB.."/>
@@ -38,10 +38,10 @@ const RTIReporterForm=(props)=>{
     <input  className="rti-reporter-input-element" type="text"  placeholder="Designation Eg... Junior Reporter,Reporter,Senior Reporter" />
     <input  className="rti-reporter-input-element" type="text"  placeholder="Area Eg.. Hyderabad,Vizag,Amaravathi" />
     <input  className="rti-reporter-input-element" type="text"  placeholder="Previous Experience If any" />
-<button onClick={onClose} type="submit" className="rti-reporter-submit-button">JOIN AS REPORTER</button>
+<button onClick={onClose} type="submit" className="rti-reporter-submit-button">JOIN AS ACTIVIST</button>
 
 
     </form> </Modal> 
 }
 
-export default RTIReporterForm
+export default RTIActivistForm

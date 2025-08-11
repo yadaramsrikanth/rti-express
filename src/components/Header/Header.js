@@ -10,6 +10,7 @@ import { BiLogoLinkedin,BiLogoTwitter } from "react-icons/bi";
 
 import {Link} from "react-router-dom"
 import RTIReporterForm from "../RTIReporterForm";
+import RTIActivistForm from "../RTIActivistForm"
 import "./Header.css"
 
 
@@ -22,6 +23,8 @@ const languageOptions=[
 ]
 const Header=(props)=>{
   const [reporterisModalOpeninMobile,setReporterisModalOpeninMobile]=useState(false)
+    const [activistisModalOpeninMobile,setactivistisModalOpeninMobile]=useState(false)
+
   const {language}=props
   const [mobileLanguage,setMobileLanguage]=useState("TELUGU")
   const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752660174/IMG-20250715-WA0002_xrwuem-removebg-preview_qdht1o.png"
@@ -127,7 +130,7 @@ setMobileLanguage(e.target.value)
         
         <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">{categories[9]}</p></Link>
          <Link to="/about" className="about-us-link-element"><p id="home">{categories[10]}</p></Link>
-         <p className="text" id="home"> RTI Activist Join </p>
+         <p onClick={()=>setactivistisModalOpeninMobile(true)} className="text" id="home"> RTI Activist Join </p>
         {/* <a className="text epaper" id="home" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a>  */}
       <p onClick={()=>setReporterisModalOpeninMobile(true)} className="text" id="home"> RTI Reporter Join </p> 
         <p className="text" id="home">Feedback</p>
@@ -148,6 +151,7 @@ setMobileLanguage(e.target.value)
         </div>}
 
     <RTIReporterForm  isOpen={reporterisModalOpeninMobile}  onClose={()=>setReporterisModalOpeninMobile(false)}/>
+       <RTIActivistForm isOpen={activistisModalOpeninMobile}  onClose={()=>setactivistisModalOpeninMobile(false)}/>
        </>
 
 }

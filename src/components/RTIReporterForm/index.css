@@ -42,8 +42,11 @@
  
   
 }
+
+
+
 .rti-reporter-input-element{
-    width: 100%;
+    width: 90%;
     padding:8px;
     outline: none;
     border-radius: 5px;
