@@ -33,7 +33,7 @@ const RTIActivistForm=(props)=>{
         id="dob"
         selected={dob}
         onChange={(date) => setDob(date)}
-        placeholderText="DD/MM/YYYY"
+        placeholderText="15/08/1947"
         dateFormat="dd/MM/yyyy"
         className="rti-reporter-input-element"
         

@@ -28,7 +28,7 @@ const RTIReporterForm=(props)=>{
                     id="dob"
                     selected={reporterdob}
                     onChange={(date) => setReporterDob(date)}
-                    placeholderText="DD/MM/YYYY"
+                    placeholderText="15/08/1947"
                     dateFormat="dd/MM/yyyy"
                     className="rti-reporter-input-element"
                     
