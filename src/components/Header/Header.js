@@ -135,15 +135,15 @@ setMobileLanguage(e.target.value)
       <p onClick={()=>setReporterisModalOpeninMobile(true)} className="text" id="home"> RTI Reporter Join </p> 
         <p className="text" id="home">Feedback</p>
         <p id="home">hello@rtiexpress.com</p>
-        <hr className="horizontal-line"/>
+        <hr className="horizontal-line-mobile-view"/>
         <div className="social-media-links-container">
           <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="_blank" rel="noopener noreferrer"><FaFacebook size={20} className="social-media-icon facebook"/></a>
             
            <a href="https://www.instagram.com/rtiexpress/" target="_blank" rel="noopener noreferrer"><FaInstagram size={20} className="social-media-icon insta"/></a>
            
           <a href="https://www.youtube.com/@rtiexpress667" target="_blank" rel="noopener noreferrer"><FaYoutube size={20} className="social-media-icon youtube"/></a>
-           <p><BiLogoLinkedin size={20} className="social-media-icon linkedin" /></p>
-             <p><BiLogoTwitter size={20} className="social-media-icon twitter" /></p> 
+         <a href="https://www.linkedin.com/in/rti-express-news-058a44378/" target="_blank" rel="noopener noreferrer"> <p><BiLogoLinkedin size={20} className="social-media-icon linkedin" /></p></a> 
+          <a  href="https://x.com/rti_expressnews" target="_blank" rel="noopener noreferrer">    <p><BiLogoTwitter size={20} className="social-media-icon twitter" /></p> </a> 
               <a title="View Location on Google Maps" target="_blank"  rel="noopener noreferrer" href="https://maps.app.goo.gl/kKD3CUwdMENNYT2a7"><p><MdLocationOn size={22} className="social-media-icon map-icon"/></p></a>
  
           

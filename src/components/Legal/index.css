@@ -1,0 +1,14 @@
+.legal-Information-conatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40%;
+    margin: 10px auto;
+}
+
+@media (max-width:767px){
+    .legal-Information-conatiner{
+        width: 50%;
+    }
+}

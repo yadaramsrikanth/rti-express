@@ -22,7 +22,7 @@ const AboutUs=()=>{
               Honourable President & Founder, Andhra Pradesh RTI Activist Organization
             </p>
             <p className="aboutus-contact">
-              Contact: <a href="tel:+917668886666">76688 86666</a>
+              Contact: <a href="tel:+917668886666">+9176688 86666</a>
             </p>
              <div className="rti-member-bio-image-container">
               <div className="rti-member-bio-container">
@@ -69,7 +69,7 @@ const AboutUs=()=>{
               State General Secretary, Andhra Pradesh RTI Activist Organization
             </p>
             <p className="aboutus-contact">
-              Contact: <a href="tel:+918919831001">89198 31001</a>
+              Contact: <a href="tel:+918919831001">+9189198 31001</a>
             </p>
              <div className="rti-member-bio-image-container">
               <div className="rti-member-bio-container">
@@ -118,7 +118,7 @@ const AboutUs=()=>{
               State President – Andhra Pradesh RTI Activist Organization
             </p>
             <p className="aboutus-contact">
-              Contact: <a href="tel:+918549845435">85498 45435</a>
+              Contact: <a href="tel:+918549845435">+9185498 45435</a>
             </p>
              <div className="rti-member-bio-image-container">
               <div className="rti-member-bio-container">
@@ -160,7 +160,7 @@ const AboutUs=()=>{
               Renowned Advocate | Legal Strategist | RTI Movement Supporter
             </p>
             <p className="aboutus-contact">
-              Contact: <a href="tel:+919440580500">94405 80500</a>
+              Contact: <a href="tel:+919440580500">+9194405 80500</a>
             </p>
             <div className="rti-member-bio-image-container">
               <div className="rti-member-bio-container">
@@ -206,6 +206,9 @@ const AboutUs=()=>{
               Senior advisor, RTI EXPRESS News<br />
               Andhra Pradesh RTI Activist Organization
              
+            </p>
+            <p className="aboutus-contact">
+              Contact: <a href="tel:+919440580500">+9186181 83264</a>
             </p>
             <p className="aboutus-contact">
               Email: <a href="mailto:shobarani.kamala@gmail.com">shobarani.kamala@gmail.com</a>

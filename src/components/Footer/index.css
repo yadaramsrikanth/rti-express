@@ -1,8 +1,8 @@
 .footer-main-container{
-    background-color: #1877F2;
+    background-color: #F2F2F2;
     margin-top: 10px;
-    padding: 25px;
-    
+    padding:25px;
+   min-height: 55vh;
 }
 .footer-info-containerss{
     display: flex;
@@ -10,27 +10,31 @@
     flex-wrap: wrap;
 }
 .website-info-in-footer{
-    width: 20%;
+    width: 30%;
 }
 
 .footer-image-logo{
     width: 35%;
 }
 .website-info-in-footer p{
-    color: #DDEEFF;
+    /* color: #DDEEFF; */
+    
     font-size: 16px;
     font-weight: 400;
     margin-left: 10px;
 }
 .company-name-heading{
-    color: #FFFFFF;
+    /* color: #FFFFFF;
+     */
+     
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .company-container p{
-    color: #DDEEFF;
+    /* color: #DDEEFF; */
+
     font-size: 14px;
     margin-left: 10px;
     margin-bottom: 8px;
@@ -38,16 +42,21 @@
 word-break: break-word;
 overflow-wrap: break-word;
 }
+.company-container Link{
+    color: black;
+}
+
 .company-container a{
     text-decoration: none;
+    color: black;
 }
 .company-container{
- width: 18%;
+ width: 22%;
 
 
 }
-.legal-heading{
-     color: #FFFFFF;
+/* .legal-heading{
+     color: #FFFFFF; 
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -55,7 +64,7 @@ overflow-wrap: break-word;
 .legal-info-conatiner{
     width: 26%;
     margin: 0 auto;
-}
+} 
 
 .legal-info-conatiner p{
      color: #DDEEFF;
@@ -67,9 +76,11 @@ word-break: break-word;
 overflow-wrap: break-word;
 }
 
+*/
 
 .horizontal-line{
-    background-color: #DDEEFF;
+    /* background-color: #DDEEFF; */
+    background-color: black;
     height: 1px;
     border: none;
 }
@@ -78,7 +89,7 @@ overflow-wrap: break-word;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    color: #DDEEFF;
+    /* color: #DDEEFF; */
     margin-top: 10px;
 }
 

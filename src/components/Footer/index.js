@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 import { MdCopyright } from "react-icons/md";
 import "./index.css"
-const logoImageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752644036/IMG-20250715-WA0002_xrwuem.jpg"
-
+// const logoImageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752644036/IMG-20250715-WA0002_xrwuem.jpg"
+const logoImageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
 const Footer=()=>{
     return <div className="footer-main-container">
       <div className="footer-info-containerss">
@@ -23,10 +23,11 @@ const Footer=()=>{
      <Link to="/contact" ><p>ContactUs</p></Link>
    <a  target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter</p></a> 
     <p>RTI Activist</p>
+    <Link to="/legal-info"><p>legal</p></Link>
 </div>
 
 
-<div className="legal-info-conatiner">
+{/* <div className="legal-info-conatiner">
     <h2 className="legal-heading">Legal</h2>
 <p>Legal Information</p>
 <p>RNI:APTEL/2018/76797</p>
@@ -37,7 +38,7 @@ const Footer=()=>{
 <p>Labour Reg No:AP-25-18-006-03671823</p>
 <p>Postal licenced:HDP/010/2024-2026</p>
 <p>GST No:37ABJPF4955F1ZK</p>
-</div>
+</div> */}
 
 
 
@@ -62,8 +63,8 @@ const Footer=()=>{
      <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="_blank" rel="noopener noreferrer"><p>Facebook</p></a> 
   <a href="https://www.instagram.com/rtiexpress/" target="_blank" rel="noopener noreferrer"> <p>Instagram</p></a> 
      <a href="https://www.youtube.com/@rtiexpress667" target="_blank" rel="noopener noreferrer"><p>Youtube</p></a>
-    <p>Twitter</p>
-    <p>Linkedin</p>
+  <a href="https://x.com/rti_expressnews" target="_blank" rel="noopener noreferrer">  <p>Twitter</p></a>
+   <a  href="https://www.linkedin.com/in/rti-express-news-058a44378/" target="_blank" rel="noopener noreferrer"> <p>Linkedin</p></a>
 </div>
 </div>
 <hr className="horizontal-line"/>

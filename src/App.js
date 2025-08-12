@@ -1,5 +1,5 @@
-import {Swiper,SwiperSlide} from "swiper/react"
-import {Pagination,Autoplay} from "swiper/modules"
+// import {Swiper,SwiperSlide} from "swiper/react"
+// import {Pagination,Autoplay} from "swiper/modules"
 
 import { BrowserRouter,Routes,Route, Link } from "react-router-dom";
 import { CgMail } from "react-icons/cg";
@@ -19,8 +19,9 @@ import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer"
 import NotFound from "./components/NotFound";
+import LegalInfo from "./components/Legal";
 // import RTIReporterForm from "./components/RTIReporterForm";
-import addimages from "./addImages.json"
+// import addimages from "./addImages.json"
 import "./App.css"
 import { useState } from "react";
 
@@ -70,8 +71,8 @@ const onChangeLanguage=(e)=>{
  <a href="https://www.instagram.com/rtiexpress/" target="_blank"  rel="noopener noreferrer"><FaInstagram size={25} className="social-media-icon insta"/></a>
   <a href="https://www.youtube.com/@rtiexpress667" target="_blank"  rel="noopener noreferrer"><FaYoutube size={25} className="social-media-icon youtube"/></a>
   
-  <p><BiLogoLinkedin size={25} className="social-media-icon linkedin" /></p>
-  <p><BiLogoTwitter size={25} className="social-media-icon twitter" /></p>
+ <a href="https://www.linkedin.com/in/rti-express-news-058a44378/" target="_blank" rel="noopener noreferrer"> <p><BiLogoLinkedin size={25} className="social-media-icon linkedin" /></p></a>
+<a href="https://x.com/rti_expressnews" target="_blank" rel="noopener noreferrer"> <p><BiLogoTwitter size={25} className="social-media-icon twitter" /></p></a>
   <a title="View Location on Google Maps" target="_blank"  rel="noopener noreferrer" href="https://maps.app.goo.gl/kKD3CUwdMENNYT2a7"><p><MdLocationOn size={25} className="social-media-icon map-icon"/></p></a>
    <p className="feedback text">Feedback</p>
       
@@ -82,7 +83,7 @@ const onChangeLanguage=(e)=>{
       <Link to="/">
     <img src={imageUrl} className="logo-rti-express" alt="RTI EXPRESS" /></Link>
     <div className="bg-color-container">
-          <Swiper modules={[Pagination,Autoplay]} 
+          {/* <Swiper modules={[Pagination,Autoplay]} 
           spaceBetween={50}
         slidesPerView={1}
         autoplay={{delay:2000,disableOnInteraction:false}}
@@ -96,7 +97,7 @@ const onChangeLanguage=(e)=>{
               ))
             }
            
-          </Swiper>
+          </Swiper> */}
 
 
     </div>
@@ -119,7 +120,7 @@ const onChangeLanguage=(e)=>{
     <Route path="/news/:id" element={<NewsDetails/>}/>
     <Route path="/about" element={<AboutUs/>}/>
     <Route path="/contact" element={<ContactUs/>} />
-   
+   <Route path="/legal-info" element={<LegalInfo/>} />
     <Route path="*" element={<NotFound/>}/>
     </Routes>
 
