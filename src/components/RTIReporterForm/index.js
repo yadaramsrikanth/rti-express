@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import DatePicker from "react-datepicker";
 import Modal from "react-modal"
 import "react-datepicker/dist/react-datepicker.css";
+import ReporterActivistContext from "../../ReactContext";
 import "./index.css"
 Modal.setAppElement("#root");
 
 
-const RTIReporterForm=(props)=>{
+const RTIReporterForm=()=>{
+  const {isReporterModal,setIsReporterModal}=useContext(ReporterActivistContext)
  const [reporterdob,setReporterDob]=useState(null)
-  const {onClose,isOpen}=props
+  // const {onClose,isOpen}=props
     return <Modal 
-    isOpen={isOpen}
-    onRequestClose={onClose}
+    isOpen={isReporterModal}
+    onRequestClose={()=>setIsReporterModal(false)}
      contentLabel="Reporter Join Form"
     className="modal-content"
     overlayClassName="modal-overlay"
@@ -60,7 +62,7 @@ const RTIReporterForm=(props)=>{
     <input  className="rti-reporter-input-element" type="text"  placeholder="560001" />
      <label className="rti-reporter-label-element">Experience:</label>
     <input  className="rti-reporter-input-element" type="text"  placeholder="Previous Experience If any like 3 years" />
-<button onClick={onClose} type="submit" className="rti-reporter-submit-button">JOIN AS REPORTER</button>
+<button onClick={()=>setIsReporterModal(false)} type="submit" className="rti-reporter-submit-button">JOIN AS REPORTER</button>
 
 
     </form> </Modal> 

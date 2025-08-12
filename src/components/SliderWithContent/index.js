@@ -10,17 +10,22 @@ import TodaysSpotLight from "../TodaysSpotLight/index"
 import AddsBanner from "../AddsBanner/index"
 import PopularNews from "../PopularNews/index"
 import RecentPosts from "../RecentPosts/index"
-import RTIReporterForm from "../RTIReporterForm/index"
-import RTIActivistForm from "../RTIActivistForm"
+// import RTIReporterForm from "../RTIReporterForm/index"
+// import RTIActivistForm from "../RTIActivistForm"
+import ReporterActivistContext from "../../ReactContext"
 import "./index.css"
 import data from "../../data.json"
-import { useState } from "react"
+import { useContext, useState } from "react"
 
 
 const SliderWithContent=()=>{
     const [isEmail,setIsEmail]=useState("")
-    const [isReporterModalOpen,setIsReporterModalOpen]=useState(false)
-      const [isActivistrModalOpen,setIsActivistModalOpen]=useState(false)
+    // const [isReporterModalOpen,setIsReporterModalOpen]=useState(false)
+    //   const [isActivistrModalOpen,setIsActivistModalOpen]=useState(false)
+
+      const {setIsReporterModal,setIsActivistModal}=useContext(ReporterActivistContext)
+
+
 
     return <div className="slider-text-main-container">
       <div className="slider-top-rti-join-container">
@@ -53,8 +58,8 @@ const SliderWithContent=()=>{
       <h3 className="join-heading">Join RTI</h3>
      
   {/* <a className="reporter-button" target="__blank" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit" >RTI Reporter</a>  */}
-            <button  onClick={()=>setIsReporterModalOpen(true)} className="reporter-button">RTI Reporter</button>
-      <button onClick={()=>setIsActivistModalOpen(true)} className="reporter-button">RTI Activist  </button>
+       <button  onClick={()=>setIsReporterModal(true)} className="reporter-button">RTI Reporter</button>
+      <button onClick={()=>setIsActivistModal(true)} className="reporter-button">RTI Activist  </button>
       </div>
       <div className="news-letter-container">
         <h3 className="daily-news-letter-heading">Daily Newsletter</h3>
@@ -82,8 +87,8 @@ const SliderWithContent=()=>{
       <RecentPosts/>
       </div>
       </div>
-      <RTIReporterForm isOpen={isReporterModalOpen}  onClose={()=>setIsReporterModalOpen(false)}/>
-      <RTIActivistForm isOpen={isActivistrModalOpen}  onClose={()=>setIsActivistModalOpen(false)}/>
+      {/* <RTIReporterForm isOpen={isReporterModalOpen}  onClose={()=>setIsReporterModalOpen(false)}/>
+      <RTIActivistForm isOpen={isActivistrModalOpen}  onClose={()=>setIsActivistModalOpen(false)}/> */}
 
 </div>
 }

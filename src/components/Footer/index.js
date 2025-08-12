@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom"
 import { MdCopyright } from "react-icons/md";
+import ReporterActivistContext from "../../ReactContext"
 import "./index.css"
+import { useContext } from "react";
 // const logoImageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752644036/IMG-20250715-WA0002_xrwuem.jpg"
 const logoImageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
 const Footer=()=>{
+  const {setIsReporterModal,setIsActivistModal}=useContext(ReporterActivistContext)
     return <div className="footer-main-container">
       <div className="footer-info-containerss">
         <div className="website-info-in-footer">
@@ -21,8 +24,8 @@ const Footer=()=>{
  <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer"><p>E-paper</p></a>
     <Link to="/about"><p>AboutUs</p></Link>
      <Link to="/contact" ><p>ContactUs</p></Link>
-   <a  target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter</p></a> 
-    <p>RTI Activist</p>
+   <p onClick={()=>setIsReporterModal(true)}>RTI Reporter</p>
+    <p onClick={()=>setIsActivistModal(true)}>RTI Activist</p>
     <Link to="/legal-info"><p>legal</p></Link>
 </div>
 

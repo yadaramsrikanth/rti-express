@@ -20,6 +20,7 @@ import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer"
 import NotFound from "./components/NotFound";
 import LegalInfo from "./components/Legal";
+import ReporterActivistContext from "./ReactContext";
 // import RTIReporterForm from "./components/RTIReporterForm";
 // import addimages from "./addImages.json"
 import "./App.css"
@@ -27,16 +28,20 @@ import { useState } from "react";
 
 const languageOptions=[
   {id:1,label:"Telugu",value:"TELUGU"},
-  {id:2,label:"English",value:"ENGLISH"}
+  {id:2,label:"English",value:"ENGLISH"},
+    {id:3,label:"Kannada",value:"KANNADA"
+  }
 ]
 
+const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
 
 
 const App=()=>{
   // const [isON,SetIsON]=useState(false)
   const [language,setLanguage]=useState("TELUGU")
-const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
 
+const [isReporterModal,setIsReporterModal]=useState(false)
+const [isActivistModal,setIsActivistModal]=useState(false)
 
 // const toToggle=()=>{
   // SetIsON((prev)=>!prev)
@@ -45,7 +50,8 @@ const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT
 const onChangeLanguage=(e)=>{
   setLanguage(e.target.value)
 }
-  return <BrowserRouter>
+  return <ReporterActivistContext.Provider value={{isReporterModal,setIsReporterModal,isActivistModal,setIsActivistModal}}>
+    <BrowserRouter>
    <div className="app-container">
     <div className="top-container">
       <div className="email-container">
@@ -127,6 +133,7 @@ const onChangeLanguage=(e)=>{
     <Footer />
   </div>
   </BrowserRouter>
+  </ReporterActivistContext.Provider> 
 }
 
 export default App

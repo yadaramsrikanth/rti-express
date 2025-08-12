@@ -9,12 +9,13 @@ import { FaFacebook ,FaInstagram,FaYoutube} from "react-icons/fa";
 import { BiLogoLinkedin,BiLogoTwitter } from "react-icons/bi";
 
 import {Link} from "react-router-dom"
-import RTIReporterForm from "../RTIReporterForm";
-import RTIActivistForm from "../RTIActivistForm"
+// import RTIReporterForm from "../RTIReporterForm";
+// import RTIActivistForm from "../RTIActivistForm"
+import ReporterActivistContext from "../../ReactContext";
 import "./Header.css"
 
 
-import { useState,useEffect} from "react";
+import { useState,useEffect, useContext} from "react";
 Modal.setAppElement("#root");
 
 const languageOptions=[
@@ -22,8 +23,10 @@ const languageOptions=[
   {id:2,label:"English",value:"ENGLISH"}
 ]
 const Header=(props)=>{
-  const [reporterisModalOpeninMobile,setReporterisModalOpeninMobile]=useState(false)
-    const [activistisModalOpeninMobile,setactivistisModalOpeninMobile]=useState(false)
+  const {setIsReporterModal,setIsActivistModal}=useContext(ReporterActivistContext)
+
+  // const [reporterisModalOpeninMobile,setReporterisModalOpeninMobile]=useState(false)
+  //   const [activistisModalOpeninMobile,setactivistisModalOpeninMobile]=useState(false)
 
   const {language}=props
   const [mobileLanguage,setMobileLanguage]=useState("TELUGU")
@@ -62,7 +65,7 @@ setMobileLanguage(e.target.value)
   [ "హోమ్ ","తెలంగాణ",
   "ఆంధ్రప్రదేశ్",
   "జాతీయం",
-  "అంతర్జాతీయ",
+  "అంతర్జాతీయం",
   "సినిమా",
   "బిజినెస్",
   "క్రీడలు",
@@ -130,9 +133,9 @@ setMobileLanguage(e.target.value)
         
         <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">{categories[9]}</p></Link>
          <Link to="/about" className="about-us-link-element"><p id="home">{categories[10]}</p></Link>
-         <p onClick={()=>setactivistisModalOpeninMobile(true)} className="text" id="home"> RTI Activist Join </p>
+         <p onClick={()=>setIsActivistModal(true)} className="text" id="home"> RTI Activist Join </p>
         {/* <a className="text epaper" id="home" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a>  */}
-      <p onClick={()=>setReporterisModalOpeninMobile(true)} className="text" id="home"> RTI Reporter Join </p> 
+      <p onClick={()=>setIsReporterModal(true)} className="text" id="home"> RTI Reporter Join </p> 
         <p className="text" id="home">Feedback</p>
         <p id="home">hello@rtiexpress.com</p>
         <hr className="horizontal-line-mobile-view"/>
@@ -150,8 +153,8 @@ setMobileLanguage(e.target.value)
         </div>
         </div>}
 
-    <RTIReporterForm  isOpen={reporterisModalOpeninMobile}  onClose={()=>setReporterisModalOpeninMobile(false)}/>
-       <RTIActivistForm isOpen={activistisModalOpeninMobile}  onClose={()=>setactivistisModalOpeninMobile(false)}/>
+    {/* <RTIReporterForm  isOpen={reporterisModalOpeninMobile}  onClose={()=>setReporterisModalOpeninMobile(false)}/>
+       <RTIActivistForm isOpen={activistisModalOpeninMobile}  onClose={()=>setactivistisModalOpeninMobile(false)}/> */}
        </>
 
 }
