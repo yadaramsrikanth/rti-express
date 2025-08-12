@@ -60,9 +60,9 @@ const RTIActivistForm=(props)=>{
      <label className="rti-reporter-label-element">Upload Your Photo:</label>
     <input  className="rti-reporter-input-element" type="file"  accept="image/*"/>
     <label className="rti-reporter-label-element">Designation:</label>
-    <input  className="rti-reporter-input-element" type="text"  placeholder="Designation Eg... Junior Reporter,Reporter,Senior Reporter" />
-     <label className="rti-reporter-label-element">Enter Your Address/pincode:</label>
-    <input  className="rti-reporter-input-element" type="text"  placeholder="Area Eg.. Hyderabad,Vizag,Amaravathi" />
+    <input  className="rti-reporter-input-element" type="text"  placeholder="Designation Eg..Activist" />
+     <label className="rti-reporter-label-element">Enter Your Pincode:</label>
+    <input  className="rti-reporter-input-element" type="text"  placeholder="560001" />
      <label className="rti-reporter-label-element">Experience:</label>
     <input  className="rti-reporter-input-element" type="text"  placeholder="Previous Experience If any like 3 years" />
 <button onClick={onClose} type="submit" className="rti-reporter-submit-button">JOIN AS ACTIVIST</button>

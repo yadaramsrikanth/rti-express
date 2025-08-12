@@ -92,7 +92,8 @@
     width: 24%;
 }
 .add-banner-img{
-    height: 250px;
+    /* height: 250px; */
+    height: 350px;
     width: 98%;
     
 }
