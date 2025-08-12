@@ -82,7 +82,7 @@ const onChangeLanguage=(e)=>{
     <div className="logo-container">
       <Link to="/">
     <img src={imageUrl} className="logo-rti-express" alt="RTI EXPRESS" /></Link>
-    <div className="bg-color-container">
+    {/* <div className="bg-color-container"> */}
           {/* <Swiper modules={[Pagination,Autoplay]} 
           spaceBetween={50}
         slidesPerView={1}
@@ -100,7 +100,7 @@ const onChangeLanguage=(e)=>{
           </Swiper> */}
 
 
-    </div>
+    {/* </div> */}
     </div>
     <Header language={language}/>
   

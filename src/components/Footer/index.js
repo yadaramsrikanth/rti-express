@@ -40,13 +40,6 @@ const Footer=()=>{
 <p>GST No:37ABJPF4955F1ZK</p>
 </div> */}
 
-
-
-
-
-
-
-
 <div className="company-container">
     <h2 className="company-name-heading">EXPLORE</h2>
   <Link to="/"><p>Telangana</p></Link>  
@@ -56,6 +49,19 @@ const Footer=()=>{
     <Link to="/"> <p>Cinema</p></Link> 
      <Link to="/"><p>Business</p></Link> 
      <Link to="/"> <p>Sports</p></Link> 
+</div>
+
+
+
+
+
+
+<div className="company-container">
+    <h2 className="company-name-heading">POLICIES</h2>
+ <p>Terms and Conditions</p>
+    <p>Privacy Policy</p>
+    <p>Refund Policy</p>
+     <p>User Policies</p>
 </div>
 
 <div className="company-container">
