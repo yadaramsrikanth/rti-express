@@ -198,7 +198,7 @@ width: 100%;
 
 @media (min-width:768px)  and (max-width:991px){
     #home{
-        font-size: 14px;
+        font-size: 12px;
         margin-left: 10px;
         
         font-weight: 500;   
@@ -217,7 +217,7 @@ width: 100%;
 
 @media (min-width:992px)  and (max-width:1199px){
     #home{
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 10px;
    
     font-weight: 500;   
