@@ -8,3 +8,10 @@ const ReporterActivistContext=createContext({
 })
 
 export default ReporterActivistContext
+
+
+
+export const LanguageContext=createContext({
+    isLanguage:"TELUGU",
+    setIsLanguage:()=>{}
+})

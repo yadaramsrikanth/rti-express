@@ -21,6 +21,9 @@ import Footer from "./components/Footer"
 import NotFound from "./components/NotFound";
 import LegalInfo from "./components/Legal";
 import ReporterActivistContext from "./ReactContext";
+import {LanguageContext} from "./ReactContext"
+import RTIReporterForm from "./components/RTIReporterForm"
+import RTIActivistForm from "./components/RTIActivistForm"
 // import RTIReporterForm from "./components/RTIReporterForm";
 // import addimages from "./addImages.json"
 import "./App.css"
@@ -38,19 +41,21 @@ const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT
 
 const App=()=>{
   // const [isON,SetIsON]=useState(false)
-  const [language,setLanguage]=useState("TELUGU")
+  // const [language,setLanguage]=useState("TELUGU")
 
 const [isReporterModal,setIsReporterModal]=useState(false)
 const [isActivistModal,setIsActivistModal]=useState(false)
+const [isLanguage,setIsLanguage]=useState("TELUGU")
 
 // const toToggle=()=>{
   // SetIsON((prev)=>!prev)
 // }
 
 const onChangeLanguage=(e)=>{
-  setLanguage(e.target.value)
+  setIsLanguage(e.target.value)
 }
   return <ReporterActivistContext.Provider value={{isReporterModal,setIsReporterModal,isActivistModal,setIsActivistModal}}>
+    <LanguageContext.Provider value={{isLanguage,setIsLanguage}}>
     <BrowserRouter>
    <div className="app-container">
     <div className="top-container">
@@ -60,7 +65,7 @@ const onChangeLanguage=(e)=>{
       </div>
       
       <div className="top-left-side-text-container">
-         <select value={language} onChange={onChangeLanguage} className="drop-down-container">
+         <select value={isLanguage} onChange={onChangeLanguage} className="drop-down-container">
             {languageOptions.map((lan)=>(
               <option key={lan.id} value={lan.value}>{lan.label}</option>
             ))}
@@ -108,8 +113,8 @@ const onChangeLanguage=(e)=>{
 
     {/* </div> */}
     </div>
-    <Header language={language}/>
-  
+    {/* <Header language={language}/> */}
+   <Header/>
   {/* <div className="map-form-container"> */}
   {/* <div className="map-container">  */}
  {/* <div className="form-main-container"> */}
@@ -133,6 +138,9 @@ const onChangeLanguage=(e)=>{
     <Footer />
   </div>
   </BrowserRouter>
+  <RTIReporterForm/>
+  <RTIActivistForm/>
+  </LanguageContext.Provider>
   </ReporterActivistContext.Provider> 
 }
 
