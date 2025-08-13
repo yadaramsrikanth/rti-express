@@ -5,7 +5,7 @@ import "./index.css"
 const RecentPosts=()=>{
     return <ul className="recent-posts-unordered-container">
         {
-            todaysSpotlightnews.slice(0,3).map((item,index)=>(
+            todaysSpotlightnews.slice(0,6).map((item,index)=>(
                 <li className="list-item-recent-post">
                     <Link to={`/news/${item.id}`} className="recent-post-link-element">
                     <img src={item.image} alt={`recent ${index}`}  className="recent-post-image"/>

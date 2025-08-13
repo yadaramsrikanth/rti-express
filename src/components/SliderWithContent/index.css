@@ -471,22 +471,17 @@
   width: 70%;
 }
 .spot-light-home-container{
-    width: 70%;
+    width: 75%;
     margin-left: 25px;
     margin-top: 0px;
 } 
 .home-spot-light-adds-container{
  
   width: 100%;
+
 }
-.home-popular-news-container{
-  width: 60%;
-  margin-left: 0px;
-  margin-top: 20px;
-}
-.recent-post-home-container{
-  width: 40%;
-}
+
+
 .taja-updates-heading{
   margin-left: 10px;
   margin-top: 12px;
@@ -496,5 +491,27 @@
   font-size: 22px;
   margin-bottom: 10px;
 }
-
+.home-spot-light-popular-news-adds-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.spot-light-popular-news-container{
+  width: 80%;
+}
+.spot-light-home-container{
+    width: 100%;
+    margin-left: 25px;
+    margin-top: 0px;
+} 
+.home-popular-news-container{
+  width: 100%;
+ margin-left: 25px;
+  margin-top: 20px;
+}
+.recent-post-home-container{
+  width: 100%;
+ margin-left: 25px;
+ margin-top: 0px;
+}
 }

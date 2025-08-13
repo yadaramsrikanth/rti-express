@@ -119,10 +119,13 @@
 
 @media (min-width:1200px){
    .recent-posts-unordered-container{
-   margin-left: 10px;
+   margin-left:0px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
 } 
 .list-item-recent-post{
-  width: 98%;
+  width: 35%;
   margin: 5px;
   padding: 5px;
   height: 80px;
@@ -134,5 +137,9 @@
 }
 .recent-posts-para{
     font-size: 12px;
+}
+.recent-post-link-element{
+    display: flex;
+    flex-direction: row;
 }
 }

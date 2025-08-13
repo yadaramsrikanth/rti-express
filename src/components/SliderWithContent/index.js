@@ -71,22 +71,58 @@ const SliderWithContent=()=>{
       </div>
       </div>
       </div>
+
+      {/* old one it is giving extra space
      <div className="home-spot-light-adds-container">
     <div className="spot-light-home-container">
         <TodaysSpotLight/>
     </div> 
       <AddsBanner/>
       </div>
+
+
       <div className="home-popular-recent-posts-conatiner">
       <div className="home-popular-news-container">
         <h1 className="taja-varathalu">తాజా వార్తలు</h1>
         <PopularNews/>
       </div>
+
+      
       <div className="recent-post-home-container">
       <h1 className="taja-updates-heading taja-varathalu">తాజా అప్‌డేట్స్</h1>
       <RecentPosts/>
       </div>
+      </div> */}
+
+
+ {/* //new styles */}
+  <div className="home-spot-light-popular-news-adds-container">
+    <div className="spot-light-popular-news-container">
+    
+    <div className="spot-light-home-container">
+        <TodaysSpotLight/>
+    </div>
+
+    <div className="home-popular-news-container">
+        <h1 className="taja-varathalu">తాజా వార్తలు</h1>
+        <PopularNews/>
       </div>
+    </div>
+
+      <AddsBanner/>
+      </div>
+      <div className="recent-post-home-container">
+      <h1 className="taja-updates-heading taja-varathalu">తాజా అప్‌డేట్స్</h1>
+      <RecentPosts/>
+      </div>
+      
+      
+
+
+
+
+
+
       {/* <RTIReporterForm isOpen={isReporterModalOpen}  onClose={()=>setIsReporterModalOpen(false)}/>
       <RTIActivistForm isOpen={isActivistrModalOpen}  onClose={()=>setIsActivistModalOpen(false)}/> */}
 
