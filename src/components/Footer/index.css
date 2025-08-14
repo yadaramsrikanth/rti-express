@@ -93,6 +93,7 @@ overflow-wrap: break-word;
     padding: 0px 10px;
     /* color: #DDEEFF; */
     margin-top: 10px;
+    font-size: 14px;
 }
 
 .copy-right-logo-text{
@@ -123,6 +124,7 @@ overflow-wrap: break-word;
 .copy-right-container{
     display: flex;
     flex-direction: column;
+
 }
 .footer-image-logo{
     width: 30%;

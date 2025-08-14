@@ -11,7 +11,7 @@ const AboutUs=()=>{
     
 
     <div className="about-profile">
-      <h2>1. Kotipalli Baba</h2>
+      <h2>1. Kotlapalli Baba</h2>
     
       <div className="about-details">
         <div className="profile-header">

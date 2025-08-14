@@ -10,7 +10,7 @@ Modal.setAppElement("#root");
 const RTIReporterForm=()=>{
   const {isReporterModal,setIsReporterModal}=useContext(ReporterActivistContext)
  const [reporterdob,setReporterDob]=useState(null)
- const [formData,setFormData]=useState({name:"kkkkkk",})
+ const [formData,setFormData]=useState({name:"",})
   // const {onClose,isOpen}=props
 const submitReporterForm=async (event)=>{
   event.preventDefault()
@@ -50,7 +50,7 @@ const submitReporterForm=async (event)=>{
                     placeholderText="15/08/1947"
                     dateFormat="dd/MM/yyyy"
                     className="rti-reporter-input-element"
-                    name="dob"
+                   
                     showYearDropdown
                     scrollableYearDropdown
                   />
