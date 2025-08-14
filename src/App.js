@@ -5,11 +5,11 @@ import { BrowserRouter,Routes,Route, Link } from "react-router-dom";
 import { CgMail } from "react-icons/cg";
 // import { MdToggleOn } from "react-icons/md";
 // import { MdToggleOff } from "react-icons/md";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import { FaFacebook,FaInstagram,FaYoutube} from "react-icons/fa";
+// import { FaInstagram } from "react-icons/fa";
+// import { FaYoutube } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
-import { BiLogoTwitter } from "react-icons/bi";
+import { FaXTwitter } from "react-icons/fa6";
 import { MdLocationOn } from "react-icons/md";
 import Header from "./components/Header/Header";
 // import Register from "./components/Register/Register";
@@ -20,10 +20,12 @@ import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer"
 import NotFound from "./components/NotFound";
 import LegalInfo from "./components/Legal";
+import ScrollTop from "./components/ScrollTop";
 import ReporterActivistContext from "./ReactContext";
 import {LanguageContext} from "./ReactContext"
 import RTIReporterForm from "./components/RTIReporterForm"
 import RTIActivistForm from "./components/RTIActivistForm"
+import TermsandConditions from "./components/TermsAndConditions";
 // import RTIReporterForm from "./components/RTIReporterForm";
 // import addimages from "./addImages.json"
 import "./App.css"
@@ -32,8 +34,8 @@ import { useState } from "react";
 const languageOptions=[
   {id:1,label:"Telugu",value:"TELUGU"},
   {id:2,label:"English",value:"ENGLISH"},
-    {id:3,label:"Kannada",value:"KANNADA"
-  }
+    {id:3,label:"Kannada",value:"KANNADA"},
+     {id:4,label:"Hindi",value:"HINDI"}
 ]
 
 const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
@@ -60,7 +62,7 @@ const onChangeLanguage=(e)=>{
    <div className="app-container">
     <div className="top-container">
       <div className="email-container">
-     <CgMail size={20} className="icon-email"/>
+     <CgMail size={16} className="icon-email"/>
       <p className="website-mail">hello@rtiexpress.com</p>
       </div>
       
@@ -83,9 +85,9 @@ const onChangeLanguage=(e)=>{
   <a href="https://www.youtube.com/@rtiexpress667" target="_blank"  rel="noopener noreferrer"><FaYoutube size={25} className="social-media-icon youtube"/></a>
   
  <a href="https://www.linkedin.com/in/rti-express-news-058a44378/" target="_blank" rel="noopener noreferrer"> <p><BiLogoLinkedin size={25} className="social-media-icon linkedin" /></p></a>
-<a href="https://x.com/rti_expressnews" target="_blank" rel="noopener noreferrer"> <p><BiLogoTwitter size={25} className="social-media-icon twitter" /></p></a>
+<a href="https://x.com/rti_expressnews" target="_blank" rel="noopener noreferrer"> <p><FaXTwitter size={25} className="social-media-icon twitter" /></p></a>
   <a title="View Location on Google Maps" target="_blank"  rel="noopener noreferrer" href="https://maps.app.goo.gl/kKD3CUwdMENNYT2a7"><p><MdLocationOn size={25} className="social-media-icon map-icon"/></p></a>
-   <p className="feedback text">Feedback</p>
+   <p className="feedback">Feedback</p>
       
       
       </div>
@@ -126,12 +128,14 @@ const onChangeLanguage=(e)=>{
  {/* </div> */}
  {/* </div> */}
     {/* </div> */}
+    <ScrollTop/>
     <Routes>
     <Route path="/" element={<SliderWithContent/>}/>
     <Route path="/news/:id" element={<NewsDetails/>}/>
     <Route path="/about" element={<AboutUs/>}/>
     <Route path="/contact" element={<ContactUs/>} />
    <Route path="/legal-info" element={<LegalInfo/>} />
+   <Route path="/termsandconditions" element={<TermsandConditions/>}/>
     <Route path="*" element={<NotFound/>}/>
     </Routes>
 

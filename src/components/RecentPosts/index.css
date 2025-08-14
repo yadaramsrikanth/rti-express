@@ -64,7 +64,7 @@
     height: 100px;
 }
 .list-item-recent-post{
-    max-height: 180px;
+    max-height: 200px;
 }
 .recent-posts-para{
     font-size: 15px;
@@ -77,15 +77,17 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
     }
     .list-item-recent-post{
         display: flex;
         flex-direction: column;
-        height:auto;
+        height:130px;
+        width: 48%;
     }
     .recent-post-link-element{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     .recent-post-image{
     width: 85%;
@@ -102,10 +104,13 @@
 .recent-posts-unordered-container{
    margin-top: 10px;
     margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .list-item-recent-post{
-    width: 98%;
-    height: 100px;
+    width: 48%;
+    height: 120px;
   margin-top: 10px;
 }
 

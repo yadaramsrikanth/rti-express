@@ -22,7 +22,8 @@ Modal.setAppElement("#root");
 const languageOptions=[
   {id:1,label:"Telugu",value:"TELUGU"},
   {id:2,label:"English",value:"ENGLISH"},
-  {id:2,label:"kannada",value:"KANNADA"}
+  {id:3,label:"kannada",value:"KANNADA"},
+  {id:4,label:"Hindi",value:"HINDI"}
 ]
 const Header=()=>{
   const {setIsReporterModal,setIsActivistModal}=useContext(ReporterActivistContext)
@@ -85,6 +86,9 @@ switch(isLanguage){
     break
   case "KANNADA":    
         categories=["ಮುಖಪುಟ","ತೆಲಂಗಾಣ","ಆಂಧ್ರ ಪ್ರದೇಶ","ರಾಷ್ಟ್ರೀಯ","ಅಂತರರಾಷ್ಟ್ರೀಯ","ಸಿನಿಮಾ","ವ್ಯವಸ್ಥೆ","ಕ್ರೀಡೆ","ಇ-ಕಾಗದ","ನಮ್ಮ ಬಗ್ಗೆ","ಸಂಪರ್ಕಿಸಿ"]
+        break
+  case "HINDI":
+        categories=["होम", "तेलंगाना", "आंध्र प्रदेश", "राष्ट्रीय", "अंतरराष्ट्रीय", "सिनेमा", "व्यापार", "खेल", "ई-पेपर", "हमारे बारे में", "संपर्क करें"]
         break
   default:
     categories=[ "హోమ్ ","తెలంగాణ","ఆంధ్రప్రదేశ్","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్","మా గురించి","సంప్రదించండి"]

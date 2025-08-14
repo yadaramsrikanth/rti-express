@@ -16,7 +16,8 @@ const Footer=()=>{
       <p>Vasavi Dharmashala Road,</p>
       <p>Hindupur, Sri Sathya Sai District,</p>
       <p>Andhra Pradesh – 515201</p>
-      <p><span>Contact:</span> +9176688 86666, +9190596 79786</p>
+      <p><span>Contact:</span> +9176688 86666,</p>
+      <p> +9190596 79786</p>
       <p><span>Email:</span> contact@rtiexpress.in</p>
     </div>
 <div className="company-container">
@@ -61,7 +62,7 @@ const Footer=()=>{
 
 <div className="company-container">
     <h2 className="company-name-heading">POLICIES</h2>
- <p>Terms and Conditions</p>
+<Link to="/termsandconditions"><p>Terms and Conditions</p></Link> 
     <p>Privacy Policy</p>
     <p>Refund Policy</p>
      <p>User Policies</p>
@@ -72,7 +73,7 @@ const Footer=()=>{
      <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="_blank" rel="noopener noreferrer"><p>Facebook</p></a> 
   <a href="https://www.instagram.com/rtiexpress/" target="_blank" rel="noopener noreferrer"> <p>Instagram</p></a> 
      <a href="https://www.youtube.com/@rtiexpress667" target="_blank" rel="noopener noreferrer"><p>Youtube</p></a>
-  <a href="https://x.com/rti_expressnews" target="_blank" rel="noopener noreferrer">  <p>Twitter</p></a>
+  <a href="https://x.com/rti_expressnews" target="_blank" rel="noopener noreferrer">  <p>X</p></a>
    <a  href="https://www.linkedin.com/in/rti-express-news-058a44378/" target="_blank" rel="noopener noreferrer"> <p>Linkedin</p></a>
 </div>
 </div>

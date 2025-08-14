@@ -1,0 +1,21 @@
+.terms-an-conditions-container{
+    padding: 10px 50px 20px 50px;
+}
+
+.terms-an-conditions-container h3{
+    font-size: 16px;
+    margin: 8px 0px;
+}
+.terms-an-conditions-container h2{
+    font-size: 16px;
+    margin-top: 15px;
+}
+.terms-an-conditions-container p{
+    font-size: 16px;
+    margin: 5px 0px;
+}
+
+.terms-an-conditions-container h3 span{
+  color: #FFC107;
+  font-size: 22px;
+}

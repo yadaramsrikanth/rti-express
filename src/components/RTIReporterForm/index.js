@@ -10,7 +10,24 @@ Modal.setAppElement("#root");
 const RTIReporterForm=()=>{
   const {isReporterModal,setIsReporterModal}=useContext(ReporterActivistContext)
  const [reporterdob,setReporterDob]=useState(null)
+ const [formData,setFormData]=useState({name:"kkkkkk",})
   // const {onClose,isOpen}=props
+const submitReporterForm=async (event)=>{
+  event.preventDefault()
+  const reporterUrl="http://34.100.231.173:3000/api/v1/reporter/application"
+  const options={method:"POST",
+     headers: {
+    'Content-Type': 'application/json',
+  },
+  body:JSON.stringify({formData})
+  }
+  const data= await fetch(reporterUrl,options)
+  const responseData=await data.json()
+  console.log(responseData)
+  setFormData("kkkkk")
+}
+
+
     return <Modal 
     isOpen={isReporterModal}
     onRequestClose={()=>setIsReporterModal(false)}
@@ -20,10 +37,10 @@ const RTIReporterForm=()=>{
     >
       
       
-      <form className="rti-reporter-form-container">
+      <form className="rti-reporter-form-container" onSubmit={submitReporterForm}>
         <h3 className="rti-reporter-heading">RTI REPORTER FORM</h3>
        <label className="rti-reporter-label-element">Name:</label>
-        <input className="rti-reporter-input-element" type="text"  placeholder="John Doe"/>
+        <input name="name" className="rti-reporter-input-element" type="text"  placeholder="John Doe"/>
          <label className="rti-reporter-label-element">Select Your DOB:</label>
           {/* <input className="rti-reporter-input-element" type="date"  placeholder="DD-MM-YYYY"/> */}
                <DatePicker
@@ -33,35 +50,35 @@ const RTIReporterForm=()=>{
                     placeholderText="15/08/1947"
                     dateFormat="dd/MM/yyyy"
                     className="rti-reporter-input-element"
-                    
+                    name="dob"
                     showYearDropdown
                     scrollableYearDropdown
                   />
 
              <label className="rti-reporter-label-element">Select Your Gender:</label>
 
-    <select className="rti-reporter-input-element" placeholder="Male/Female/Other">
+    <select  name="gender" className="rti-reporter-input-element" placeholder="Male/Female/Other">
         <option value="">Select gender</option>
         <option value="male">Male</option>
         <option value="female">Female</option>
         <option value="other">Other</option>
   </select>
    <label className="rti-reporter-label-element">Enter Your Phone Number:</label>
-     <input  className="rti-reporter-input-element" type="tel"  placeholder="+91 98765 43210"/>
+     <input name="number"  className="rti-reporter-input-element" type="tel"  placeholder="+91 98765 43210"/>
              <label className="rti-reporter-label-element">Enter Your Gmail:</label>
-<input  className="rti-reporter-input-element" type="email" placeholder="example@mail.com"/>
+<input name="email" className="rti-reporter-input-element" type="email" placeholder="example@mail.com"/>
     <label className="rti-reporter-label-element">Enter Your Address:</label>
-<input  className="rti-reporter-input-element" type="text"  placeholder="123 Main St, City" />
+<input name="address"  className="rti-reporter-input-element" type="text"  placeholder="123 Main St, City" />
      <label className="rti-reporter-label-element">Enter Your Adhaar Number:</label>
-      <input  className="rti-reporter-input-element" type="text"  placeholder="1234 5678 9012"  maxLength="12"/>
+      <input name="adhaar"  className="rti-reporter-input-element" type="text"  placeholder="1234 5678 9012"  maxLength="12"/>
      <label className="rti-reporter-label-element">Upload Your Photo:</label>
-    <input  className="rti-reporter-input-element" type="file"  accept="image/*"/>
+    <input name="image"  className="rti-reporter-input-element" type="file"  accept="image/*"/>
     <label className="rti-reporter-label-element">Designation:</label>
-    <input  className="rti-reporter-input-element" type="text"  placeholder="Designation Eg... Junior Reporter,Reporter,Senior Reporter" />
+    <input name="dsignation" className="rti-reporter-input-element" type="text"  placeholder="Designation Eg... Junior Reporter,Reporter,Senior Reporter" />
      <label className="rti-reporter-label-element">Enter Your Pincode:</label>
-    <input  className="rti-reporter-input-element" type="text"  placeholder="560001" />
+    <input name="pincode"  className="rti-reporter-input-element" type="text"  placeholder="560001" />
      <label className="rti-reporter-label-element">Experience:</label>
-    <input  className="rti-reporter-input-element" type="text"  placeholder="Previous Experience If any like 3 years" />
+    <input name="experience" className="rti-reporter-input-element" type="text"  placeholder="Previous Experience If any like 3 years" />
 <button onClick={()=>setIsReporterModal(false)} type="submit" className="rti-reporter-submit-button">JOIN AS REPORTER</button>
 
 

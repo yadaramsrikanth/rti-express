@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom"
 import {Swiper,SwiperSlide} from "swiper/react"
-import {Pagination,Navigation,Autoplay} from "swiper/modules"
+import {Navigation,Autoplay} from "swiper/modules"
 
 import "swiper/css"
 import "swiper/css/navigation"
@@ -30,10 +30,10 @@ const SliderWithContent=()=>{
     return <div className="slider-text-main-container">
       <div className="slider-top-rti-join-container">
         <div className="slider-container">
-        <Swiper modules={[Pagination,Navigation,Autoplay]}
+        <Swiper modules={[Navigation,Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
-        navigation pagination={{clickable:true}}
+        navigation={{clickable:true}}
         
         autoplay={{delay:3000,disableOnInteraction:false}}
         >
@@ -96,12 +96,14 @@ const SliderWithContent=()=>{
 
 
  {/* //new styles */}
+ 
   <div className="home-spot-light-popular-news-adds-container">
     <div className="spot-light-popular-news-container">
     
     <div className="spot-light-home-container">
         <TodaysSpotLight/>
     </div>
+
 
     <div className="home-popular-news-container">
         <h1 className="taja-varathalu">తాజా వార్తలు</h1>

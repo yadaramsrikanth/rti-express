@@ -14,7 +14,7 @@
 }
 
 .footer-image-logo{
-    width: 60%;
+    width: 50%;
     height: auto;
 }
 .website-info-in-footer p{
@@ -22,7 +22,7 @@
     
     font-size: 16px;
     font-weight: 400;
-    margin-left: 10px;
+   
 }
 .company-name-heading{
     /* color: #FFFFFF;
@@ -37,7 +37,7 @@
     /* color: #DDEEFF; */
 
     font-size: 14px;
-    margin-left: 10px;
+    
     margin-bottom: 8px;
     white-space: normal;
 word-break: break-word;
@@ -89,7 +89,8 @@ overflow-wrap: break-word;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0px 10px;
     /* color: #DDEEFF; */
     margin-top: 10px;
 }
@@ -102,13 +103,39 @@ overflow-wrap: break-word;
 .copy-righ-icon{
     margin-bottom: 6px;
 }
-@media (max-width:767px) {
+@media (max-width:375px){
     .company-container{
         width:100%;
         margin-top: 10px;
     }
     .website-info-in-footer{
         width: 100%;
+    }
+    .copy-right-container p{
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+.legal-info-conatiner{
+    width: 100%;
+    margin-top: 10px;
+}
+.copy-right-container{
+    display: flex;
+    flex-direction: column;
+}
+.footer-image-logo{
+    width: 30%;
+}
+}
+
+@media (min-width:376px) and (max-width:767px) {
+    .company-container{
+        width:50%;
+        margin-top: 10px;
+    }
+    .website-info-in-footer{
+        width: 50%;
     }
     .copy-right-container p{
     margin-left: 0px;
