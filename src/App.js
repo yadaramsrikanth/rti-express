@@ -26,6 +26,7 @@ import {LanguageContext} from "./ReactContext"
 import RTIReporterForm from "./components/RTIReporterForm"
 import RTIActivistForm from "./components/RTIActivistForm"
 import TermsandConditions from "./components/TermsAndConditions";
+// import International from "./components/International";
 // import RTIReporterForm from "./components/RTIReporterForm";
 // import addimages from "./addImages.json"
 import "./App.css"
@@ -136,6 +137,7 @@ const onChangeLanguage=(e)=>{
     <Route path="/contact" element={<ContactUs/>} />
    <Route path="/legal-info" element={<LegalInfo/>} />
    <Route path="/termsandconditions" element={<TermsandConditions/>}/>
+   {/* <Route path="/international" element={<International/>} /> */}
     <Route path="*" element={<NotFound/>}/>
     </Routes>
 

@@ -82,7 +82,7 @@ switch(isLanguage){
     categories=[ "హోమ్ ","తెలంగాణ","ఆంధ్రప్రదేశ్","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్","మా గురించి","సంప్రదించండి"]
     break
   case "ENGLISH":
-    categories=[ "Home","Telangana","Andhra Pradesh","National","InterNational","Cinema","Business","Sports","E-paper","AboutUs","ContactUs"]
+    categories=[ "Home","Telangana","Andhra Pradesh","National","International","Cinema","Business","Sports","E-paper","AboutUs","ContactUs"]
     break
   case "KANNADA":    
         categories=["ಮುಖಪುಟ","ತೆಲಂಗಾಣ","ಆಂಧ್ರ ಪ್ರದೇಶ","ರಾಷ್ಟ್ರೀಯ","ಅಂತರರಾಷ್ಟ್ರೀಯ","ಸಿನಿಮಾ","ವ್ಯವಸ್ಥೆ","ಕ್ರೀಡೆ","ಇ-ಕಾಗದ","ನಮ್ಮ ಬಗ್ಗೆ","ಸಂಪರ್ಕಿಸಿ"]
