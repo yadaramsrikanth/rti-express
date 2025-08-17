@@ -37,7 +37,7 @@ const languageOptions=[
   {id:1,label:"Telugu",value:"TELUGU"},
   {id:2,label:"English",value:"ENGLISH"},
     {id:3,label:"Kannada",value:"KANNADA"},
-     {id:4,label:"Hindi",value:"HINDI"}
+     {id:4,label:"HINDHI",value:"HINDI"}
 ]
 
 const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
