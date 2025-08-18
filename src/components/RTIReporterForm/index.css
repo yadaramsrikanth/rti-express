@@ -1,4 +1,6 @@
-
+.rti-reporter-form-container span{
+    font-size: 12px;
+}
 .rti-reporter-heading{
     align-self: center;
 }
