@@ -1,14 +1,38 @@
-.legal-Information-conatiner{
+/* .legal-Information-conatiner{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     width: 40%;
     margin: 10px auto;
+
 }
 
 @media (max-width:767px){
     .legal-Information-conatiner{
         width: 50%;
     }
+} */
+
+
+.legal-Information-conatiner{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    justify-content: center;
+     background-color: #E8F5E9;
+    padding: 100px 50px;
+    
+    
+}
+.legal-Information-conatiner h2{
+  
+    color: #000000;
+    margin-bottom: 10px;
+}
+.legal-content-inside-container{
+      
+    color: #333333;
+    
+   
 }

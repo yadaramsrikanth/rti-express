@@ -187,6 +187,7 @@
   .slider-container{
     width: 100%;
     text-align: center;
+    margin-top: 50px;
   }
   .slider-image{
     width: 100%;
@@ -242,6 +243,7 @@
   .slider-container{
     width: 100%;
     text-align: center;
+    margin-top: 50px;
   }
   .slider-image{
     width: 89%;
