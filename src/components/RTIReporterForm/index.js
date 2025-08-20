@@ -1,7 +1,11 @@
 import  { useContext, useState } from "react";
-import DatePicker from "react-datepicker";
 import Modal from "react-modal"
-import "react-datepicker/dist/react-datepicker.css";
+
+// import DatePicker from "react-datepicker";
+// import "react-datepicker/dist/react-datepicker.css";
+import DatePicker from "react-multi-date-picker";
+import "react-multi-date-picker/styles/colors/teal.css";
+
 import ReporterActivistContext from "../../ReactContext";
 import "./index.css"
 Modal.setAppElement("#root");
@@ -57,7 +61,7 @@ const submitReporterForm= async (event)=>{
     
     Object.keys(formData).forEach((key) => {
       if (key === "DOB") {
-        formDataToSend.append(key, formData.DOB ? formData.DOB.toISOString() : "");
+        formDataToSend.append(key, formData.DOB ? formData.DOB.toDate().toISOString() : "");
       } else {
         formDataToSend.append(key, formData[key]);
       }
@@ -112,16 +116,27 @@ const submitReporterForm= async (event)=>{
          <label className="rti-reporter-label-element">Select Your DOB:</label>
           {/* <input className="rti-reporter-input-element" type="date"  placeholder="DD-MM-YYYY"/> */}
                <DatePicker
-                    id="dob"
-                    selected={formData.DOB}
-                    onChange={(date) =>setFormData({...formData,DOB:date})}
-                    placeholderText="15/08/1947"
-                    dateFormat="dd/MM/yyyy"
-                    className="rti-reporter-input-element"
+                    // id="dob"
+                    // selected={formData.DOB}
+                    // onChange={(date) =>setFormData({...formData,DOB:date})}
+                    // placeholderText="15/08/1947"
+                    // dateFormat="dd/MM/yyyy"
+                    // className="rti-reporter-input-element"
                    
-                    showYearDropdown
-                    scrollableYearDropdown
-                  />
+                    // showYearDropdown
+                    // scrollableYearDropdown
+
+         value={formData.DOB}
+        onChange={(date) =>setFormData({...formData,DOB:date})}
+        format="DD/MM/YYYY"
+        maxDate={new Date()}              // prevents future dates
+        minDate={new Date(1920, 0, 1)}   // realistic DOB minimum
+        yearPicker                    
+      placeholder="15/08/1947"
+    inputClass="rti-reporter-input-element"
+
+    />
+
         {errors.DOB&& <span style={{ color: "red" }}>{errors.DOB}</span>}
 
              <label className="rti-reporter-label-element">Select Your Gender:</label>
