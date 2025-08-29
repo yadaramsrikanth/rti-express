@@ -38,9 +38,9 @@ const validate=()=>{
   if(!formData.DOB) newErrors.DOB="Date Of Birth is Required"
   if(!formData.gender) newErrors.gender="Please select Gender"
   if(!formData.phone) newErrors.phone="Please Enter a Phone Number"
-  if(!formData.email) newErrors.phone="Gmail is Required"
+  if(!formData.email) newErrors.email="Gmail is Required"
   if(!formData.address) newErrors.address="Address is Required"
-  
+  if(!formData.aadhar) newErrors.aadhar="Aadhar Number is Required"
   if(!formData.media) newErrors.media="Please Upload a Photo"
   // if(!formData.designation) newErrors.designation="Designation is Required"
   if(!formData.pincode) newErrors.pincode="Pincode is Required"
