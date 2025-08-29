@@ -10,6 +10,7 @@ import TodaysSpotLight from "../TodaysSpotLight/index"
 import AddsBanner from "../AddsBanner/index"
 import PopularNews from "../PopularNews/index"
 import RecentPosts from "../RecentPosts/index"
+// import LiveNews from "../LiveNews"
 // import RTIReporterForm from "../RTIReporterForm/index"
 // import RTIActivistForm from "../RTIActivistForm"
 import ReporterActivistContext from "../../ReactContext"
@@ -119,7 +120,7 @@ const SliderWithContent=()=>{
       </div>
       
       
-
+        {/* <LiveNews/> */}
 
 
 

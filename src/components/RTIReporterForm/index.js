@@ -66,7 +66,7 @@ const submitReporterForm= async (event)=>{
         formDataToSend.append(key, formData[key]);
       }
     });
-        const reporterUrl="http://34.100.231.173:3000/api/v1/reporter/application"
+        const reporterUrl="https://api.rtiexpress.in/api/v1/reporter/application"
         const options={method:"POST",
         
         body:formDataToSend
