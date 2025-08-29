@@ -16,8 +16,7 @@ Modal.setAppElement("#root");
 const RTIActivistForm=()=>{
   const initialFormdata={
   name:"",DOB:null,gender:"",phone:"",
-  email:"",address:"",aadhar:"",media:null,
-  designation:"",pincode:"",experience:""}
+  email:"",address:"",aadhar:"",media:null,pincode:"",experience:""}
 
    const {isActivistModal,setIsActivistModal}=useContext(ReporterActivistContext)
  const [errors,setErrors]=useState({})
@@ -43,7 +42,7 @@ const validate=()=>{
   if(!formData.address) newErrors.address="Address is Required"
   
   if(!formData.media) newErrors.media="Please Upload a Photo"
-  if(!formData.designation) newErrors.designation="Designation is Required"
+  // if(!formData.designation) newErrors.designation="Designation is Required"
   if(!formData.pincode) newErrors.pincode="Pincode is Required"
   if(!formData.experience) newErrors.experience="Enter 0 if you have no experience"
   setErrors(newErrors)
@@ -171,11 +170,11 @@ const submiActivistForm= async (event)=>{
     <input name="media"  className="rti-reporter-input-element" type="file"  accept="image/*" onChange={onhandleChangeActivist}/>
             {errors.media && <span style={{ color: "red" }}>{errors.media}</span>}
 
-    <label className="rti-reporter-label-element">Designation:</label>
+    {/* <label className="rti-reporter-label-element">Designation:</label>
     <input value={formData.designation}  name="designation" className="rti-reporter-input-element" type="text"  placeholder="Designation Eg..Activist"  onChange={onhandleChangeActivist}/>
    
 
-             {errors.designation && <span style={{ color: "red" }}>{errors.designation}</span>}
+    {errors.designation && <span style={{ color: "red" }}>{errors.designation}</span>} */}
 
       <label className="rti-reporter-label-element">Enter Your Pincode:</label>
     <input value={formData.pincode}  name="pincode"  className="rti-reporter-input-element" type="text"  placeholder="560001" onChange={onhandleChangeActivist}/>
