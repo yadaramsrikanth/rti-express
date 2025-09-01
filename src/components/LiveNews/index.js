@@ -21,13 +21,13 @@ const fetchLiveNews=async()=>{
     },[])
 
     return <div className="live-news-main-container">
-        <h1>లైవ్ న్యూస్</h1>
+        <h1 style={{fontSize:"25px",marginTop:"10px",marginLeft:"10px"}}>లైవ్ న్యూస్</h1>
         <ul className="unordered-live-news-container">
             {
                 livenews.map((newsItem)=>(
-                    <li key={newsItem._id}>
+                    <li key={newsItem._id} className="live-news-item-card">
                         <img className="live-news-image" src={newsItem.media} alt={newsItem.headline} />
-                    <p>{newsItem.description}</p>
+                    <p className="live-news-description">{newsItem.headline}</p>
                     </li>
                 ))
             }
