@@ -27,6 +27,7 @@ const fetchLiveNews=async()=>{
                 livenews.map((newsItem)=>(
                     <li key={newsItem._id}>
                         <img className="live-news-image" src={newsItem.media} alt={newsItem.headline} />
+                    <p>{newsItem.description}</p>
                     </li>
                 ))
             }
