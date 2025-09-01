@@ -7,13 +7,13 @@ const LiveNews=()=>{
     
     const [livenews,setLiveNews]=useState([])
 const fetchLiveNews=async()=>{
-    const url="https://api.rtiexpress.in/api/v1/news/fetchNews?language=English"
+    const url="https://api.rtiexpress.in/v1/news/fetch?language=English"
     const response = await fetch(url)
     
     
     const data=await response.json()
     console.log(data)
-    setLiveNews(data)
+    setLiveNews(data.news)
 }
 
     useEffect(()=>{
@@ -26,7 +26,7 @@ const fetchLiveNews=async()=>{
             {
                 livenews.map((newsItem)=>(
                     <li key={newsItem._id}>
-                        {/* <img className="live-news-image" src={newsItem.image} alt={newsItem.headline} /> */}
+                        <img className="live-news-image" src={newsItem.media} alt={newsItem.headline} />
                     </li>
                 ))
             }
