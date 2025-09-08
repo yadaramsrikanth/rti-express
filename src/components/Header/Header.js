@@ -34,8 +34,8 @@ const Header=()=>{
   // const {language}=props
   // const [mobileLanguage,setMobileLanguage]=useState("TELUGU")
   // const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752660174/IMG-20250715-WA0002_xrwuem-removebg-preview_qdht1o.png"
-const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
-
+// const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
+const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752644036/IMG-20250715-WA0002_xrwuem.jpg"
   // const [languageCategory,setLanguageCategory]=useState(false)
    
 
