@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom"
 import { useEffect, useState } from "react"
 import "./index.css"
 
@@ -25,9 +25,11 @@ const fetchLiveNews=async()=>{
         <ul className="unordered-live-news-container">
             {
                 livenews.map((newsItem)=>(
-                    <li key={newsItem._id} className="live-news-item-card">
+                    <li key={newsItem._id}  className="live-news-item-card">
+                       <Link to={`news/${newsItem._id}`} className="link-live-news-item-card">
                         <img className="live-news-image" src={newsItem.media} alt={newsItem.headline} />
                     <p className="live-news-description">{newsItem.headline}</p>
+                    </Link>
                     </li>
                 ))
             }

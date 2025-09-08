@@ -13,15 +13,22 @@
     
 }
 .news-details-image{
-    width: 90%;
+    /* width: 90%;
     height: auto;
    max-height: 350px;
-    padding-bottom: 15px;
+    padding-bottom: 15px; */
+
+ width: 90%;
+  max-height: 400px; 
+   height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto; 
 }
 .slide-description{
     font-size: 15px;
     font-family: "Roboto";
-    margin: 5px 15px 10px 0px;
+    margin: 20px 15px 10px 0px;
     font-weight: 400;
     padding-right: 15px;
     

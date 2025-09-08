@@ -12,6 +12,8 @@
 }
 body{
 overflow-x: hidden;
+background-color: #F9F9F6;
+
 }
 .drop-down-container{
     background-color: transparent;
