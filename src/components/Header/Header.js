@@ -33,7 +33,8 @@ const Header=()=>{
 
   // const {language}=props
   // const [mobileLanguage,setMobileLanguage]=useState("TELUGU")
-  const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752660174/IMG-20250715-WA0002_xrwuem-removebg-preview_qdht1o.png"
+  // const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752660174/IMG-20250715-WA0002_xrwuem-removebg-preview_qdht1o.png"
+const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
 
   // const [languageCategory,setLanguageCategory]=useState(false)
    
@@ -115,6 +116,7 @@ switch(isLanguage){
   }, [isMenuOpen]);
 
     return <> <nav className="Header-container">
+      <img src={imageUrl} alt="logo" className="logo-rti-express" />    {/*/* newly */ }
      <Link to="/" className="header-link-item">   <p className="text" id="home">{categories[0]}</p></Link>
       <Link to="/"className="header-link-item">  <p className="text" id="home">{categories[1]}</p></Link>
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[2]}</p></Link>
