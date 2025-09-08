@@ -116,7 +116,7 @@ switch(isLanguage){
   }, [isMenuOpen]);
 
     return <> <nav className="Header-container">
-      <img src={imageUrl} alt="logo" className="logo-rti-express" />    {/*/* newly */ }
+      <img src={imageUrl} alt="logo" className="logo-rti-express-header" />    {/*/* newly */ }
      <Link to="/" className="header-link-item">   <p className="text" id="home">{categories[0]}</p></Link>
       <Link to="/"className="header-link-item">  <p className="text" id="home">{categories[1]}</p></Link>
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[2]}</p></Link>
