@@ -18,10 +18,15 @@
 .legal-Information-conatiner{
     display: flex;
     flex-direction: column;
-   align-items: center;
-    justify-content: center;
-     background-color: #E8F5E9;
-    padding: 100px 50px;
+   /* align-items: center;
+    justify-content: center; */
+     background-color: #ffffff;
+     /* margin: 20px; */
+     border-radius: 15px;
+     border: 1px solid #E0E0E0;
+    padding: 40px 50px;
+    width: 90%;
+    margin: 30px auto;
     
     
 }
@@ -30,9 +35,15 @@
     color: #000000;
     margin-bottom: 10px;
 }
-.legal-content-inside-container{
+.legal-content-inside-container p{
       
-    color: #333333;
-    
+    /* color: #333333;
+     */
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 5px;
    
+}
+.strong-elelment-legal{
+    margin-left: 5px;
 }

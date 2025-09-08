@@ -21,7 +21,7 @@ const fetchLiveNews=async()=>{
     },[])
 
     return <div className="live-news-main-container">
-        <h1 style={{fontSize:"25px",marginTop:"10px",marginLeft:"10px"}}>లైవ్ న్యూస్</h1>
+        <h1 className="live-news-heading" >లైవ్ న్యూస్</h1>
         <ul className="unordered-live-news-container">
             {
                 livenews.map((newsItem)=>(

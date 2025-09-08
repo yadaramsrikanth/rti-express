@@ -1,6 +1,9 @@
 .footer-main-container{
-    background-color: #F2F2F2;
-   
+    /* background-color: #F2F2F2; */
+   /* background-color: #E0E0E0;  */
+   /* background-color: #DDDCD8; */
+   background-color: #333333;
+   /* background-color: #D6CFC7; */
     padding:25px;
   
 }
@@ -10,7 +13,7 @@
     flex-wrap: wrap;
 }
 .website-info-in-footer{
-    width: 24%;
+    width: 28%;
 }
 
 .footer-image-logo{
@@ -19,14 +22,14 @@
 }
 .website-info-in-footer p{
     /* color: #DDEEFF; */
-    
+    color: #E0E0E0;
     font-size: 16px;
     font-weight: 400;
    
 }
 .company-name-heading{
-    /* color: #FFFFFF;
-     */
+    color: #FFFFFF;
+    
      
     font-size: 16px;
     font-weight: 600;
@@ -35,7 +38,7 @@
 
 .company-container p{
     /* color: #DDEEFF; */
-
+color: #E0E0E0;
     font-size: 14px;
     
     margin-bottom: 8px;
@@ -52,7 +55,7 @@ overflow-wrap: break-word;
     color: black;
 }
 .company-container{
- width: 19%;
+ width: 18%;
 
 
 }
@@ -81,7 +84,7 @@ overflow-wrap: break-word;
 
 .horizontal-line{
     /* background-color: #DDEEFF; */
-    background-color: black;
+    background-color:#E0E0E0;
     height: 1px;
     border: none;
 }
@@ -94,6 +97,8 @@ overflow-wrap: break-word;
     /* color: #DDEEFF; */
     margin-top: 10px;
     font-size: 14px;
+    color: #E0E0E0;
+  
 }
 
 .copy-right-logo-text{

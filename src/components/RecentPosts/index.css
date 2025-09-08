@@ -5,19 +5,45 @@
     flex-direction: column;
     margin-top: 10px;
     margin-left: 70px;
+    /* adding */
+  background-color: #FFFFFF; /* or #FFFFFF */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border: 1px solid #E0E0E0;
+  width: 78%;
+
 
 }
 .list-item-recent-post{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
-     margin: 5px;
+    margin: 5px;
     box-shadow: 0px 4px 8px 0px #00000033;
-   padding: 15px;
-   border-radius: 5px; 
-   height: 100px;
-   
+    padding: 15px;
+    border-radius: 5px; 
+    height: 120px; */
+
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 8px;
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: 1px solid #EAEAEA;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 }
+.list-item-recent-post:hover{
+   transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12); 
+}
+
+   
 .recent-post-image{
     width: 150px;
     height: 100px;
@@ -38,6 +64,7 @@
 @media (max-width:375px){
     .recent-posts-unordered-container{
         margin-left: 5px;
+        width: 100% !important;
     }
     .list-item-recent-post{
         height: 120px;
@@ -52,12 +79,14 @@
 @media (max-width:575px){
     .recent-posts-unordered-container{
         margin-left: 5px;
+        width: 95%;
     }
 }
 
 @media (min-width:576px) and (max-width:767px){
     .recent-posts-unordered-container{
         margin-left: 5px;
+        width: 100%;
     }
     .recent-post-image{
     width: 150px;
@@ -78,11 +107,12 @@
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
+        width: 98%;
     }
     .list-item-recent-post{
         display: flex;
         flex-direction: column;
-        height:130px;
+        height:150px;
         width: 48%;
     }
     .recent-post-link-element{
@@ -90,11 +120,11 @@
         flex-direction: row;
     }
     .recent-post-image{
-    width: 85%;
+    width: 82%;
     height: 80px;
 }
 .recent-posts-para{
-    font-size: 15px;
+    font-size: 14px;
     
 
 }
@@ -107,11 +137,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
 }
 .list-item-recent-post{
     width: 48%;
     height: 120px;
   margin-top: 10px;
+  
 }
 
 .recent-posts-para{
@@ -130,10 +162,10 @@
    flex-wrap: wrap;
 } 
 .list-item-recent-post{
-  width: 35%;
+  width: 48%;
   margin: 5px;
   padding: 5px;
-  height: 80px;
+  height: 120px;
   
 }
 .recent-post-image{
@@ -141,7 +173,7 @@
     height: 80px;
 }
 .recent-posts-para{
-    font-size: 12px;
+    font-size: 15px;
 }
 .recent-post-link-element{
     display: flex;

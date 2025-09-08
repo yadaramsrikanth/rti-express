@@ -59,6 +59,7 @@
 }
 
 
+
 .spot-light-text{
     color: #1E90FF;
     font-size: 16px;
@@ -74,23 +75,69 @@
   text-decoration: none;
   color: inherit;
 }
-  
 
-@media (max-width:575px){
-  .todays-spot-light-unordered-container{
+@media (max-width:375px){
+.todays-spot-light-unordered-container{
+    /* display: flex;
+    flex-direction: column;
+    width: 100%;
+   margin: 0 0;
+   padding: 10px;
+   margin: 10px; */
     display: flex;
     flex-direction: column;
-    
-    padding-left: 0px;
-  }
+       /* width includes padding now */
+    margin: 10px 10px; /* small space outside */
+    padding: 10px;
+
+}
   .spot-light-image{
     width: 100px;
     height: 100px;
   }
 .spot-light-list-item-container{
-  width: 100%;
+  width: 95%;
   padding: 10px;
-  margin-left: 0px;
+    flex: 1 1 100%;   /* take full width */
+     /* left spacing */
+    margin-right: 10px
+}
+.spot-light-text{
+  font-size: 14px;
+  font-weight: 500;
+}
+.spot-light-link{
+  gap: 5px;
+}
+}
+
+
+
+@media (min-width:376px) and (max-width:575px){
+  .todays-spot-light-unordered-container{
+    /* display: flex;
+    flex-direction: column;
+    width: 100%;
+   margin: 0 0;
+   padding: 10px;
+   margin: 10px; */
+    display: flex;
+    flex-direction: column;
+    width: 95%;       /* width includes padding now */
+    margin: 10px 10px; /* small space outside */
+    padding: 10px;
+
+}
+  .spot-light-image{
+    width: 100px;
+    height: 100px;
+  }
+.spot-light-list-item-container{
+  width: 95%;
+  padding: 10px;
+    flex: 1 1 100%;   /* take full width */
+     /* left spacing */
+    margin-right: 10px
 }
 .spot-light-text{
   font-size: 14px;
@@ -105,15 +152,16 @@
   .todays-spot-light-unordered-container{
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .spot-light-image{
     width: 120px;
     height: 120px;
   }
   .spot-light-list-item-container{
-  width: 90%;
+  width: 100%;
   padding: 8px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 .spot-light-text{
   font-size: 16px;
@@ -126,12 +174,14 @@
 }
 
 @media (min-width:768px)and (max-width:991px){
+
+
   .spot-light-image{
     width: 120px;
     height: 120px;
 }
 .spot-light-list-item-container{
-    width: 48%;
+    width: 45%;
     margin: 3px;
     padding: 10px;
 }
