@@ -48,7 +48,7 @@ const first=newsItems.slice(2,6)[0]
         <ul className="unordered-container-for-right-side-items">
             {
             newsItems.map((item)=>(
-            <li className="category-based-list-item-right-container">
+            <li key={item._id} className="category-based-list-item-right-container">
                <Link to={`news/${item._id}`} className="category-based-link-element-right">
                 <div>
             <p className="category-of-item-right">{item.category.toUpperCase()}</p>

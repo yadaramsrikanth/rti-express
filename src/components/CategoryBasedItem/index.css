@@ -178,7 +178,11 @@ font-size: 10px;
 display: flex;
 }
 .category-based-link-element-right{
-    text-decoration: none;
-    color: inherit;
-    display: flex;
+
+ display: flex;                /* make it a flex container */
+    justify-content: space-between; /* push image to the end */
+    align-items: center;          /* vertically center */
+    width: 100%;                  /* let it take full width of parent li */
+    text-decoration: none;        /* remove underline */
+    color: inherit;    
 }
