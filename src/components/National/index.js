@@ -21,7 +21,7 @@ const fetchInternationalData=async()=>{
 
 
 
-    return <>{internationalnewsData.length===0 ? <p>Data fetching</p>  : <ul className="unordered-international-news-container">
+    return <>{internationalnewsData.length===0 ? <p style={{margin:"50px",textAlign:"center",fontSize:"25px"}}>News Loading</p>  : <ul className="unordered-international-news-container">
             {
                 internationalnewsData.map((newsItem)=>(
                     <li key={newsItem.article_id} className="international-card-list-item">
