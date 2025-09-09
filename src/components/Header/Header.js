@@ -116,7 +116,8 @@ switch(isLanguage){
   }, [isMenuOpen]);
 
     return <> <nav className="Header-container">
-      <img src={imageUrl} alt="logo" className="logo-rti-express-header" />    {/*/* newly */ }
+    <Link to="/">  <img src={imageUrl} alt="logo" className="logo-rti-express-header" />  </Link>  {/*/* newly */ }
+    {/* <div className="header-items-to-navigate"> */}
      <Link to="/" className="header-link-item">   <p className="text" id="home">{categories[0]}</p></Link>
       <Link to="/"className="header-link-item">  <p className="text" id="home">{categories[1]}</p></Link>
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[2]}</p></Link>
@@ -124,13 +125,13 @@ switch(isLanguage){
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[4]}</p></Link>
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[5]}</p></Link>
         <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[6]}</p></Link>
-                <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[7]}</p></Link>
+        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[7]}</p></Link>
 
         <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer" className="text epaper"  id="home"><p>{categories[8]}</p></a>
         <Link to="/about" className="about-us-link-element">
          <p className="text" id="home">{categories[9]}</p> </Link>
         <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">{categories[10]}</p></Link>
-      
+      {/* </div> */}
        </nav>
 
     <nav className="mobile-view-small-large-screen-hamburger-icon-container">

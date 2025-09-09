@@ -7,7 +7,7 @@ const LiveNews=()=>{
     
     const [livenews,setLiveNews]=useState([])
 const fetchLiveNews=async()=>{
-    const url="https://api.rtiexpress.in/v1/news/fetch?language=English"
+    const url="https://api.rtiexpress.in/v1/news/fetch"
     const response = await fetch(url)
     
     

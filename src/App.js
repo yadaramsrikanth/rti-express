@@ -1,7 +1,7 @@
 // import {Swiper,SwiperSlide} from "swiper/react"
 // import {Pagination,Autoplay} from "swiper/modules"
 
-import { BrowserRouter,Routes,Route, Link } from "react-router-dom";
+import { BrowserRouter,Routes,Route} from "react-router-dom";
 import { CgMail } from "react-icons/cg";
 // import { MdToggleOn } from "react-icons/md";
 // import { MdToggleOff } from "react-icons/md";
@@ -40,7 +40,7 @@ const languageOptions=[
      {id:4,label:"Hindi",value:"HINDI"}
 ]
 
-const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
+// const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
 
 
 const App=()=>{
@@ -94,9 +94,9 @@ const onChangeLanguage=(e)=>{
       
       </div>
     </div>
-    <div className="logo-container">
+    {/* <div className="logo-container">
       <Link to="/">
-    <img src={imageUrl} className="logo-rti-express" alt="RTI EXPRESS" /></Link>
+    <img src={imageUrl} className="logo-rti-express" alt="RTI EXPRESS" /></Link> */}
     {/* <div className="bg-color-container"> */}
           {/* <Swiper modules={[Pagination,Autoplay]} 
           spaceBetween={50}
@@ -116,7 +116,7 @@ const onChangeLanguage=(e)=>{
 
 
     {/* </div> */}
-    </div>
+    {/* </div> */}
     {/* <Header language={language}/> */}
    <Header/>
   {/* <div className="map-form-container"> */}

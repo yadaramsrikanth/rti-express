@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom"
 import {Swiper,SwiperSlide} from "swiper/react"
-import {Navigation,Autoplay} from "swiper/modules"
+import {Navigation,Autoplay,Pagination} from "swiper/modules"
 
 import "swiper/css"
 import "swiper/css/navigation"
@@ -11,6 +11,7 @@ import AddsBanner from "../AddsBanner/index"
 import PopularNews from "../PopularNews/index"
 import RecentPosts from "../RecentPosts/index"
 import LiveNews from "../LiveNews"
+import CategoryBasedItem from "../CategoryBasedItem"
 // import RTIReporterForm from "../RTIReporterForm/index"
 // import RTIActivistForm from "../RTIActivistForm"
 import ReporterActivistContext from "../../ReactContext"
@@ -31,12 +32,13 @@ const SliderWithContent=()=>{
     return <div className="slider-text-main-container">
       <div className="slider-top-rti-join-container">
         <div className="slider-container">
-        <Swiper modules={[Navigation,Autoplay]}
+        <Swiper modules={[Navigation,Autoplay,Pagination]}
         spaceBetween={50}
         slidesPerView={1}
         navigation={{clickable:true}}
-        
+        pagination={{clickable:true}}
         autoplay={{delay:3000,disableOnInteraction:false}}
+        style={{padding:"30px"}}
         >
          {
            data.map((item)=>(
@@ -44,6 +46,7 @@ const SliderWithContent=()=>{
             <SwiperSlide key={item.id}>
                 <Link to={`/news/${item.id}`} className="slide-link">
                 <img src={item.image}  alt={`slider ${item.id}`} className="slider-image"/>
+                <p className="slide-para-content">{item.description.slice(0,66)}</p>
               </Link>
             </SwiperSlide>
            
@@ -97,6 +100,8 @@ const SliderWithContent=()=>{
 
 
  {/* //new styles */}
+<CategoryBasedItem/>
+
  
   <div className="home-spot-light-popular-news-adds-container">
     <div className="spot-light-popular-news-container">

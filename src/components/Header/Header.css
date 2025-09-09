@@ -1,7 +1,9 @@
 .logo-rti-express-header{
-  width: 15%;
-  
+  display: block;      /* remove inline spacing */
+  height: 60px;        /* desired height */
+  width: auto;
 }
+
 .header-link-item{
   text-decoration: none;
 }
@@ -18,12 +20,20 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
     padding: 10px 20px;
     box-sizing: border-box;
      z-index: 10;
 
   position: sticky; /* key */
   top: 0;        
+}
+.header-items-to-navigate{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 6;
 }
 
 #home{

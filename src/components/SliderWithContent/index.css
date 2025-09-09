@@ -1,3 +1,13 @@
+.slide-para-content{
+  
+  text-align: center;
+  margin-top: 10px;
+  color: #000000;
+}
+.slide-link{
+  text-decoration: none;
+
+}
 .slider-text-main-container{
     width: 100%;
     min-height: 70vh;
@@ -169,6 +179,24 @@
 .taja-updates-heading{
   margin-left: 70px;
 }
+ .swiper-pagination {
+    text-align: center !important; /* center the dots */
+    margin-top: 8px; /* space between text and dots */
+    position: relative !important;   /* ensures it aligns properly */
+
+  }
+  .swiper-pagination-bullet {
+    background: #888;
+    opacity: 0.6;
+    margin: 0 4px;
+  }
+  .swiper-pagination-bullet-active {
+    background: #333;
+    opacity: 1;
+    width: 20px;
+    border-radius: 8px;
+  }
+
 
 
 @media (max-width:575px){
@@ -180,6 +208,11 @@
   }
   .slider-container .swiper-pagination{
     display: none;
+    /* display: flex;
+    position: relative !important;   /* ensures it aligns properly */
+  /* text-align: center !important;  */
+   
+    
   }
   .rti-join-and-news-letter-container{
     display: none;
