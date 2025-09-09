@@ -30,7 +30,7 @@ setnewsItems(OnePercategory)
         
     },[])
   if (!newsItems || newsItems.length === 0) return null;
-const [first,...rest]=newsItems.slice(2,6)
+const first=newsItems.slice(2,6)[0]
 
     return <div className="news-container-category-based">
         <div className="container-for-left-flex-item">
