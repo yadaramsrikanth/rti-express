@@ -2,14 +2,14 @@ import { useEffect, useState } from "react"
 import "./index.css"
 
 
-const International=()=>{
+const National=()=>{
     
 
     const [internationalnewsData,setInternationalNewsData]=useState([])
 
     console.log(internationalnewsData)
 const fetchInternationalData=async()=>{
-    const data=await fetch("https://api.rtiexpress.in/v1/newsdata/InternationalTelgu")   
+    const data=await fetch("https://api.rtiexpress.in/v1/newsdata/India")   
         const responseData=await data.json()
         console.log(responseData)
         setInternationalNewsData(responseData.results || [])
@@ -21,7 +21,7 @@ const fetchInternationalData=async()=>{
 
 
 
-    return <>{internationalnewsData.length===0 ?<p>News Loading</p>:<ul className="unordered-international-news-container">
+    return <>{internationalnewsData.length===0 ? <p>Data fetching</p>  : <ul className="unordered-international-news-container">
             {
                 internationalnewsData.map((newsItem)=>(
                     <li key={newsItem.article_id} className="international-card-list-item">
@@ -31,8 +31,8 @@ const fetchInternationalData=async()=>{
                 ))
             }
         </ul>
- } </> 
-    
+    }
+  </>  
 }
 
-export default International
+export default National

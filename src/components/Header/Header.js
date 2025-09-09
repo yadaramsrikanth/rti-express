@@ -121,8 +121,8 @@ switch(isLanguage){
      <Link to="/" className="header-link-item">   <p className="text" id="home">{categories[0]}</p></Link>
       <Link to="/"className="header-link-item">  <p className="text" id="home">{categories[1]}</p></Link>
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[2]}</p></Link>
-       <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[3]}</p></Link>
-       <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[4]}</p></Link>
+       <Link to="/national" className="header-link-item"> <p className="text" id="home">{categories[3]}</p></Link>
+       <Link to="/international" className="header-link-item"> <p className="text" id="home">{categories[4]}</p></Link>
        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[5]}</p></Link>
         <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[6]}</p></Link>
         <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[7]}</p></Link>
