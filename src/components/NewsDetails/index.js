@@ -32,7 +32,7 @@ const NewsDetails=()=>{
          const newsdata=await newsresponse.json()
           console.log(newsdata)
          if(newsdata && newsdata.news){
-                setSlide(newsdata.news[0])
+                setSlide(newsdata.news)
          }else{
             const localSlide = data.find((item) => item.id.toString() === id);
           setSlide(localSlide || null);
