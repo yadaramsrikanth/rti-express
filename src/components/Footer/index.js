@@ -50,11 +50,11 @@ const Footer=()=>{
     <h2 className="company-name-heading">EXPLORE</h2>
   <Link to="/"><p>Telangana</p></Link>  
      <Link to="/"><p>AndhraPradesh</p></Link> 
-   <Link to="/">  <p>National</p></Link> 
-   <Link to="/">  <p>International</p></Link> 
-    <Link to="/"> <p>Cinema</p></Link> 
-     <Link to="/"><p>Business</p></Link> 
-     <Link to="/"> <p>Sports</p></Link> 
+   <Link to="/national">  <p>National</p></Link> 
+   <Link to="/international">  <p>International</p></Link> 
+    <Link to="/cinema"> <p>Cinema</p></Link> 
+     <Link to="/business"><p>Business</p></Link> 
+     <Link to="/sports"> <p>Sports</p></Link> 
 </div>
 
 
