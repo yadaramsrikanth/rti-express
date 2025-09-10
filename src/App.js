@@ -29,6 +29,9 @@ import TermsandConditions from "./components/TermsAndConditions";
 
 import International from "./components/International";
 import National from "./components/National";
+import Business from "./components/Business";
+import Cinema from "./components/Cinema";
+import Sports from "./components/Sports";
 // import RTIReporterForm from "./components/RTIReporterForm";
 // import addimages from "./addImages.json"
 import "./App.css"
@@ -141,6 +144,9 @@ const onChangeLanguage=(e)=>{
    <Route path="/termsandconditions" element={<TermsandConditions/>}/>
    <Route path="/international" element={<International/>} />
    <Route path="/national" element={<National/>} />
+   <Route path="/business" element={<Business/>} />
+   <Route path="/cinema" element={<Cinema/>} />
+   <Route path="/sports" element={<Sports/>} />
     <Route path="*" element={<NotFound/>}/>
     </Routes>
 

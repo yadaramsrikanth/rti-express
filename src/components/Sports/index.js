@@ -2,28 +2,28 @@ import { useEffect, useState } from "react"
 import "./index.css"
 
 
-const National=()=>{
+const Sports=()=>{
     
 
-    const [nationalnewsData,setnationalNewsData]=useState([])
+    const [sportsData,setSportsData]=useState([])
 
-    console.log(nationalnewsData)
-const fetchnationalData=async()=>{
-    const data=await fetch("https://api.rtiexpress.in/v1/newsdata/India")   
+    console.log(sportsData)
+const fetchsportsData=async()=>{
+    const data=await fetch("https://api.rtiexpress.in/v1/newsdata/sports")   
         const responseData=await data.json()
         console.log(responseData)
-        setnationalNewsData(responseData.results || [])
+        setSportsData(responseData.results || [])
 }
 
      useEffect(()=>{
-        fetchnationalData()
+        fetchsportsData()
     },[])        
 
 
 
-    return <>{nationalnewsData.length===0 ? <p style={{margin:"50px",textAlign:"center",fontSize:"25px"}}>News Loading</p>  : <ul className="unordered-international-news-container">
+    return <>{sportsData.length===0 ? <p style={{margin:"50px",textAlign:"center",fontSize:"25px"}}>News Loading</p>  : <ul className="unordered-international-news-container">
             {
-                nationalnewsData.map((newsItem)=>(
+              sportsData.map((newsItem)=>(
                     <li key={newsItem.article_id} className="international-card-list-item">
                         <img src={newsItem.image_url} alt={newsItem.title}  className="international-image"/>
                         <p className="international-news-item-text">{newsItem.title}</p>
@@ -35,4 +35,4 @@ const fetchnationalData=async()=>{
   </>  
 }
 
-export default National
+export default Sports

@@ -119,9 +119,9 @@ useEffect(() => {
        <Link to="/" className="header-link-item"> <p className={`${currentPath==="ap"?"active":""} text`} id="home" >{categories[2]}</p></Link>
        <Link to="/national" className="header-link-item"> <p className={`${currentPath==="national"?"active":""} text`} id="home" >{categories[3]}</p></Link>
        <Link to="/international" className="header-link-item"> <p className={`${currentPath==="international"?"active":""} text`} id="home" >{categories[4]}</p></Link>
-       <Link to="/" className="header-link-item"> <p className={`${currentPath==="cinema"?"active":""} text`} id="home" >{categories[5]}</p></Link>
-        <Link to="/" className="header-link-item"> <p className={`${currentPath==="business"?"active":""} text`} id="home" >{categories[6]}</p></Link>
-        <Link to="/" className="header-link-item"> <p className={`${currentPath==="sports"?"active":""} text`} id="home" >{categories[7]}</p></Link>
+       <Link to="/cinema" className="header-link-item"> <p className={`${currentPath==="cinema"?"active":""} text`} id="home" >{categories[5]}</p></Link>
+        <Link to="/business" className="header-link-item"> <p className={`${currentPath==="business"?"active":""} text`} id="home" >{categories[6]}</p></Link>
+        <Link to="/sports" className="header-link-item"> <p className={`${currentPath==="sports"?"active":""} text`} id="home" >{categories[7]}</p></Link>
 
         <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer"    className={`${currentPath==="epaper"?"active":""} text epaper`} id="home"><p>{categories[8]}</p></a>
         <Link to="/about" className="about-us-link-element">

@@ -2,28 +2,28 @@ import { useEffect, useState } from "react"
 import "./index.css"
 
 
-const National=()=>{
+const Cinema=()=>{
     
 
-    const [nationalnewsData,setnationalNewsData]=useState([])
+    const [cinemaData,setCinemaData]=useState([])
 
-    console.log(nationalnewsData)
-const fetchnationalData=async()=>{
-    const data=await fetch("https://api.rtiexpress.in/v1/newsdata/India")   
+    console.log(cinemaData)
+const fetchCinemaData=async()=>{
+    const data=await fetch("https://api.rtiexpress.in/v1/newsdata/entertainment")   
         const responseData=await data.json()
         console.log(responseData)
-        setnationalNewsData(responseData.results || [])
+        setCinemaData(responseData.results || [])
 }
 
      useEffect(()=>{
-        fetchnationalData()
+        fetchCinemaData()
     },[])        
 
 
 
-    return <>{nationalnewsData.length===0 ? <p style={{margin:"50px",textAlign:"center",fontSize:"25px"}}>News Loading</p>  : <ul className="unordered-international-news-container">
+    return <>{cinemaData.length===0 ? <p style={{margin:"50px",textAlign:"center",fontSize:"25px"}}>News Loading</p>  : <ul className="unordered-international-news-container">
             {
-                nationalnewsData.map((newsItem)=>(
+               cinemaData.map((newsItem)=>(
                     <li key={newsItem.article_id} className="international-card-list-item">
                         <img src={newsItem.image_url} alt={newsItem.title}  className="international-image"/>
                         <p className="international-news-item-text">{newsItem.title}</p>
@@ -35,4 +35,4 @@ const fetchnationalData=async()=>{
   </>  
 }
 
-export default National
+export default Cinema
