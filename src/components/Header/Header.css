@@ -41,10 +41,21 @@
     font-weight: 500;
 }
 
-#home:hover{
-    
-    color: #FF69B4;
-    text-decoration: underline;
+/* #home:hover{ */
+  .active{
+  background-color: #f085ba;
+  padding: 15px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  
+  display: flex;           /* use flex to center text */
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
+  text-align: center;  
+
+    /* color: #FF69B4;
+    text-decoration: underline; */
 }
 .epaper{
   text-decoration: none;

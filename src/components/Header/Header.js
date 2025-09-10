@@ -26,6 +26,8 @@ const languageOptions=[
   {id:4,label:"Hindi",value:"HINDI"}
 ]
 const Header=()=>{
+
+  const [activeSection,setActivesection]=useState("home")
   const {setIsReporterModal,setIsActivistModal}=useContext(ReporterActivistContext)
   const {isLanguage,setIsLanguage}=useContext(LanguageContext)
   // const [reporterisModalOpeninMobile,setReporterisModalOpeninMobile]=useState(false)
@@ -96,15 +98,7 @@ switch(isLanguage){
   }
 
 
-
-
-
-
-
-
-
-
-  useEffect(() => {
+useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768 && isMenuOpen) {
         setIsMenuOpen(false);
@@ -118,19 +112,19 @@ switch(isLanguage){
     return <> <nav className="Header-container">
     <Link to="/">  <img src={imageUrl} alt="logo" className="logo-rti-express-header" />  </Link>  {/*/* newly */ }
     {/* <div className="header-items-to-navigate"> */}
-     <Link to="/" className="header-link-item">   <p className="text" id="home">{categories[0]}</p></Link>
-      <Link to="/"className="header-link-item">  <p className="text" id="home">{categories[1]}</p></Link>
-       <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[2]}</p></Link>
-       <Link to="/national" className="header-link-item"> <p className="text" id="home">{categories[3]}</p></Link>
-       <Link to="/international" className="header-link-item"> <p className="text" id="home">{categories[4]}</p></Link>
-       <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[5]}</p></Link>
-        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[6]}</p></Link>
-        <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[7]}</p></Link>
+     <Link to="/" className="header-link-item">   <p className={`${activeSection==="home"?"active":""} text`} id="home" onClick={()=>setActivesection("home")}>{categories[0]}</p></Link>
+      <Link to="/"className="header-link-item">  <p className={`${activeSection==="telangana"?"active":""} text`} id="home" onClick={()=>setActivesection("telangana")}>{categories[1]}</p></Link>
+       <Link to="/" className="header-link-item"> <p className={`${activeSection==="ap"?"active":""} text`} id="home" onClick={()=>setActivesection("ap")}>{categories[2]}</p></Link>
+       <Link to="/national" className="header-link-item"> <p className={`${activeSection==="national"?"active":""} text`} id="home" onClick={()=>setActivesection("national")}>{categories[3]}</p></Link>
+       <Link to="/international" className="header-link-item"> <p className={`${activeSection==="international"?"active":""} text`} id="home" onClick={()=>setActivesection("international")}>{categories[4]}</p></Link>
+       <Link to="/" className="header-link-item"> <p className={`${activeSection==="cinema"?"active":""} text`} id="home" onClick={()=>setActivesection("cinema")}>{categories[5]}</p></Link>
+        <Link to="/" className="header-link-item"> <p className={`${activeSection==="business"?"active":""} text`} id="home" onClick={()=>setActivesection("business")}>{categories[6]}</p></Link>
+        <Link to="/" className="header-link-item"> <p className={`${activeSection==="sports"?"active":""} text`} id="home" onClick={()=>setActivesection("sports")}>{categories[7]}</p></Link>
 
-        <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer" className="text epaper"  id="home"><p>{categories[8]}</p></a>
+        <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer"    className={`${activeSection==="epaper"?"active":""} text epaper`} id="home" onClick={()=>setActivesection("epaper")}><p>{categories[8]}</p></a>
         <Link to="/about" className="about-us-link-element">
-         <p className="text" id="home">{categories[9]}</p> </Link>
-        <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">{categories[10]}</p></Link>
+         <p className={`${activeSection==="aboutus"?"active":""} text`} id="home" onClick={()=>setActivesection("aboutus")}>{categories[9]}</p> </Link>
+        <Link to="/contact"  className="about-us-link-element"><p className={`${activeSection==="contactus"?"active":""} text`} id="home" onClick={()=>setActivesection("contactus")}>{categories[10]}</p></Link>
       {/* </div> */}
        </nav>
 
@@ -156,8 +150,8 @@ switch(isLanguage){
       <Link to="/" className="header-link-item"> <p  id="home">{categories[0]}</p></Link>
        <Link to="/" className="header-link-item"> <p  id="home">{categories[1]}</p></Link>
        <Link to="/" className="header-link-item"> <p id="home">{categories[2]}</p></Link>
-       <Link to="/" className="header-link-item"> <p  id="home">{categories[3]}</p></Link>
-       <Link to="/" className="header-link-item"> <p  id="home">{categories[4]}</p></Link>
+       <Link to="/national" className="header-link-item"> <p  id="home">{categories[3]}</p></Link>
+       <Link to="/international" className="header-link-item"> <p  id="home">{categories[4]}</p></Link>
        <Link to="/" className="header-link-item"> <p  id="home">{categories[5]}</p></Link>
             <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[6]}</p></Link>
             <Link to="/" className="header-link-item"> <p className="text" id="home">{categories[7]}</p></Link>

@@ -8,6 +8,8 @@
   display: flex;
  flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .international-card-list-item{
@@ -30,4 +32,10 @@
 .international-news-item-text{
     text-align: center;
     margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.international-news-item-text:hover{
+    color: #5555f0;
 }
