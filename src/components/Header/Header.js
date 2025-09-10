@@ -29,9 +29,10 @@ const Header=()=>{
 
   const location=useLocation()
   const currentPath = location.pathname === "/" ? "home" : location.pathname.slice(1);
-  // const [activeSection,setActivesection]=useState("home")
+  const [activeSection,setActivesection]=useState("home")
   const {setIsReporterModal,setIsActivistModal}=useContext(ReporterActivistContext)
   const {isLanguage,setIsLanguage}=useContext(LanguageContext)
+  const pathofUrl=activeSection ||currentPath
   // const [reporterisModalOpeninMobile,setReporterisModalOpeninMobile]=useState(false)
   //   const [activistisModalOpeninMobile,setactivistisModalOpeninMobile]=useState(false)
 
@@ -98,7 +99,9 @@ switch(isLanguage){
   default:
     categories=[ "హోమ్ ","తెలంగాణ","ఆంధ్రప్రదేశ్","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్","మా గురించి","సంప్రదించండి"]
   }
-
+useEffect(() => {
+    setActivesection(""); // Clear epaper highlight on route change
+  }, [location]);
 
 useEffect(() => {
     const handleResize = () => {
@@ -114,19 +117,19 @@ useEffect(() => {
     return <> <nav className="Header-container">
     <Link to="/">  <img src={imageUrl} alt="logo" className="logo-rti-express-header" />  </Link>  {/*/* newly */ }
     {/* <div className="header-items-to-navigate"> */}
-     <Link to="/" className="header-link-item">   <p className={`${currentPath==="home"?"active":""} text`} id="home" >{categories[0]}</p></Link>
-      <Link to="/"className="header-link-item">  <p className={`${currentPath==="telangana"?"active":""} text`} id="home">{categories[1]}</p></Link>
-       <Link to="/" className="header-link-item"> <p className={`${currentPath==="ap"?"active":""} text`} id="home" >{categories[2]}</p></Link>
-       <Link to="/national" className="header-link-item"> <p className={`${currentPath==="national"?"active":""} text`} id="home" >{categories[3]}</p></Link>
-       <Link to="/international" className="header-link-item"> <p className={`${currentPath==="international"?"active":""} text`} id="home" >{categories[4]}</p></Link>
-       <Link to="/cinema" className="header-link-item"> <p className={`${currentPath==="cinema"?"active":""} text`} id="home" >{categories[5]}</p></Link>
-        <Link to="/business" className="header-link-item"> <p className={`${currentPath==="business"?"active":""} text`} id="home" >{categories[6]}</p></Link>
-        <Link to="/sports" className="header-link-item"> <p className={`${currentPath==="sports"?"active":""} text`} id="home" >{categories[7]}</p></Link>
+     <Link to="/" className="header-link-item">   <p className={`${pathofUrl==="home"?"active":""} text`} id="home" >{categories[0]}</p></Link>
+      <Link to="/"className="header-link-item">  <p className={`${pathofUrl==="telangana"?"active":""} text`} id="home">{categories[1]}</p></Link>
+       <Link to="/" className="header-link-item"> <p className={`${pathofUrl==="ap"?"active":""} text`} id="home" >{categories[2]}</p></Link>
+       <Link to="/national" className="header-link-item"> <p className={`${pathofUrl==="national"?"active":""} text`} id="home" >{categories[3]}</p></Link>
+       <Link to="/international" className="header-link-item"> <p className={`${pathofUrl==="international"?"active":""} text`} id="home" >{categories[4]}</p></Link>
+       <Link to="/cinema" className="header-link-item"> <p className={`${pathofUrl==="cinema"?"active":""} text`} id="home" >{categories[5]}</p></Link>
+        <Link to="/business" className="header-link-item"> <p className={`${pathofUrl==="business"?"active":""} text`} id="home" >{categories[6]}</p></Link>
+        <Link to="/sports" className="header-link-item"> <p className={`${pathofUrl==="sports"?"active":""} text`} id="home" >{categories[7]}</p></Link>
 
-        <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer"    className={`${currentPath==="epaper"?"active":""} text epaper`} id="home"><p>{categories[8]}</p></a>
+        <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer"    className={`${pathofUrl==="epaper"?"active":""} text epaper`} id="home"  onClick={()=>setActivesection("epaper")}><p>{categories[8]}</p></a>
         <Link to="/about" className="about-us-link-element">
-         <p className={`${currentPath==="aboutus"?"active":""} text`} id="home">{categories[9]}</p> </Link>
-        <Link to="/contact"  className="about-us-link-element"><p className={`${currentPath==="contactus"?"active":""} text`} id="home">{categories[10]}</p></Link>
+         <p className={`${pathofUrl==="about"?"active":""} text`} id="home">{categories[9]}</p> </Link>
+        <Link to="/contact"  className="about-us-link-element"><p className={`${pathofUrl==="contact"?"active":""} text`} id="home">{categories[10]}</p></Link>
       {/* </div> */}
        </nav>
 

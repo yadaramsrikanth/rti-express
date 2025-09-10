@@ -2,13 +2,24 @@
     padding: 10px 50px 20px 50px;
 }
 
+.terms-an-conditioner-internal-container{
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid #E0E0E0;
+    padding: 15px 5%;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+   background-color: #FFFFFF;
+}
+
 .terms-an-conditions-container h3{
     font-size: 16px;
     margin: 8px 0px;
+   
 }
 .terms-an-conditions-container h2{
     font-size: 16px;
     margin-top: 15px;
+    
 }
 .terms-an-conditions-container p{
     font-size: 16px;

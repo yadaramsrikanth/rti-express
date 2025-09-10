@@ -4,7 +4,7 @@ const TermsandConditions=()=>{
   return <div className="terms-an-conditions-container">
 
 
-
+<div className="terms-an-conditioner-internal-container">
 
 <h3>Welcome to <span>RTIEXPRESS</span>. By accessing or using our website, you agree to be bound by these Terms and Conditions. Please read them carefully before using our services.</h3>
 
@@ -60,7 +60,7 @@ We reserve the right to modify these Terms and Conditions at any time. Changes w
 <p>
 For questions or concerns regarding these Terms and Conditions, contact us via our Contact Us page or through our official social media channels.
 </p>
-  </div>
+</div>  </div>
 }
 
 export default TermsandConditions
