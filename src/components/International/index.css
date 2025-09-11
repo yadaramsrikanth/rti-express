@@ -1,4 +1,121 @@
-.unordered-international-news-container{
+.news-container{
+   background-color: white;
+   margin: 20px;
+   border: 1px solid #E0E0E0;
+   padding:50px 10px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+.first-row-container{
+    display: flex;
+}
+
+.first-article-container{
+    display: flex;
+    width: 45%;
+    margin-right: 10px;
+}
+
+.first-article-image{
+
+  width: 50%;         /* Make image take full card width */
+  max-height: 240px;   /* Limit how tall it can get */
+ object-fit: cover;
+  display: block;
+  border-radius: 6px; 
+}
+.first-article-info-container{
+    width: 50%;
+    margin: 10px;
+
+}
+
+.first-article-title{
+    font-size: 20px;
+    font-weight: 600;
+  
+}
+.source-name{
+   font-size: 12px;
+    color: #555; 
+    font-weight: 500;
+}
+.firsta-article-calender-container{
+    display: flex;
+    font-size: 12px;
+    color: #777;
+
+}
+
+
+
+.next-three-articles-container-unordered{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        width: 55%;
+        padding-left: 0px;
+        gap: 10px;
+}
+
+.next-three-articles-list-item-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33%;
+    
+}
+.next-three-article-image{
+    width:95%;
+   
+    object-fit: cover;
+     border-radius: 6px;
+     aspect-ratio: 1/1;
+}
+
+.next-three-article-title{
+    margin-top: 10px;
+    font-size: 18px;
+   
+}
+
+
+
+.remaining-article-unordered-container{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 15px;
+    padding: 0px;
+}
+.remaining-article-list-item-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1 1 32%;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: 1px solid #EAEAEA;
+    
+}
+
+.remaining-article-image{
+    width:35%;
+   object-fit: cover;
+   
+     aspect-ratio: 1 / 1;
+      border-radius: 6px 0 0 6px;
+     
+}
+.remaining-article-title{
+   font-size: 16px;
+}
+
+/* .unordered-international-news-container{
     list-style-type: none;
     background-color: white;
     margin: 15px;
@@ -38,4 +155,4 @@
 
 .international-news-item-text:hover{
     color: #5555f0;
-}
+} */
