@@ -56,19 +56,19 @@ let categories=[]
 
 switch(isLanguage){
   case "TELUGU":
-    categories=[ "హోమ్ ","తెలంగాణ","ఆంధ్రప్రదేశ్","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్","మా గురించి","సంప్రదించండి"]
+    categories=[ "హోమ్","ఆంధ్రప్రదేశ్","తెలంగాణ","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్"]
     break
   case "ENGLISH":
-    categories=[ "Home","Telangana","Andhra Pradesh","National","International","Cinema","Business","Sports","E-paper","AboutUs","ContactUs"]
+    categories=[ "Home","Andhra Pradesh","Telangana","National","International","Cinema","Business","Sports","E-paper"]
     break
   case "KANNADA":    
-        categories=["ಮುಖಪುಟ","ತೆಲಂಗಾಣ","ಆಂಧ್ರ ಪ್ರದೇಶ","ರಾಷ್ಟ್ರೀಯ","ಅಂತರರಾಷ್ಟ್ರೀಯ","ಸಿನಿಮಾ","ವ್ಯವಸ್ಥೆ","ಕ್ರೀಡೆ","ಇ-ಕಾಗದ","ನಮ್ಮ ಬಗ್ಗೆ","ಸಂಪರ್ಕಿಸಿ"]
+        categories=["ಮುಖಪುಟ","ಆಂಧ್ರ ಪ್ರದೇಶ","ತೆಲಂಗಾಣ","ರಾಷ್ಟ್ರೀಯ","ಅಂತರರಾಷ್ಟ್ರೀಯ","ಸಿನಿಮಾ","ವ್ಯವಸ್ಥೆ","ಕ್ರೀಡೆ","ಇ-ಕಾಗದ"]
         break
   case "HINDI":
-        categories=["होम", "तेलंगाना", "आंध्र प्रदेश", "राष्ट्रीय", "अंतरराष्ट्रीय", "सिनेमा", "व्यापार", "खेल", "ई-पेपर", "हमारे बारे में", "संपर्क करें"]
+        categories=["होम", "आंध्र प्रदेश", "तेलंगाना", "राष्ट्रीय", "अंतरराष्ट्रीय", "सिनेमा", "व्यापार", "खेल", "ई-पेपर"]
         break
   default:
-    categories=[ "హోమ్ ","తెలంగాణ","ఆంధ్రప్రదేశ్","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్","మా గురించి","సంప్రదించండి"]
+    categories=[ "హోమ్","ఆంధ్రప్రదేశ్","తెలంగాణ","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్"]
   }
 useEffect(() => {
     setActivesection(""); // Clear epaper highlight on route change
@@ -98,9 +98,9 @@ useEffect(() => {
         <Link to="/sports" className="header-link-item"> <p className={`${pathofUrl==="sports"?"active":""} text`} id="home" >{categories[7]}</p></Link>
 
         <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer"    className={`${pathofUrl==="epaper"?"active":""} text epaper`} id="home"  onClick={()=>setActivesection("epaper")}><p>{categories[8]}</p></a>
-        <Link to="/about" className="about-us-link-element">
+        {/* <Link to="/about" className="about-us-link-element">
          <p className={`${pathofUrl==="about"?"active":""} text`} id="home">{categories[9]}</p> </Link>
-        <Link to="/contact"  className="about-us-link-element"><p className={`${pathofUrl==="contact"?"active":""} text`} id="home">{categories[10]}</p></Link>
+        <Link to="/contact"  className="about-us-link-element"><p className={`${pathofUrl==="contact"?"active":""} text`} id="home">{categories[10]}</p></Link> */}
       {/* </div> */}
        </nav>
 
@@ -132,8 +132,8 @@ useEffect(() => {
 
        <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer" className="text epaper"  id="home"><p>{categories[8]}</p></a>
         
-        <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">{categories[9]}</p></Link>
-         <Link to="/about" className="about-us-link-element"><p id="home">{categories[10]}</p></Link>
+        {/* <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">{categories[9]}</p></Link>
+         <Link to="/about" className="about-us-link-element"><p id="home">{categories[10]}</p></Link> */}
          <p onClick={()=>setIsActivistModal(true)} className="text" id="home"> RTI Activist Join </p>
         {/* <a className="text epaper" id="home" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a>  */}
       <p onClick={()=>setIsReporterModal(true)} className="text" id="home"> RTI Reporter Join </p> 
