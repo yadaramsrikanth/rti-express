@@ -7,7 +7,7 @@ const LiveNews=()=>{
     
     const [livenews,setLiveNews]=useState([])
 const fetchLiveNews=async()=>{
-    const url="https://api.rtiexpress.in/v1/news/fetch"
+    const url="https://api.rtiexpress.in/v1/news/fetchAll"
     const response = await fetch(url)
     
     
@@ -19,12 +19,12 @@ const fetchLiveNews=async()=>{
     useEffect(()=>{
      fetchLiveNews()
     },[])
-
+const topNineArticles=livenews
     return <div className="live-news-main-container">
         <h1 className="live-news-heading" >లైవ్ న్యూస్</h1>
         <ul className="unordered-live-news-container">
             {
-                livenews.map((newsItem)=>(
+               topNineArticles.map((newsItem)=>(
                     <li key={newsItem._id}  className="live-news-item-card">
                        <Link to={`news/${newsItem._id}`} className="link-live-news-item-card">
                         <img className="live-news-image" src={newsItem.media} alt={newsItem.headline} />

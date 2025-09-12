@@ -5,8 +5,8 @@ import "./index.css"
 import { useContext } from "react";
 // const logoImageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752644036/IMG-20250715-WA0002_xrwuem.jpg"
 // const logoImageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
-const logoImageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752644036/IMG-20250715-WA0002_xrwuem.jpg"
-
+// const logoImageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752644036/IMG-20250715-WA0002_xrwuem.jpg"
+const logoImageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1757666809/e7b04b41322092344b0fbacff8b44a049fb61a63_g6minf.jpg"
 const Footer=()=>{
   const {setIsReporterModal,setIsActivistModal}=useContext(ReporterActivistContext)
     return <div className="footer-main-container">

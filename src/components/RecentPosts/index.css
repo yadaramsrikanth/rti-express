@@ -11,7 +11,7 @@
   border-radius: 8px;
   margin: 20px 0;
   border: 1px solid #E0E0E0;
-  width: 78%;
+  width: 98%;
 
 
 }
@@ -29,7 +29,7 @@
   border-radius: 8px;
   padding: 16px 20px;
   margin: 8px;
-  flex: 1 1 45%;
+  flex: 1 1 30%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -46,7 +46,7 @@
    
 .recent-post-image{
     width: 150px;
-    height: 100px;
+    height: 150px;
 }
 .recent-posts-para{
     font-size: 14px;

@@ -7,7 +7,7 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 // import { FiArrowUpRight } from "react-icons/fi";
 import TodaysSpotLight from "../TodaysSpotLight/index"
-import AddsBanner from "../AddsBanner/index"
+// import AddsBanner from "../AddsBanner/index"
 import PopularNews from "../PopularNews/index"
 import RecentPosts from "../RecentPosts/index"
 import LiveNews from "../LiveNews"
@@ -130,22 +130,30 @@ fetchingTopNewsArticles()
 <CategoryBasedItem/>
 
  
-  <div className="home-spot-light-popular-news-adds-container">
-    <div className="spot-light-popular-news-container">
-    
+  {/* <div className="home-spot-light-popular-news-adds-container"> */}
+    {/* <div className="spot-light-popular-news-container"> */}
+    <div className="spot-light-home-adds-container">
+    <div className="adds-size-container-home">
+    <img src="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/IMG-20250807-WA0016_pmop91.jpg" alt="first-add" className="add-banner-image-home-1"/>
+    </div>
     <div className="spot-light-home-container">
         <TodaysSpotLight/>
     </div>
-
-
+    <div className="adds-size-container-home">
+  <img src="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754996290/SLN_Technologies_and_Consultancy_2_seghqa_orpxme_jqbbmg_qpx7fo.jpg" alt="second-add" className="add-banner-image-home-1"/>
+</div>
+</div>
+    
+    
+    
     <div className="home-popular-news-container">
         <h1 className="taja-varathalu">తాజా వార్తలు</h1>
         <PopularNews/>
       </div>
-    </div>
+    {/* </div> */}
 
-      <AddsBanner/>
-      </div>
+      {/* <AddsBanner/> */}
+      {/* </div> */}
       <div className="recent-post-home-container">
       <h1 className="taja-updates-heading taja-varathalu">తాజా అప్‌డేట్స్</h1>
       <RecentPosts/>

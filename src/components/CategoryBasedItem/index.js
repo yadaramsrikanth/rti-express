@@ -10,15 +10,15 @@ const CategoryBasedItem=()=>{
     useEffect(()=>{
 
       const fetchNewsItems=async()=>{
-        const url="https://api.rtiexpress.in/v1/news/fetch"
+        const url="https://api.rtiexpress.in/v1/news/fetchAll"
         const response= await fetch(url)
         const data=await response.json()
         const responseData=data.news
         console.log(responseData)
         const  OnePercategory=Object.values(
        responseData.reduce((acc,item)=>{
-        if(!acc[item.category]){
-            acc[item.category]=item
+        if(!acc[item.category.toUpperCase()]){
+            acc[item.category.toUpperCase()]=item
         }
         return acc
     },{})

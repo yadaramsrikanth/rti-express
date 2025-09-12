@@ -117,11 +117,13 @@
 }
 .add-banner-img{
     /* height: 250px; */
-   width:auto;
+   /* width:auto;
    height: auto ;
    max-width: 100%;
     max-height: 400px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
+    width: 300px;
+    height: auto;
 }  
 
 
