@@ -12,6 +12,6 @@ export default ReporterActivistContext
 
 
 export const LanguageContext=createContext({
-    isLanguage:"TELUGU",
+    isLanguage:"hi",
     setIsLanguage:()=>{}
 })

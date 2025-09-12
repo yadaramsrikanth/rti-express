@@ -38,10 +38,11 @@ import "./App.css"
 import { useState } from "react";
 
 const languageOptions=[
-  {id:1,label:"Telugu",value:"TELUGU"},
-  {id:2,label:"English",value:"ENGLISH"},
-    {id:3,label:"Kannada",value:"KANNADA"},
-     {id:4,label:"Hindi",value:"HINDI"}
+  
+  {id:1,label:"English",value:"en"},
+  {id:2,label:"Telugu",value:"te"},
+    {id:3,label:"Kannada",value:"kn"},
+     {id:4,label:"Hindi",value:"hi"}
 ]
 
 // const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"

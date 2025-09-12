@@ -13,6 +13,13 @@ import {Link,useLocation} from "react-router-dom"
 // import RTIActivistForm from "../RTIActivistForm"
 import ReporterActivistContext from "../../ReactContext";
 import {LanguageContext} from "../../ReactContext"
+
+
+import teluguLanguage from "../../telugu.json"
+import hindiLanguage from "../../hindi.json"
+import englishLanguage from "../../english.json"
+import kannadaLanguage from "../../kannada.json"
+
 import "./Header.css"
 
 
@@ -20,10 +27,11 @@ import { useState,useEffect, useContext} from "react";
 Modal.setAppElement("#root");
 
 const languageOptions=[
-  {id:1,label:"Telugu",value:"TELUGU"},
-  {id:2,label:"English",value:"ENGLISH"},
-  {id:3,label:"kannada",value:"KANNADA"},
-  {id:4,label:"Hindi",value:"HINDI"}
+ 
+  {id:1,label:"English",value:"en"},
+   {id:2,label:"Telugu",value:"te"},
+  {id:3,label:"kannada",value:"kn"},
+  {id:4,label:"Hindi",value:"hi"}
 ]
 const Header=()=>{
 
@@ -55,20 +63,25 @@ setIsLanguage(e.target.value)
 let categories=[]
 
 switch(isLanguage){
-  case "TELUGU":
-    categories=[ "హోమ్","ఆంధ్రప్రదేశ్","తెలంగాణ","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్"]
+  case "te":
+    // categories=[ "హోమ్","ఆంధ్రప్రదేశ్","తెలంగాణ","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్"]
+    categories=teluguLanguage
     break
-  case "ENGLISH":
-    categories=[ "Home","Andhra Pradesh","Telangana","National","International","Cinema","Business","Sports","E-paper"]
+  case "en":
+    // categories=[ "Home","Andhra Pradesh","Telangana","National","International","Cinema","Business","Sports","E-paper"]
+    categories=englishLanguage
     break
-  case "KANNADA":    
-        categories=["ಮುಖಪುಟ","ಆಂಧ್ರ ಪ್ರದೇಶ","ತೆಲಂಗಾಣ","ರಾಷ್ಟ್ರೀಯ","ಅಂತರರಾಷ್ಟ್ರೀಯ","ಸಿನಿಮಾ","ವ್ಯವಸ್ಥೆ","ಕ್ರೀಡೆ","ಇ-ಕಾಗದ"]
+  case "kn":    
+        // categories=["ಮುಖಪುಟ","ಆಂಧ್ರ ಪ್ರದೇಶ","ತೆಲಂಗಾಣ","ರಾಷ್ಟ್ರೀಯ","ಅಂತರರಾಷ್ಟ್ರೀಯ","ಸಿನಿಮಾ","ವ್ಯವಸ್ಥೆ","ಕ್ರೀಡೆ","ಇ-ಕಾಗದ"]
+       categories=kannadaLanguage
         break
-  case "HINDI":
-        categories=["होम", "आंध्र प्रदेश", "तेलंगाना", "राष्ट्रीय", "अंतरराष्ट्रीय", "सिनेमा", "व्यापार", "खेल", "ई-पेपर"]
+  case "hi":
+        // categories=["होम", "आंध्र प्रदेश", "तेलंगाना", "राष्ट्रीय", "अंतरराष्ट्रीय", "सिनेमा", "व्यापार", "खेल", "ई-पेपर"]
+        categories=hindiLanguage
         break
   default:
-    categories=[ "హోమ్","ఆంధ్రప్రదేశ్","తెలంగాణ","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్"]
+    // categories=[ "హోమ్","ఆంధ్రప్రదేశ్","తెలంగాణ","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్"]
+    categories=englishLanguage
   }
 useEffect(() => {
     setActivesection(""); // Clear epaper highlight on route change
