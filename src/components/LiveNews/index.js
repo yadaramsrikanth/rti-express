@@ -19,7 +19,7 @@ const fetchLiveNews=async()=>{
     useEffect(()=>{
      fetchLiveNews()
     },[])
-const topNineArticles=livenews
+const topNineArticles=livenews.slice(0,9)
     return <div className="live-news-main-container">
         <h1 className="live-news-heading" >లైవ్ న్యూస్</h1>
         <ul className="unordered-live-news-container">
