@@ -71,6 +71,7 @@ const onChangeLanguage=(e)=>{
      <CgMail size={16} className="icon-email"/>
       <p className="website-mail">hello@rtiexpress.com</p>
       </div>
+
       
       <div className="top-left-side-text-container">
          <select value={isLanguage} onChange={onChangeLanguage} className="drop-down-container">
@@ -86,13 +87,13 @@ const onChangeLanguage=(e)=>{
   
  
 
-  <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="_blank"  rel="noopener noreferrer"><FaFacebook size={25} className="social-media-icon facebook"/></a>
- <a href="https://www.instagram.com/rtiexpress/" target="_blank"  rel="noopener noreferrer"><FaInstagram size={25} className="social-media-icon insta"/></a>
-  <a href="https://www.youtube.com/@rtiexpress667" target="_blank"  rel="noopener noreferrer"><FaYoutube size={25} className="social-media-icon youtube"/></a>
+  <a href="https://www.facebook.com/share/1QU7yNAkhg/" target="_blank"  rel="noopener noreferrer"><FaFacebook size={20} className="social-media-icon facebook"/></a>
+ <a href="https://www.instagram.com/rtiexpress/" target="_blank"  rel="noopener noreferrer"><FaInstagram size={20} className="social-media-icon insta"/></a>
+  <a href="https://www.youtube.com/@rtiexpress667" target="_blank"  rel="noopener noreferrer"><FaYoutube size={20} className="social-media-icon youtube"/></a>
   
- <a href="https://www.linkedin.com/in/rti-express-news-058a44378/" target="_blank" rel="noopener noreferrer"> <p><BiLogoLinkedin size={25} className="social-media-icon linkedin" /></p></a>
-<a href="https://x.com/rti_expressnews" target="_blank" rel="noopener noreferrer"> <p><FaXTwitter size={25} className="social-media-icon twitter" /></p></a>
-  <a title="View Location on Google Maps" target="_blank"  rel="noopener noreferrer" href="https://maps.app.goo.gl/kKD3CUwdMENNYT2a7"><p><MdLocationOn size={25} className="social-media-icon map-icon"/></p></a>
+ <a href="https://www.linkedin.com/in/rti-express-news-058a44378/" target="_blank" rel="noopener noreferrer"> <p><BiLogoLinkedin size={20} className="social-media-icon linkedin" /></p></a>
+<a href="https://x.com/rti_expressnews" target="_blank" rel="noopener noreferrer"> <p><FaXTwitter size={20} className="social-media-icon twitter" /></p></a>
+  <a title="View Location on Google Maps" target="_blank"  rel="noopener noreferrer" href="https://maps.app.goo.gl/kKD3CUwdMENNYT2a7"><p><MdLocationOn size={20} className="social-media-icon map-icon"/></p></a>
    <p className="feedback">Feedback</p>
       
       

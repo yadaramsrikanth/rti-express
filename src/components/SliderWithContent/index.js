@@ -5,7 +5,7 @@ import {Navigation,Autoplay,Pagination} from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
-import { FiArrowUpRight } from "react-icons/fi";
+// import { FiArrowUpRight } from "react-icons/fi";
 import TodaysSpotLight from "../TodaysSpotLight/index"
 import AddsBanner from "../AddsBanner/index"
 import PopularNews from "../PopularNews/index"
@@ -16,16 +16,34 @@ import CategoryBasedItem from "../CategoryBasedItem"
 // import RTIActivistForm from "../RTIActivistForm"
 import ReporterActivistContext from "../../ReactContext"
 import "./index.css"
-import data from "../../data.json"
-import { useContext, useState } from "react"
+// import data from "../../data.json"
+import { useContext, useEffect, useState } from "react"
 
 
 const SliderWithContent=()=>{
-    const [isEmail,setIsEmail]=useState("")
+    const [topArticles,setTopArticlesData]=useState([])
     // const [isReporterModalOpen,setIsReporterModalOpen]=useState(false)
     //   const [isActivistrModalOpen,setIsActivistModalOpen]=useState(false)
 
       const {setIsReporterModal,setIsActivistModal}=useContext(ReporterActivistContext)
+const aticlesvalue=10
+useEffect(()=>{
+const fetchingTopNewsArticles=async()=>{
+  try{
+  const url=`https://api.rtiexpress.in/v1/news/fetch?limit=${aticlesvalue}`
+  const toparticlesdata=await fetch(url)
+  const toparticleResponseData=await toparticlesdata.json()
+  console.log("articles",toparticleResponseData.news)
+  setTopArticlesData(toparticleResponseData.news)
+
+  }catch(e){
+    console.log("top articles api: ",e)
+  }
+  
+}
+fetchingTopNewsArticles()
+},[])
+
 
 
 
@@ -41,12 +59,12 @@ const SliderWithContent=()=>{
         style={{padding:"30px"}}
         >
          {
-           data.map((item)=>(
+           topArticles.map((item)=>(
             
             <SwiperSlide key={item.id}>
-                <Link to={`/news/${item.id}`} className="slide-link">
-                <img src={item.image}  alt={`slider ${item.id}`} className="slider-image"/>
-                <p className="slide-para-content">{item.description.slice(0,66)}</p>
+                <Link to={`/news/${item._id}`} className="slide-link">
+                <img src={item.media}  alt={`slider ${item.id}`} className="slider-image"/>
+                <p className="slide-para-content">{item.headline}</p>
               </Link>
             </SwiperSlide>
            
@@ -57,24 +75,33 @@ const SliderWithContent=()=>{
 
         </Swiper>
     </div>
-    <div className="rti-join-and-news-letter-container">
-    <div className="rti-join-container">
-      <h3 className="join-heading">Join RTI</h3>
+<div className="rti-join-buttons-activist-reporter-citizen-container">
+
+      <button  onClick={()=>setIsReporterModal(true)} className="reporter-button">RTI Reporter</button>
+      <button onClick={()=>setIsActivistModal(true)} className="reporter-button">RTI Activist</button>
+      <button className="reporter-button">Citizen Voice</button>
+</div>
+
+    </div>
+    {/* <div className="rti-join-and-news-letter-container"> */}
+    {/* <div className="rti-join-container"> */}
+      {/* <h3 className="join-heading">Join RTI</h3> */}
      
   {/* <a className="reporter-button" target="__blank" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit" >RTI Reporter</a>  */}
-       <button  onClick={()=>setIsReporterModal(true)} className="reporter-button">RTI Reporter</button>
-      <button onClick={()=>setIsActivistModal(true)} className="reporter-button">RTI Activist  </button>
-      </div>
-      <div className="news-letter-container">
+       {/* <button  onClick={()=>setIsReporterModal(true)} className="reporter-button">RTI Reporter</button> */}
+      {/* <button onClick={()=>setIsActivistModal(true)} className="reporter-button">RTI Activist  </button> */}
+      
+      {/* </div> */}
+      {/* <div className="news-letter-container">
         <h3 className="daily-news-letter-heading">Daily Newsletter</h3>
         <p className="news-para">Get all the top stories from Blogs to keep track.</p>
       <div className="news-letter-mail-container">
         <input value={isEmail} type="email" placeholder="Enter Your e-mail" onChange={(e)=>setIsEmail(e.target.value)}/>
         <FiArrowUpRight size={25}/>
       </div>
-      </div>
-      </div>
-      </div>
+      </div> */}
+      {/* </div> */}
+      {/* </div> */}
 
       {/* old one it is giving extra space
      <div className="home-spot-light-adds-container">

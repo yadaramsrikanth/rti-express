@@ -14,7 +14,7 @@ const CategoryBasedItem=()=>{
         const response= await fetch(url)
         const data=await response.json()
         const responseData=data.news
-
+        console.log(responseData)
         const  OnePercategory=Object.values(
        responseData.reduce((acc,item)=>{
         if(!acc[item.category]){
@@ -30,9 +30,10 @@ setnewsItems(OnePercategory)
         
     },[])
   if (!newsItems || newsItems.length === 0) return null;
-const first=newsItems.slice(2,6)[0]
+const first=newsItems[0]
 
-    return <div className="news-container-category-based">
+    return <><h3 style={{fontSize:"25px",marginLeft:"30px"}}>Breaking news</h3><div className="news-container-category-based">
+        
         <div className="container-for-left-flex-item">
             <Link to={`news/${first._id}`} className="category-based-link-element">
             <img src= {first.media } alt={first.headline} className="category-image-left" />
@@ -67,7 +68,7 @@ const first=newsItems.slice(2,6)[0]
         </ul>
     </div>
 
-   
+   </>
 }
 
 export default CategoryBasedItem

@@ -81,14 +81,14 @@ border: 1px solid #ccc;
     padding: 10px;
     border-radius: 10px;
     display: flex;
-    width: 80%;              /* full width */
-    max-width: 1200px;        /* cap width for large screens */
+    width: 98%;              /* full width */
+           /* cap width for large screens */
                              /* center the container */
     gap: 20px;                /* spacing between left and right */
 }
 
 .container-for-left-flex-item {
-    width: 40%;
+    width: 35%;
 }
 
 .category-image-left {
@@ -112,6 +112,7 @@ border: 1px solid #ccc;
 .category-based-headline {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 22px;
     
 }
 
@@ -129,7 +130,7 @@ border: 1px solid #ccc;
     list-style-type: none;
     padding: 10px;
     margin: 0;               /* removed left margin */
-    width: 60%;
+    width: 65%;
     display: flex;
    
     gap: 12px;
@@ -146,7 +147,7 @@ border: 1px solid #ccc;
     justify-content: space-between;
     align-items: center;
     
-    width: 48%;
+    width: 32%;
 }
 
 .category-of-item-right {

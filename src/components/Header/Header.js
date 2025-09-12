@@ -33,16 +33,9 @@ const Header=()=>{
   const {setIsReporterModal,setIsActivistModal}=useContext(ReporterActivistContext)
   const {isLanguage,setIsLanguage}=useContext(LanguageContext)
   const pathofUrl=activeSection ||currentPath
-  // const [reporterisModalOpeninMobile,setReporterisModalOpeninMobile]=useState(false)
-  //   const [activistisModalOpeninMobile,setactivistisModalOpeninMobile]=useState(false)
+ 
+const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1757666809/e7b04b41322092344b0fbacff8b44a049fb61a63_g6minf.jpg"  
 
-  // const {language}=props
-  // const [mobileLanguage,setMobileLanguage]=useState("TELUGU")
-  // const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752660174/IMG-20250715-WA0002_xrwuem-removebg-preview_qdht1o.png"
-// const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/RT-3_bcitau.png"
-const imageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1752644036/IMG-20250715-WA0002_xrwuem.jpg"
-  // const [languageCategory,setLanguageCategory]=useState(false)
-   
 
 const [isMenuOpen,setIsMenuOpen]=useState(false)
 
@@ -60,28 +53,6 @@ setIsLanguage(e.target.value)
 }
 
 let categories=[]
-
-//   const categories=isLanguage==="ENGLISH" ?[ "Home","Telangana",
-//   "Andhra Pradesh",
-//   "National",
-//   "InterNational",
-//   "Cinema",
-//   "Business",
-//   "Sports",
-// "E-paper",
-// "AboutUs",
-// "ContactUs"
-// ]:
-//   [ "హోమ్ ","తెలంగాణ",
-//   "ఆంధ్రప్రదేశ్",
-//   "జాతీయం",
-//   "అంతర్జాతీయం",
-//   "సినిమా",
-//   "బిజినెస్",
-//   "క్రీడలు",
-// "ఈ-పేపర్",
-// "మా గురించి",
-// "సంప్రదించండి"]
 
 switch(isLanguage){
   case "TELUGU":
@@ -141,10 +112,8 @@ useEffect(() => {
             ))}
           </select>
       
-      {/* <div onClick={onToggleInmobileView} className="categories-container-on-mobile-view"> */}
-        {/* {isON || languageCategory?<MdToggleOn size={30}  color="green" />:<MdToggleOff size={30} color="gray"/>} */}
-        {/* <p className="language"> {isON || languageCategory ? 'English' : 'తెలుగు'}</p> */}
-      {/* </div> */}
+     
+      
      { !isMenuOpen&&<button onClick={OpenIconHamburger} className="hamburger-button"><RxHamburgerMenu/></button>
     }
       
@@ -185,8 +154,7 @@ useEffect(() => {
         </div>
         </div>}
 
-    {/* <RTIReporterForm  isOpen={reporterisModalOpeninMobile}  onClose={()=>setReporterisModalOpeninMobile(false)}/>
-       <RTIActivistForm isOpen={activistisModalOpeninMobile}  onClose={()=>setactivistisModalOpeninMobile(false)}/> */}
+  
        </>
 
 }

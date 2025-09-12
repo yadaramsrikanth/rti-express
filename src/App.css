@@ -7,7 +7,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: 'Noto Sans Telugu' !important;
+  font-family: 'Noto Sans Telugu','Times New Roman';
 
 }
 body{
@@ -19,7 +19,8 @@ background-color: #F9F9F6;
     background-color: transparent;
     border: none;
     outline: none;
-    
+    font-weight:bold;
+    font-size: 16px;
 }
 
 .app-container{
@@ -64,7 +65,7 @@ background-color: #F9F9F6;
 }
 .text{
   
-  font-family: "Poppins";
+ 
   font-weight: 600;
   font-size: 15px;
   height: 24px;

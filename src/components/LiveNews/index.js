@@ -12,7 +12,7 @@ const fetchLiveNews=async()=>{
     
     
     const data=await response.json()
-    console.log(data)
+    console.log("live news: ",data)
     setLiveNews(data.news)
 }
 
