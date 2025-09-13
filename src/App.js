@@ -54,7 +54,7 @@ const App=()=>{
 
 const [isReporterModal,setIsReporterModal]=useState(false)
 const [isActivistModal,setIsActivistModal]=useState(false)
-const [isLanguage,setIsLanguage]=useState("TELUGU")
+const [isLanguage,setIsLanguage]=useState("en")
 
 // const toToggle=()=>{
   // SetIsON((prev)=>!prev)
