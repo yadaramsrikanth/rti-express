@@ -32,7 +32,8 @@ setnewsItems(OnePercategory)
   if (!newsItems || newsItems.length === 0) return null;
 const first=newsItems[0]
 
-    return <><h1 className="breaking-news-heading">Breaking news</h1><div className="news-container-category-based">
+    return <><h1 className="breaking-news-heading">Breaking news</h1>
+    <div className="news-container-category-based">
         
         <div className="container-for-left-flex-item">
             <Link to={`news/${first._id}`} className="category-based-link-element">
@@ -48,7 +49,7 @@ const first=newsItems[0]
 
         <ul className="unordered-container-for-right-side-items">
             {
-            newsItems.map((item)=>(
+            newsItems.slice(0,6).map((item)=>(
             <li key={item._id} className="category-based-list-item-right-container">
                <Link to={`news/${item._id}`} className="category-based-link-element-right">
                 <div>

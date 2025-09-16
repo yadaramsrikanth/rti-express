@@ -10,8 +10,10 @@
   background-color: #FFFFFF; /* or #FFFFFF */
   padding: 20px;
   border-radius: 8px;
-  margin: 20px 0;
+  
   border: 1px solid #E0E0E0;
+  width: 100%;
+  margin: 0 auto;
 
 }
 .live-news-item-card{
@@ -182,7 +184,7 @@
     font-size: 18px;
   }
   .unordered-live-news-container{
-    margin-left: 18px;
+    margin-left: 0px;
   }
   .live-news-heading{
     margin-left: 25px;

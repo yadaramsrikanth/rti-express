@@ -1,0 +1,40 @@
+.citizen-voice-para{
+   font-size: 25px;
+   text-align: center;
+}
+.citizen-voice-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.citizen-modal-content {
+ background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  
+  width: 40%;
+  outline: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+      align-items: center;
+
+      min-height: 20vh; 
+  overflow-y: auto; 
+
+  margin: 0 auto;
+}
+
+.google-play-icon{
+    width: 100px;
+    height: 100px;
+    margin:15px;
+   
+}

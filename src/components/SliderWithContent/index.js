@@ -9,11 +9,12 @@ import "swiper/css/pagination"
 import TodaysSpotLight from "../TodaysSpotLight/index"
 // import AddsBanner from "../AddsBanner/index"
 // import PopularNews from "../PopularNews/index"
-import RecentPosts from "../RecentPosts/index"
+// import RecentPosts from "../RecentPosts/index"
 import LiveNews from "../LiveNews"
 import CategoryBasedItem from "../CategoryBasedItem"
 // import RTIReporterForm from "../RTIReporterForm/index"
 // import RTIActivistForm from "../RTIActivistForm"
+import CitizenVoice from "../CitizenVoice"
 import ReporterActivistContext from "../../ReactContext"
 import "./index.css"
 // import data from "../../data.json"
@@ -24,7 +25,7 @@ const SliderWithContent=()=>{
     const [topArticles,setTopArticlesData]=useState([])
     // const [isReporterModalOpen,setIsReporterModalOpen]=useState(false)
     //   const [isActivistrModalOpen,setIsActivistModalOpen]=useState(false)
-
+      const [citizenVoiceValue,setCitizenVoice]=useState(false)
       const {setIsReporterModal,setIsActivistModal}=useContext(ReporterActivistContext)
 const aticlesvalue=10
 useEffect(()=>{
@@ -79,7 +80,7 @@ fetchingTopNewsArticles()
 
       <button  onClick={()=>setIsReporterModal(true)} className="reporter-button">RTI Reporter</button>
       <button onClick={()=>setIsActivistModal(true)} className="reporter-button">RTI Activist</button>
-      <button className="reporter-button">Citizen Voice</button>
+      <button className="reporter-button" onClick={()=>setCitizenVoice(true)}>Citizen Voice</button>
 </div>
 
     </div>
@@ -158,17 +159,17 @@ fetchingTopNewsArticles()
 
       {/* <AddsBanner/> */}
       {/* </div> */}
-      <div className="recent-post-home-container">
+      {/* <div className="recent-post-home-container">
       <h1 className="taja-updates-heading taja-varathalu">తాజా అప్‌డేట్స్</h1>
       <RecentPosts/>
-      </div>
+      </div> */}
       
       
        
 
 
 
-
+        <CitizenVoice isOpen={citizenVoiceValue}  onClose={()=>setCitizenVoice(false)} />
 
       {/* <RTIReporterForm isOpen={isReporterModalOpen}  onClose={()=>setIsReporterModalOpen(false)}/>
       <RTIActivistForm isOpen={isActivistrModalOpen}  onClose={()=>setIsActivistModalOpen(false)}/> */}
