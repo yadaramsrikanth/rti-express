@@ -32,6 +32,8 @@ import National from "./components/National";
 import Business from "./components/Business";
 import Cinema from "./components/Cinema";
 import Sports from "./components/Sports";
+import Telangana from "./components/Telangana";
+import AP from "./components/AP";
 // import RTIReporterForm from "./components/RTIReporterForm";
 // import addimages from "./addImages.json"
 import "./App.css"
@@ -149,6 +151,8 @@ const onChangeLanguage=(e)=>{
    <Route path="/business" element={<Business/>} />
    <Route path="/cinema" element={<Cinema/>} />
    <Route path="/sports" element={<Sports/>} />
+   <Route path="/telangana" element={<Telangana/>} />
+   <Route path="/ap" element={<AP/>}/>
     <Route path="*" element={<NotFound/>}/>
     </Routes>
 

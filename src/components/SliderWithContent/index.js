@@ -8,7 +8,7 @@ import "swiper/css/pagination"
 // import { FiArrowUpRight } from "react-icons/fi";
 import TodaysSpotLight from "../TodaysSpotLight/index"
 // import AddsBanner from "../AddsBanner/index"
-import PopularNews from "../PopularNews/index"
+// import PopularNews from "../PopularNews/index"
 import RecentPosts from "../RecentPosts/index"
 import LiveNews from "../LiveNews"
 import CategoryBasedItem from "../CategoryBasedItem"
@@ -132,11 +132,14 @@ fetchingTopNewsArticles()
  
   {/* <div className="home-spot-light-popular-news-adds-container"> */}
     {/* <div className="spot-light-popular-news-container"> */}
+           <h2 className="latest-news-heading">Latest News</h2>
+
     <div className="spot-light-home-adds-container">
     <div className="adds-size-container-home">
     <img src="https://res.cloudinary.com/dqdx0yz2t/image/upload/v1754575769/IMG-20250807-WA0016_pmop91.jpg" alt="first-add" className="add-banner-image-home-1"/>
     </div>
     <div className="spot-light-home-container">
+       
         <TodaysSpotLight/>
     </div>
     <div className="adds-size-container-home">
@@ -144,12 +147,13 @@ fetchingTopNewsArticles()
 </div>
 </div>
     
+    <h2 className="latest-news-heading recent-posts-heading">Recent Posts</h2> 
+     <LiveNews/>
     
-    
-    <div className="home-popular-news-container">
+    {/* <div className="home-popular-news-container">
         <h1 className="taja-varathalu">తాజా వార్తలు</h1>
         <PopularNews/>
-      </div>
+      </div> */}
     {/* </div> */}
 
       {/* <AddsBanner/> */}
@@ -160,7 +164,7 @@ fetchingTopNewsArticles()
       </div>
       
       
-        <LiveNews/>
+       
 
 
 

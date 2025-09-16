@@ -32,7 +32,7 @@ setnewsItems(OnePercategory)
   if (!newsItems || newsItems.length === 0) return null;
 const first=newsItems[0]
 
-    return <><h3 style={{fontSize:"25px",marginLeft:"30px",marginTop:"30px"}}>Breaking news</h3><div className="news-container-category-based">
+    return <><h1 className="breaking-news-heading">Breaking news</h1><div className="news-container-category-based">
         
         <div className="container-for-left-flex-item">
             <Link to={`news/${first._id}`} className="category-based-link-element">

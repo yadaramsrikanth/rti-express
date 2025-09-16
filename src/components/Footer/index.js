@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { MdCopyright } from "react-icons/md";
+// import { MdCopyright } from "react-icons/md";
 import ReporterActivistContext from "../../ReactContext"
 import "./index.css"
 import { useContext } from "react";
@@ -10,16 +10,18 @@ const logoImageUrl="https://res.cloudinary.com/dqdx0yz2t/image/upload/v175766680
 const Footer=()=>{
   const {setIsReporterModal,setIsActivistModal}=useContext(ReporterActivistContext)
     return <div className="footer-main-container">
+              <img src={logoImageUrl}  alt="logo-in-footer" className="footer-image-logo"/>
+
       <div className="footer-info-containerss">
         <div className="website-info-in-footer">
-        <img src={logoImageUrl}  alt="logo-in-footer" className="footer-image-logo"/>
+        {/* <img src={logoImageUrl}  alt="logo-in-footer" className="footer-image-logo"/> */}
       
       <p>#7-2-28, Near Indian Gas,</p>
       <p>Vasavi Dharmashala Road,</p>
-      <p>Hindupur, Sri Sathya Sai District,</p>
+      <p>Hindupur, Sri Sathya Sai(D),</p>
       <p>Andhra Pradesh – 515201</p>
-      <p><span>Contact:</span> +9176688 86666,+9190596 79786</p>
-      {/* <p> +9190596 79786</p> */}
+      <p><span>Contact:</span> +9176688 86666,</p>
+      <p> +9190596 79786</p>
       <p><span>Email:</span> contact@rtiexpress.in</p>
     </div>
 <div className="company-container">
@@ -81,8 +83,9 @@ const Footer=()=>{
 </div>
 <hr className="horizontal-line"/>
 <div className="copy-right-container">
-  <p>Designed and Developed by Krishlabs</p>
-  <p className="copy-right-logo-text"><MdCopyright size={18} className="copy-righ-icon"/> 2025 All Rights Reserved</p>
+  <a href="https://krishlabs.in/" target="_blank" rel="noopener noreferrer">Designed and Developed by Krishlabs</a>
+  {/* <p>Designed and Developed by Krishlabs</p> */}
+  {/* <p className="copy-right-logo-text"><MdCopyright size={18} className="copy-righ-icon"/> 2025 All Rights Reserved</p> */}
 
     </div>
     </div>

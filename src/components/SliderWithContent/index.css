@@ -169,6 +169,7 @@
    max-width: 100%;
     max-height: 400px;
     margin-bottom: 10px;
+    
 }
 
 .adds-size-container-home{
@@ -179,8 +180,23 @@
    width: 50%;
     
 } 
+.latest-news-heading{
+  background-color: #007BFF;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 800;
+    height: 40px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin: 30px 0px 20px 250px;
+   clip-path: polygon(20px 0, 100% 0, calc(100% - 20px) 100%, 0 100%);
+}
 
-
+.recent-posts-heading{
+  margin: 20px 0px 20px 25px;
+}
 /* .home-spot-light-adds-container{
   display: flex;
   flex-direction: row;

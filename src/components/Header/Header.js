@@ -99,11 +99,13 @@ useEffect(() => {
   }, [isMenuOpen]);
 // onClick={()=>setActivesection("home")}
     return <> <nav className="Header-container">
-    <Link to="/">  <img src={imageUrl} alt="logo" className="logo-rti-express-header" />  </Link>  {/*/* newly */ }
+    <Link to="/">  <img src={imageUrl} alt="logo" className="logo-rti-express-header" />  </Link>  
+    <div className="header-items-separator-container"></div>
+    <div className="header-items-container">
     {/* <div className="header-items-to-navigate"> */}
      <Link to="/" className="header-link-item">   <p className={`${pathofUrl==="home"?"active":""} text`} id="home" >{categories[0]}</p></Link>
-      <Link to="/"className="header-link-item">  <p className={`${pathofUrl==="telangana"?"active":""} text`} id="home">{categories[1]}</p></Link>
-       <Link to="/" className="header-link-item"> <p className={`${pathofUrl==="ap"?"active":""} text`} id="home" >{categories[2]}</p></Link>
+      <Link to="/ap"className="header-link-item">  <p className={`${pathofUrl==="ap"?"active":""} text`} id="home">{categories[1]}</p></Link>
+       <Link to="/telangana" className="header-link-item"> <p className={`${pathofUrl==="telangana"?"active":""} text`} id="home" >{categories[2]}</p></Link>
        <Link to="/national" className="header-link-item"> <p className={`${pathofUrl==="national"?"active":""} text`} id="home" >{categories[3]}</p></Link>
        <Link to="/international" className="header-link-item"> <p className={`${pathofUrl==="international"?"active":""} text`} id="home" >{categories[4]}</p></Link>
        <Link to="/cinema" className="header-link-item"> <p className={`${pathofUrl==="cinema"?"active":""} text`} id="home" >{categories[5]}</p></Link>
@@ -115,8 +117,8 @@ useEffect(() => {
          <p className={`${pathofUrl==="about"?"active":""} text`} id="home">{categories[9]}</p> </Link>
         <Link to="/contact"  className="about-us-link-element"><p className={`${pathofUrl==="contact"?"active":""} text`} id="home">{categories[10]}</p></Link> */}
       {/* </div> */}
-       </nav>
-
+   </div>    
+</nav>
     <nav className="mobile-view-small-large-screen-hamburger-icon-container">
     <Link to="/"><img src={imageUrl} className="mobile-logo-rti-express" alt="RTI EXPRESS" /> </Link>
          <select value={isLanguage} onChange={onChangeLanguageMobile} className="drop-down-container">
