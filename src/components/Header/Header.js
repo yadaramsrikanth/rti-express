@@ -1,16 +1,14 @@
 import Modal from "react-modal"
 
 import { RxHamburgerMenu } from "react-icons/rx";
-// import { MdToggleOn } from "react-icons/md";
-// import { MdToggleOff } from "react-icons/md";
+
 import { MdOutlineClose,MdLocationOn  } from "react-icons/md";
 import { FaFacebook ,FaInstagram,FaYoutube} from "react-icons/fa";
 
 import { BiLogoLinkedin,BiLogoTwitter } from "react-icons/bi";
 
 import {Link,useLocation} from "react-router-dom"
-// import RTIReporterForm from "../RTIReporterForm";
-// import RTIActivistForm from "../RTIActivistForm"
+
 import ReporterActivistContext from "../../ReactContext";
 import {LanguageContext} from "../../ReactContext"
 
@@ -64,23 +62,18 @@ let categories=[]
 
 switch(isLanguage){
   case "te":
-    // categories=[ "హోమ్","ఆంధ్రప్రదేశ్","తెలంగాణ","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్"]
     categories=teluguLanguage
     break
   case "en":
-    // categories=[ "Home","Andhra Pradesh","Telangana","National","International","Cinema","Business","Sports","E-paper"]
     categories=englishLanguage
     break
   case "kn":    
-        // categories=["ಮುಖಪುಟ","ಆಂಧ್ರ ಪ್ರದೇಶ","ತೆಲಂಗಾಣ","ರಾಷ್ಟ್ರೀಯ","ಅಂತರರಾಷ್ಟ್ರೀಯ","ಸಿನಿಮಾ","ವ್ಯವಸ್ಥೆ","ಕ್ರೀಡೆ","ಇ-ಕಾಗದ"]
        categories=kannadaLanguage
         break
   case "hi":
-        // categories=["होम", "आंध्र प्रदेश", "तेलंगाना", "राष्ट्रीय", "अंतरराष्ट्रीय", "सिनेमा", "व्यापार", "खेल", "ई-पेपर"]
         categories=hindiLanguage
         break
   default:
-    // categories=[ "హోమ్","ఆంధ్రప్రదేశ్","తెలంగాణ","జాతీయం","అంతర్జాతీయం","సినిమా","బిజినెస్","క్రీడలు","ఈ-పేపర్"]
     categories=englishLanguage
   }
 useEffect(() => {
@@ -113,10 +106,8 @@ useEffect(() => {
         <Link to="/sports" className="header-link-item"> <p className={`${pathofUrl==="sports"?"active":""} text`} id="home" >{categories[7]}</p></Link>
 
         <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer"    className={`${pathofUrl==="epaper"?"active":""} text epaper`} id="home"  onClick={()=>setActivesection("epaper")}><p>{categories[8]}</p></a>
-        {/* <Link to="/about" className="about-us-link-element">
-         <p className={`${pathofUrl==="about"?"active":""} text`} id="home">{categories[9]}</p> </Link>
-        <Link to="/contact"  className="about-us-link-element"><p className={`${pathofUrl==="contact"?"active":""} text`} id="home">{categories[10]}</p></Link> */}
-      {/* </div> */}
+      
+     
    </div>    
 </nav>
     <nav className="mobile-view-small-large-screen-hamburger-icon-container">
@@ -147,10 +138,8 @@ useEffect(() => {
 
        <a href="https://www.rtiexpressnews.com/" target="_blank" rel="noopener noreferrer" className="text epaper"  id="home"><p>{categories[8]}</p></a>
         
-        {/* <Link to="/contact"  className="about-us-link-element"><p className="text" id="home">{categories[9]}</p></Link>
-         <Link to="/about" className="about-us-link-element"><p id="home">{categories[10]}</p></Link> */}
+      
          <p onClick={()=>setIsActivistModal(true)} className="text" id="home"> RTI Activist Join </p>
-        {/* <a className="text epaper" id="home" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1chrWcKXZJlU0tF7jTJProrx8TQCr_vZIBSpJulAIO_8/edit"><p>RTI Reporter Join</p></a>  */}
       <p onClick={()=>setIsReporterModal(true)} className="text" id="home"> RTI Reporter Join </p> 
         <p className="text" id="home">Feedback</p>
         <p id="home">hello@rtiexpress.com</p>

@@ -8,20 +8,11 @@ const NewsDetails=()=>{
     const [slide,setSlide]=useState(null)
     const {id}=useParams()
     console.log(id)
-    // let slide=data.find((item)=>item.id.toString()===id)
-
-
-
-// rti api  accessing article based on id
+  
 
     useEffect(()=>{
 
-        // const localSlide = data.find((item) => item.id.toString() === id)
-        //     if (localSlide) {
-        //  setSlide(localSlide)
-        // }
-
-        const fetchnewsFullDetailsBasedOnId=async()=>{
+       const fetchnewsFullDetailsBasedOnId=async()=>{
          let resultResponse=null
             
          //rti backend
@@ -40,18 +31,14 @@ const NewsDetails=()=>{
                 // setSlide(newsdata.news)
                 resultResponse=newsdata.news
          }else{
-        //     const localSlide = data.find((item) => item.id.toString() === id);
-        // //   setSlide(localSlide || null);
-        //     resultResponse=localSlide
+      
             throw new Error("Backend not availbale")
 
          }
         
     }catch(error){
         console.error(error.message);
-        // const localSlide = data.find((item) => item.id.toString() === id);
-        // // setSlide(localSlide || null);
-        // resultResponse=localSlide
+        
     }
     // local json
 
